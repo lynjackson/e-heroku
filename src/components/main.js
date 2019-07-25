@@ -6,7 +6,7 @@ import '../styles/main.css';
 import '../styles/contact.css';
 import '../styles/images/e2.png';
 import PageTitle from '../flex_Components/page-title'
-import '../styles/images/old_ethe.png';
+import '../styles/images/old_ethe.jpg';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 
 
@@ -16,7 +16,7 @@ export class AboveFold extends React.Component{
     console.log(this.props);
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold}}>
-      <h1 id='above-title'>Digital products that help you reach farther.</h1>
+      <h1 id='above-title'>Digital experience helping you reach farther</h1>
 
     </div>
   )
@@ -44,14 +44,14 @@ export class OurWork extends React.Component{
   return(
     <div className='view' id='ourWork-view'>
 
-      <p className='ourWork-statement'>We make great digital stuff.</p>
+      <p className='ourWork-statement'>We create effective digital products and strategies</p>
         <div id='ourWork-content'>
           <WhatWeDo title={'Digital Strategy'} description={'We learn how your customers interact with your brand and build strategies that maximize your customer reach and engagement.'} icon={'./src/styles/icons/svg/023-research.svg'}/>
           <WhatWeDo title={`Design x Development`} description={'We design applications, social media experiences, and marketing campaigns that extend your business vision, culture and spirit, and make great user experience a part of your brand.'} icon={'./src/styles/icons/svg/027-social-media.svg'}/>
           <WhatWeDo title={'Data Integration'} description={'We prioritize collection of useful data in designing compelling customer experiences. Adding science to the art allows you to move from guesswork to inspired predictions, using metrics and analytics to inform changes to your business.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
         </div>
       <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}><div id='learn-div'>
-        <h2 id='learn-text'>Why you need a great digital footprint</h2><ion-icon id='learn-arrow' name="arrow-dropright"></ion-icon>
+        <h2 id='learn-text'>Why your digital footprint matters</h2><ion-icon id='learn-arrow' name="arrow-dropright"></ion-icon>
       </div></Link>
     </div>
   )
@@ -95,9 +95,9 @@ export class RecentProjects extends React.Component {
     <div className='view' id='projects-view'>
       <p className='ourWork-statement'>Recent Projects</p>
       <div id='projects-div'>
-        <img className='project-image' src='./src/styles/images/old_ethe.png'/>
-        <img className='project-image' src='./src/styles/images/creator.png'/>
-        <img className='project-image' src='./src/styles/images/bill.png'/>
+        <img className='project-image' src='./src/styles/images/old_ethe.jpg'/>
+        <img className='project-image' src='./src/styles/images/creator.jpg'/>
+        <img className='project-image' src='./src/styles/images/bill.jpg'/>
       </div>
     </div>
   )
@@ -116,15 +116,9 @@ componentDidMount(){
 export const ContactUs = ()=>{
   return(
     <div className='view' id='contact-view' style={{backgroundColor:'#333333'}}>
-      <PageTitle message={'Contact Us'}/>
-        <form id='contact-form'>
-          <input type='text' placeholder='Name' className='contact-input' />
-          <input type='email' placeholder='Email' className='contact-input' />
-          <input type='text' placeholder='Company (optional)' className='contact-input' />
-          <input type='tel' name='phone' placeholder='Phone (optional)' className='contact-input' />
-          <textarea type='text' placeholder='Message' className='contact-input' id='contact-message'></textarea>
-          <div id='submit-button-div'><button type='submit' value='submit' id='submit-button'>Submit</button> </div>
-        </form>
+      <p className='contact-text' id='ready'>Ready to step your digital game up?</p>
+      <p className='contact-text' id='hit'>Drop us a line</p>
+      <a href="mailto:webmaster@example.com" id='contact-link'>hello@ethedigital.com</a>
     </div>
   )
 }
@@ -135,8 +129,7 @@ const WhatWeDo = (props)=>{
   return(
     <div className='ourWork-div' id='ourWork-strategy-div' style={{border: props.noBorder}}>
       <div className='ourWork-service-div'><h1 className='ourWork-service'>{props.title}</h1></div>
-      <img src={props.icon} className='ourWork-icon'/>
-      <div className='ourWork-description-div' id='ourWork-strategy-text'><p className='ourWork-description-text'>{props.description}</p></div>
+      <div className='ourWork-description-div' id='ourWork-strategy-text'><img src={props.icon} className='ourWork-icon'/><p className='ourWork-description-text'>{props.description}</p></div>
     </div>
   )
 }
@@ -157,3 +150,12 @@ export class MenuButton extends React.Component {
       // document.getElementById('e').addEventListener('click', (event)=>{this.props.appState.front(); event.stopPropagation()})
     }
 }
+
+// <form id='contact-form'>
+//   <input type='text' placeholder='Name' className='contact-input' />
+//   <input type='email' placeholder='Email' className='contact-input' />
+//   <input type='text' placeholder='Company (optional)' className='contact-input' />
+//   <input type='tel' name='phone' placeholder='Phone (optional)' className='contact-input' />
+//   <textarea type='text' placeholder='Message' className='contact-input' id='contact-message'></textarea>
+//   <div id='submit-button-div'><button type='submit' value='submit' id='submit-button'>Submit</button> </div>
+// </form>

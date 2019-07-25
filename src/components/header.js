@@ -7,7 +7,7 @@ export default class Header extends React.Component {
   render(){
     console.log(this.props);
       return(
-        <div id='header' style={(document.documentElement.clientWidth < 376 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, position:'relative' }:{backgroundColor:this.props.appState.header.backgroundColor}}>
+        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, position:'relative' }:{backgroundColor:this.props.appState.header.backgroundColor}}>
           <Link to='/'><img src='./src/styles/images/e2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
           {this.props.children}
           <div id='menu-icon-circle'>
@@ -21,7 +21,7 @@ export default class Header extends React.Component {
                 event.stopPropagation()
               }
             }}
-            style={(document.documentElement.clientWidth > 375)?{filter:this.props.appState.header.headerInvert}:{filter:'invert(0)'}}></ion-icon>
+            style={(document.documentElement.clientWidth > 411)?{filter:this.props.appState.header.headerInvert}:{filter:'invert(0)'}}></ion-icon>
           </div>
         </div>
 

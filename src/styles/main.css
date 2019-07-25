@@ -63,7 +63,7 @@ z-index:2
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: .5px solid rgba(128, 128, 128, .5);
-  padding: 5px 0px 44px 0px;
+  padding: 3% 0px 5% 0px;
 
 }
 
@@ -71,7 +71,6 @@ z-index:2
   width: 308px;
     /* border: 1px solid; */
     position: relative;
-    left: -18px;
     font-family:rockwell;
     font-weight:bold;
     font-size:12px;
@@ -101,7 +100,7 @@ font-weight: 900;
 
 }
 #learn-text{
-  font-size:14px;
+  font-size:20px;
   font-weight: bold;
   margin:0;
   text-decoration: underline;
@@ -125,6 +124,7 @@ flex-direction: column;
 #projects-view{
   opacity:0;
   transition:opacity 1s;
+  margin-bottom: 30px;
 }
 
 .project-image{
@@ -151,15 +151,73 @@ margin: 5px 5px 0px 0px;
 }
 
 @media screen and (min-width: 375px){
+  #above-title{
+
+      font-size: 2.5em;
+  }
+
   #ourWork-view{
-    padding-top:90vh;
+    padding: 93vh 0 0 0;
+    width: auto;
+    position: relative;
+  }
+  .ourWork-description-div{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ourWork-div{
+    flex-direction: column;
+  }
+  .ourWork-description-text{
+    width:71%
+  }
+
+  #projects-div{
+    flex-direction:column;
+    justify-content: space-between;
+
+  }
+  .project-image{
+    width:100%;
+    margin: 3px 0 0 0;
   }
 
 }
+@media screen and (min-width:768px){
+  .ourWork-div{
+    height:141px;
+  }
+  .ourWork-statement{
+    font-size: 1.9em;
+  }
+  #ourWork-view{
 
-@media screen and (min-width: 1366px){
+  }
+  .ourWork-icon {
+    left: 41px;
+    position: relative;
+}
+#projects-div {
+    flex-direction: row;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+.project-image {
+
+    width: 50%;
+
+}
+}
+
+@media screen and (min-width: 1024px){
   #above-fold{
     background-position: 0 0;
+  }
+  #above-title{
+      padding: 0;
+      font-size: 2.8em;
   }
   .ourWork-div {
     padding:0px;
@@ -168,6 +226,7 @@ margin: 5px 5px 0px 0px;
     flex-direction:column;
     justify-content: flex-start;
     border-bottom:0px;
+    height: auto;
 }
 #ourWork-content{
     display:flex;
@@ -176,7 +235,7 @@ margin: 5px 5px 0px 0px;
 #ourWork-view{
 
   padding-top:106vh;
-  
+
 }
 .ourWork-service-div {
     text-align:center;
@@ -189,13 +248,18 @@ margin: 5px 5px 0px 0px;
 .ourWork-icon{
   width:155px;
   margin-bottom:30px;
+  align-self: center;
 }
 .ourWork-description-div{
   width: auto;
+  flex-direction:column;
+}
+.ourWork-description-text{
+  width:auto
 }
 #learn-div{
   padding: 0px;
-  margin-bottom: 39px;
+  padding-top:5%;
 }
 
 #projects-div{
@@ -237,234 +301,3 @@ position: relative;
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 380px){
-
-#above-fold{
-  height: 100vh;
-  width: 100%;
-
-  background-image: url("images/reach.jpg");
-  background-size: cover;
-  background-position: 50% 86%;
-}
-
-#front-title-div{
-  position: relative;
-  margin: 0px 4px;
-  top: 253px;
-}
-#front-title{
-  font-family: acier-bat-solid, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size:48px;
-}
-
-#project-div{
-  position:relative;
-  top:43px;
-}
-.project-image{
-  width: 100%;
-    position: relative;
-    top: 18px;
-
-} */
-
-
-
-/* #contact-box{
-  border: 1px solid white;
-
-
-
-}
-.contact-input{
-  width: 317px;
-  height: 33px;
-  border: 2px solid rgba(146, 93, 25, 1);
-  margin-bottom:10px;
-  font-size:18px;
-  font-family: raleway;
-}
-#contact-message{
-height: 100%;
-}
-
-.contact-word{
-  margin: 0;
-    color: white;
-    font-family: raleway;
-    font-size: 20px;
-}
-
-#contact-form{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: relative;
-  top: 4em;
-}
-
-.contact-first4{
-  display: flex;
-flex-direction: column;
-justify-content: space-around;
-}
-
-#submit-button-div{
-  width: 50%;
-
-position: absolute;
-display: flex;
-justify-content: center;
-align-self: flex-end;
-margin-top: 64px;
-}
-#submit-button{
-  height: 44px;
-width: 117px;
-border: 2px solid #faf5f5;
-border-radius: 7%;
-font-family: raleway;
-font-size: 19px;
-font-weight: bold;
-background: rgba(0,0,0,0);
-color: white;
-} */
-
-/* #over-lay{
-  color: blue;
-position: fixed;
-height: 100vh;
-width: 100%;
-z-index: 1;
-display:flex;
-
-background: rgba(48, 48, 48, 0.85);
-}
-} */
-
-/* @media screen and (min-width:1366px){
-
-#above-fold{
-  height: 100vh;
-  width: 100%;
-
-  background-image: url("images/reach.jpg");
-  background-size: cover;
-  background-position: 50% 86%;
-}
-
-
-
-#front-title-div{
-  position: relative;
-  margin: 0px 4px;
-  top: 253px;
-}
-#front-title{
-  font-family: acier-bat-solid, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size:48px;
-}
-
-
-.project-image{
-  width: 415px;
-    position: relative;
-    top: 18px;
-    margin-left: 34px;
-} */
-
-/* #contact-box{
-  border: 1px solid white;
-width: 50%;
-
-
-}
-.contact-input{
-  width: 317px;
-  height: 33px;
-  border: 2px solid rgba(146, 93, 25, 1);
-  margin-bottom:10px;
-  font-size:18px;
-  font-family: raleway;
-}
-#contact-message{
-height: 100%;
-}
-
-.contact-word{
-  margin: 0;
-    color: white;
-    font-family: raleway;
-    font-size: 20px;
-}
-
-.contact-first4{
-  display: flex;
-flex-direction: column;
-justify-content: space-around;
-}
-
-#submit-button-div{
-  width: 50%;
-
-position: absolute;
-display: flex;
-justify-content: center;
-align-self: flex-end;
-margin-top: 64px;
-}
-#submit-button{
-  height: 44px;
-width: 117px;
-border: 2px solid #faf5f5;
-border-radius: 7%;
-font-family: raleway;
-font-size: 19px;
-font-weight: bold;
-background: rgba(0,0,0,0);
-color: white;
-} */
-
-/* #over-lay{
-  color: blue;
-position: fixed;
-height: 100vh;
-width: 100%;
-z-index: 1;
-display:flex;
-
-background: rgba(48, 48, 48, 0.85);
-}
-} */

@@ -15,12 +15,27 @@ img{
   max-width:100%;
 }
 
+@media screen and (min-width:375px){
+  #main {
+      width: 92%;
+      margin: 3% auto;
+      /* border: 1px solid; */
+  }
+}
+
+@media screen and (min-width:411px){
+  #main {
+      width: 94%;
+  }
+}
 
 @media screen and (min-width:768px){
   #routes{
 
   }
 }
+
+
 
 @media screen and (min-width:1366px){
   #main{
