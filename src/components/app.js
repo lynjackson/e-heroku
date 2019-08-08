@@ -6,7 +6,7 @@ import Values from './values'
 import '../styles/project.css'
 import '../styles/main.css';
 import '../styles/matters.css';
-import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader} from '../actions/index.js'
+import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
@@ -49,7 +49,7 @@ function mapStateToProps(state){
 
 
 function mapDispatchToProps(dispatch){
-	return bindActionCreators({ selector: selectBook, overlay: overlay, valueNextPage: valueNextPage, valuePrevPage: valuePrevPage, defaultView: defaultView, defaultHeader: defaultHeader, invertHeader: invertHeader, menuHeader: menuHeader, scrollHeader: scrollHeader }, dispatch)
+	return bindActionCreators({ selector: selectBook, overlay: overlay, valueNextPage: valueNextPage, valuePrevPage: valuePrevPage, defaultView: defaultView, defaultHeader: defaultHeader, invertHeader: invertHeader, menuHeader: menuHeader, scrollHeader: scrollHeader,  }, dispatch)
 }
 
 

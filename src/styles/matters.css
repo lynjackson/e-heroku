@@ -65,7 +65,12 @@ margin-top: 101px;
 .matters-content-container{
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 78px;
+}
+
+.matters-text-div{
+  display:flex;
+  flex-direction:column;
 }
 
 #matters-content-engagement{
@@ -78,7 +83,8 @@ margin-top: 101px;
 }
 
 .matters-content-title{
-  margin: 0px 0 9px 10px;
+align-self:center;
+width:auto;
 font-family: Raleway;
 font-weight: normal;
 font-size: 25px;
@@ -93,28 +99,24 @@ display:inline-block;
     width: 293px;
 } */
 
+#engagement-title{
+  border-bottom: 4px solid rgb(46, 2, 0);
+}
+
 #identity-title{
-
-border-bottom: 4px solid rgb(180, 124, 9);
-/* text-decoration: underline; */
-width: 100%;
-
-align-self: center;
-
+  border-bottom: 4px solid rgb(180, 124, 9);
 }
 
 #expectation-title{
-
   border-bottom: 4px solid rgba(7, 87, 3, 0.45);
   width: auto;
-
 }
 
 #information-title{
-  text-align: right;
+
     border-bottom: 4px solid rgba(0, 30, 46, 0.45);
-    width: 246px;
-    margin-left: 122px;
+
+
 }
 
 #expectation-quote-text{
@@ -129,7 +131,7 @@ align-self: center;
 .matters-content-text{
   font-family: Lato;
 font-weight: 300;
-padding: 0px 18px;
+
 align-self: center;
 }
 
@@ -141,27 +143,37 @@ align-self: center;
 
 
 
-@media screen and (max-width:376px){
+@media screen and (min-width:375px){
   #matters-view{
         /* background: linear-gradient(180deg, #ef00001a, white); */
         /* padding:0px 10px; */
-        height:2460px;
+        height:auto;
+        width: 92%;
+        margin: 3% auto;
+
   }
   .matters-content{
-    padding:0px 10px;
+
+  }
+  .matters-content-title{
+    margin: 0px 0 9px 0px;
+
   }
   #matters-nav-div{
     top:57px;
-    width:100vw;
+    width:inherit;
   }
   #matters-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: raleway;
     top: 48%;
     position: relative;
-    padding: 0px 10px;
+    padding: 0px 0px;
+}
+#matters-content-engagement {
+    margin-top: 104px;
 }
 #matters-view-title {
     font-family: raleway;
@@ -185,7 +197,7 @@ align-self: center;
   height:auto;
 }
 #matters-nav-div {
-  top: 87px;
+  top: 83px;
 
 }
 #matters-nav {
@@ -200,11 +212,11 @@ align-self: center;
     flex-direction: row;
     padding-bottom: 143px;
     justify-content: space-between;
-    padding: 0px 25px
+    padding: 0px 0px;
   }
 
   #matters-content-engagement{
-    margin-top: 190px;
+    margin-top: 140px;
   }
 
   #matters-content-identity{
@@ -248,8 +260,9 @@ align-self: center;
 .matters-content-title{
   margin: 0;
   text-align: left;
-    font-size:44px;
-    width:503px;
+  align-self:flex-start;
+    font-size:38px;
+    width:auto;
 }
 #expectation-title {
     text-align: left;
@@ -265,7 +278,7 @@ align-self: center;
 }
 .matters-content-text{
 
-  font-size:28px;
+  font-size:1.2em;
   padding:0;
 }
 

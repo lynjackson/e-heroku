@@ -184,7 +184,20 @@ margin: 5px 5px 0px 0px;
   }
 
 }
+@media screen and (min-width: 411px){
+  #above-title{
+      font-size: 2.5em;
+  }
+#above-fold{
+    background-position: -48em 0px;
+}
+}
 @media screen and (min-width:768px){
+
+  #above-title{
+    background-position: -48em 0px;
+      font-size: 2.5em;
+  }
   .ourWork-div{
     height:141px;
   }
@@ -213,7 +226,7 @@ margin: 5px 5px 0px 0px;
 
 @media screen and (min-width: 1024px){
   #above-fold{
-    background-position: 0 0;
+    background-position: -187px 0;
   }
   #above-title{
       padding: 0;
@@ -284,6 +297,17 @@ position: relative;
 
 }
 
+}
+
+@media screen and (min-width: 1280px){
+  #above-fold{
+    background-position: -109px 0;
+  }
+}
+@media screen and (min-width: 1366px){
+  #above-fold{
+    background-position: 0 0;
+  }
 }
 
 @media screen and (min-width:1920px){

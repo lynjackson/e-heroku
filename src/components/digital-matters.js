@@ -40,7 +40,7 @@ class DigitalMatters extends React.Component{
 
           <div id='matters-content-engagement' className='matters-content-container'>
             <div className='matters-text-div'>
-              <h1 className='matters-content-title matters-content'  id='engagement-title'>Find your customers, and help them find you</h1>
+              <h1 className='matters-content-title matters-content'  id='engagement-title'>Find Your People</h1>
               <p className='matters-content-text matters-content' >Digital strategies and technologies increase the reach between you and your customers.</p>
               <p className='matters-content-text matters-content' >They'll also help you engage current customers in new, innovative and exciting ways. </p>
             </div>
@@ -49,7 +49,7 @@ class DigitalMatters extends React.Component{
 
           <div id='matters-content-identity' className='matters-content-container' style={{opacity:this.state.identity, transition:'opacity 1s'}}>
             <div className='matters-text-div  matters-identity-text-div'>
-              <h1 className='matters-content-title matters-content'  id='identity-title'>Show them what you're about</h1>
+              <h1 className='matters-content-title matters-content'  id='identity-title'>Show Them Who You Are</h1>
               <p className='matters-content-text matters-content' >Your digital presence is your company's identity to anyone who interacts.</p>
               <p className='matters-content-text matters-content' >It should uphold the ideas your company seeks to embody, and communicate those ideas to your users.</p>
               <p className='matters-content-text matters-content' >It's critical your presence is designed, first, with the user in mind, and sends the message you wish to communicate.</p>
