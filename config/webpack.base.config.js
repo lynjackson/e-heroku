@@ -34,10 +34,15 @@ module.exports = {
       use: ['style-loader', 'css-loader']
       },
       {
-    test: /\.(png|svg|jpg|gif|jpeg|ttf)$/,
-    use: 'file-loader'
-    //preprocesses imported image files
-    },
+        test: /\.(png|svg|jpg|gif|jpeg|ttf)$/,
+        use: 'file-loader'
+        //preprocesses imported image files
+      },
+      {
+        test: /\.(svg|jpg|gif|jpeg|ttf)$/,
+        use: 'url-loader'
+        //preprocesses imported image files
+      },
     ]
   },
   resolve: {
