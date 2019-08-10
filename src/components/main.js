@@ -7,6 +7,7 @@ import '../styles/contact.css';
 import '../styles/images/e2.png';
 import PageTitle from '../flex_Components/page-title'
 import '../styles/images/old_ethe.jpg';
+import '../styles/images/reach.jpeg';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 
 
@@ -15,7 +16,7 @@ export class AboveFold extends React.Component{
   render(){
     console.log(this.props);
   return(
-    <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold}}>
+    <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold, backgroundImage: 'url("../styles/images/reach.jpeg")';}}>
       <h1 id='above-title'>Digital experience helping you reach farther</h1>
 
     </div>
