@@ -16,7 +16,7 @@ export class AboveFold extends React.Component{
   render(){
     console.log(this.props);
   return(
-    <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold, backgroundImage: 'url("../styles/images/reach.jpeg")'}}>
+    <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold, backgroundImage: 'url(../styles/images/reach.jpeg)'}}>
       <h1 id='above-title'>Digital experience helping you reach farther</h1>
 
     </div>
