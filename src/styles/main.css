@@ -1,6 +1,6 @@
 #above-fold{
 height: 100vh;
-background-image: url("src/styles/images/reach.jpeg");
+background-image: url("./images/reach.jpeg");
 background-position: -59em 0px;
 background-size: cover;
 display: flex;
