@@ -47,11 +47,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js']
-  }
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: './src/index.html',
-  //     filename: './index.html'
-  //   })
-  // ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: './index.html'
+    })
+  ]
 }

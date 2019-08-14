@@ -22,7 +22,7 @@ class DigitalMatters extends React.Component{
   render(){
     return(
       <div className='view' id='matters-view' style={{opacity:1, transition:'opacity 3s'}}>
-          <Header appState={this.props}><h1 id='why-digital-matters'>Why Digital Matters</h1></Header>
+          <Header appState={this.props}></Header>
           <Overlay display={this.props.view.overlay} appState={this.props} />
           <div id='matters-nav-div'>
             <div id='matters-nav'>
@@ -110,6 +110,8 @@ class DigitalMatters extends React.Component{
       document.getElementById('nav-information').addEventListener('click', ()=>{window.scrollTo({top:document.getElementById('matters-content-information').offsetTop - 200, behavior: 'smooth'})})
   }
 }
+
+// <h1 id='why-digital-matters'>Why Digital Matters</h1>
 
 // <img src='src/styles/images/arrow.png' className='matters-nav-arrow' style={{transform:'rotate(-90deg)'}}/>
 

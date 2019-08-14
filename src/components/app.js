@@ -1,5 +1,5 @@
 import React from 'react';
-import {AboveFold, OurWork, RecentProjects, ContactUs, DigitalMatters} from './main';
+import {AboveFold, OurWork, RecentProjects, ContactUs, DigitalMatters, Learn} from './main';
 import Header from '../components/header';
 import Overlay from './overlay';
 import Values from './values'
@@ -23,10 +23,11 @@ class App extends React.Component {
     console.log(this.props)
       return(
           <div id='main'>
-            <Overlay display={this.state.overlay.display} appState={this.props} />
+
             <Header appState={this.props}/>
             <AboveFold appState={this.props} />
             <OurWork appState={this.props}/>
+            <Learn appState={this.props}/>
             <RecentProjects />
             <ContactUs />
           </div>
@@ -37,6 +38,8 @@ class App extends React.Component {
 // change={()=>{return this.setState({overlay:{display: 'flex'}, menu:"battery-charging"})}}
 
 }
+
+// <Overlay display={this.state.overlay.display} appState={this.props} />
 
 function mapStateToProps(state){
   return{

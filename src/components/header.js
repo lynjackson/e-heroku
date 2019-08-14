@@ -7,22 +7,39 @@ export default class Header extends React.Component {
   render(){
     console.log(this.props);
       return(
-        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, position:'relative' }:{backgroundColor:this.props.appState.header.backgroundColor}}>
-          <Link to='/'><img src='./src/styles/images/e2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
-          {this.props.children}
-          <div id='menu-icon-circle'>
-            <ion-icon name={this.props.appState.view.menu} id='menu-icon' onClick={(event)=>{
-              if (this.props.appState.view.overlay === 'none'){
-                this.props.appState.overlay();
-                this.props.appState.menuHeader();
-              } else{
-                this.props.appState.defaultView();
-                this.props.appState.defaultHeader();
-                event.stopPropagation()
-              }
-            }}
-            style={(document.documentElement.clientWidth > 411)?{filter:this.props.appState.header.headerInvert}:{filter:'invert(0)'}}></ion-icon>
+        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, position:'relative', height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
+          <div id='header-items'>
+            <Link to='/'><img src='./src/styles/images/e2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
+            {this.props.children}
+            <div id='menu-icon-circle'>
+              <ion-icon name={this.props.appState.view.menu} id='menu-icon' onClick={(event)=>{
+                if (document.getElementById('header').style.height > '10em'){
+                  this.props.appState.menuHeader();
+                } else{
+                  if(window.pageYOffset > window.innerHeight){
+                    this.props.appState.scrollHeader();
+                  }else if (document.getElementById('value-page')){
+                    this.props.appState.valuesHeader();
+                  }else{
+                  this.props.appState.defaultHeader();
+                  event.stopPropagation();
+                }
+              }}}
+              style={(document.documentElement.clientWidth > 411)?{filter:this.props.appState.header.headerInvert}:{filter:'invert(0)'}}></ion-icon>
+            </div>
           </div>
+
+
+          <div id='overlay-content' style={{display: this.props.appState.header.display}}>
+              <Link to='/' className='over-lay-link' onClick={()=>{this.props.appState.front()}}>Home</Link>
+              <hr className='over-lay-line' />
+              <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Our Values</Link>
+              <hr className='over-lay-line' />
+              <Link to='/digital_matters' className='over-lay-link'>Why Digital Matters</Link>
+              <hr className='over-lay-line' />
+              <a href='#' className='over-lay-link'>Contact Us</a>
+            </div>
+
         </div>
 
       )

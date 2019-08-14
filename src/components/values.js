@@ -3,7 +3,7 @@ import '../styles/values.css';
 import '../styles/overlay.css';
 import Header from '../components/header';
 import Overlay from './overlay'
-import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, invertHeader } from '../actions/index.js'
+import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, invertHeader, menuHeader, defaultHeader, valuesHeader } from '../actions/index.js'
 //imports action creator
 import { bindActionCreators } from 'redux'
 //imports function needed to use action creator
@@ -72,6 +72,8 @@ class Values extends React.Component{
 
     document.getElementById('value-page').addEventListener('wheel', funky)
 
+    document.getElementById('value-page').addEventListener('touchstart', console.log('swipe'));
+
 
 }
 }
@@ -87,7 +89,7 @@ function mapStateToProps(state){
 
 
 function mapDispatchToProps(dispatch){
-	return bindActionCreators({ selector: selectBook, overlay: overlay, valueNextPage: valueNextPage, valuePrevPage: valuePrevPage, defaultView: defaultView, invertHeader:invertHeader}, dispatch)
+	return bindActionCreators({ selector: selectBook, overlay: overlay, valueNextPage: valueNextPage, valuePrevPage: valuePrevPage, menuHeader:menuHeader, valuesHeader:valuesHeader, defaultHeader:defaultHeader, defaultView: defaultView, invertHeader:invertHeader}, dispatch)
 }
 
 

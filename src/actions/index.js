@@ -62,6 +62,13 @@ export function defaultHeader(book){
 	};
 }
 
+export function valuesHeader(book){
+	return {
+		type: 'VALUESHEADER',
+		payload:book,
+	};
+}
+
 export function menuHeader(book){
 	return {
 		type: 'MENUHEADER',

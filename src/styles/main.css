@@ -80,7 +80,7 @@ z-index:2
   margin: 0;
 font-family: Raleway;
 font-size: 20px;
-font-weight: 900;
+font-weight: 600;
 
 }
 
@@ -96,16 +96,23 @@ font-weight: 900;
 #learn-div{
   display:flex;
   padding: 10px 0px;
-  justify-content: flex-end;
+  justify-content: center;
+  background-color: rgb(51,51,51);
+  width: 99vw;
+  left: 0;
+  position: absolute;
+  margin-top:106px;
 
 }
 #learn-text{
-  font-size:20px;
-  font-weight: bold;
-  margin:0;
-  text-decoration: underline;
-  font-family: Muli;
-  color:black;
+  font-size: 48px;
+    font-weight: 200;
+    margin: 0;
+    /* text-decoration: underline; */
+    font-family: Muli;
+    color: white;
+    top: 10px;
+    position: relative;
 }
 #learn-arrow{
   font-size:20px;
@@ -123,8 +130,8 @@ flex-direction: column;
 
 #projects-view{
   opacity:0;
-  transition:opacity 1s;
-  margin-bottom: 30px;
+  transition: opacity 1s;
+  margin: 219px 0 30px 0;
 }
 
 .project-image{
@@ -198,17 +205,23 @@ margin: 5px 5px 0px 0px;
     background-position: -48em 0px;
       font-size: 2.5em;
   }
+
+  #ourWork-content{
+
+    margin: 0 auto;
+  }
+
   .ourWork-div{
     height:141px;
   }
   .ourWork-statement{
-    font-size: 1.9em;
+    font-size: 48px;
   }
   #ourWork-view{
 
   }
   .ourWork-icon {
-    left: 41px;
+
     position: relative;
 }
 #projects-div {
@@ -244,10 +257,11 @@ margin: 5px 5px 0px 0px;
 #ourWork-content{
     display:flex;
     justify-content: space-between;
+    width: 90.5%;
 }
 #ourWork-view{
 
-  padding-top:106vh;
+  padding-top:108vh;
 
 }
 .ourWork-service-div {
@@ -256,10 +270,10 @@ margin: 5px 5px 0px 0px;
     margin-bottom:30px;
 }
 .ourWork-service{
-  font-size:24px;
+  font-size:32px;
 }
 .ourWork-icon{
-  width:155px;
+  width:100px;
   margin-bottom:30px;
   align-self: center;
 }
@@ -268,11 +282,12 @@ margin: 5px 5px 0px 0px;
   flex-direction:column;
 }
 .ourWork-description-text{
-  width:auto
+  width:auto;
+  font-size: 20px;
 }
 #learn-div{
   padding: 0px;
-  padding-top:5%;
+
 }
 
 #projects-div{
@@ -308,6 +323,21 @@ position: relative;
   #above-fold{
     background-position: 0 0;
   }
+  .ourWork-description-text {
+    width: 314px;
+    font-size: 20px;
+}
+.ourWork-icon{
+  width:100px;
+}
+
+#projects-view{
+  opacity:0;
+  transition: opacity 1s;
+  margin: 303px 0 30px 0;
+}
+
+
 }
 
 @media screen and (min-width:1920px){

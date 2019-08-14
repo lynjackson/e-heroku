@@ -35,7 +35,7 @@ componentDidMount(){
       }})
 
   window.addEventListener('scroll', (event)=>{
-    ((window.pageYOffset > window.innerHeight && document.getElementById('over-lay').style.display === 'none') || document.getElementById('matters-view')) ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
+    (window.pageYOffset > window.innerHeight) || document.getElementById('matters-view') ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
   })
 }
 }
@@ -45,15 +45,15 @@ export class OurWork extends React.Component{
   return(
     <div className='view' id='ourWork-view'>
 
-      <p className='ourWork-statement'>We create effective digital products and strategies</p>
+      <p className='ourWork-statement'>We Consult & Create</p>
         <div id='ourWork-content'>
           <WhatWeDo title={'Digital Strategy'} description={'We learn how your customers interact with your brand and build strategies that maximize your customer reach and engagement.'} icon={'./src/styles/icons/svg/023-research.svg'}/>
           <WhatWeDo title={`Design x Development`} description={'We design applications, social media experiences, and marketing campaigns that extend your business vision, culture and spirit, and make great user experience a part of your brand.'} icon={'./src/styles/icons/svg/027-social-media.svg'}/>
           <WhatWeDo title={'Data Integration'} description={'We prioritize collection of useful data in designing compelling customer experiences. Adding science to the art allows you to move from guesswork to inspired predictions, using metrics and analytics to inform changes to your business.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
         </div>
-      <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}><div id='learn-div'>
-        <h2 id='learn-text'>Why your digital footprint matters</h2><ion-icon id='learn-arrow' name="arrow-dropright"></ion-icon>
-      </div></Link>
+      <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}>
+
+      </Link>
     </div>
   )
 }
@@ -64,6 +64,16 @@ componentDidMount(){
         return document.getElementById('ourWork-view').style.opacity=1}
     })
 }
+}
+
+export const Learn = ()=>{
+  return(
+    <div id='learn-div'>
+      <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}>
+        <h2 id='learn-text'>Learn why your digital footprint matters</h2><ion-icon id='learn-arrow' name="arrow-dropright"></ion-icon>
+      </Link>
+    </div>
+  )
 }
 
 export class DigitalMatters extends React.Component{
@@ -94,7 +104,7 @@ export class RecentProjects extends React.Component {
   render(){
   return(
     <div className='view' id='projects-view'>
-      <p className='ourWork-statement'>Recent Projects</p>
+      <p className='ourWork-statement'>Some of Our Work</p>
       <div id='projects-div'>
         <img className='project-image' src='./src/styles/images/old_ethe.jpg'/>
         <img className='project-image' src='./src/styles/images/creator.jpg'/>
@@ -129,8 +139,9 @@ export const ContactUs = ()=>{
 const WhatWeDo = (props)=>{
   return(
     <div className='ourWork-div' id='ourWork-strategy-div' style={{border: props.noBorder}}>
+      <img src={props.icon} className='ourWork-icon'/>
       <div className='ourWork-service-div'><h1 className='ourWork-service'>{props.title}</h1></div>
-      <div className='ourWork-description-div' id='ourWork-strategy-text'><img src={props.icon} className='ourWork-icon'/><p className='ourWork-description-text'>{props.description}</p></div>
+      <div className='ourWork-description-div' id='ourWork-strategy-text'><p className='ourWork-description-text'>{props.description}</p></div>
     </div>
   )
 }
