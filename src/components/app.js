@@ -27,13 +27,15 @@ class App extends React.Component {
             <Header appState={this.props}/>
             <AboveFold appState={this.props} />
             <OurWork appState={this.props}/>
-            <Learn appState={this.props}/>
+
             <RecentProjects />
             <ContactUs />
           </div>
 
       )
     }
+
+    // <Learn appState={this.props}/>
 
 // change={()=>{return this.setState({overlay:{display: 'flex'}, menu:"battery-charging"})}}
 

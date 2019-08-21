@@ -7,9 +7,9 @@ export default class Header extends React.Component {
   render(){
     console.log(this.props);
       return(
-        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, position:'relative', height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
+        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor,height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
           <div id='header-items'>
-            <Link to='/'><img src='./src/styles/images/e2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
+            <Link to='/'><img src='./src/styles/images/e3.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
             {this.props.children}
             <div id='menu-icon-circle'>
               <ion-icon name={this.props.appState.view.menu} id='menu-icon' onClick={(event)=>{
@@ -25,7 +25,7 @@ export default class Header extends React.Component {
                   event.stopPropagation();
                 }
               }}}
-              style={(document.documentElement.clientWidth > 411)?{filter:this.props.appState.header.headerInvert}:{filter:'invert(0)'}}></ion-icon>
+              style={{filter:this.props.appState.header.headerInvert}}></ion-icon>
             </div>
           </div>
 

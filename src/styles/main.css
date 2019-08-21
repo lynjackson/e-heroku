@@ -6,12 +6,10 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
 position: relative;
-width: 100vw;
-left: 0px;
-top:0px;
-z-index:2
+width: 100%;
+
+
 }
 
 #above-title{
@@ -22,10 +20,6 @@ z-index:2
   font-family: Muli, sans-serif;
   font-weight: 200;
   font-style: normal;
-
-}
-
-#above-fold-content{
 
 }
 
@@ -40,36 +34,17 @@ z-index:2
 #ourWork-view{
   opacity:0;
   transition:opacity 1s;
-  padding-top:106vh;
   z-index: 1
-}
-
-.ourWork-icon{
-  width: 70px;
-}
-
-#ourWork-content{
-
-}
-
-.ourWork-statement{
-  font-family: raleway;
-    font-size: 2em;
-    font-weight: 100;
-    text-align: center;
 }
 
 .ourWork-div{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-bottom: .5px solid rgba(128, 128, 128, .5);
-  padding: 3% 0px 5% 0px;
-
+  flex-direction: column;
+  margin: 0 0 50px 0;
 }
 
-.ourWork-service-div{
-  width: 308px;
+.ourWork-title-div{
+    width: auto;
     /* border: 1px solid; */
     position: relative;
     font-family:rockwell;
@@ -77,22 +52,35 @@ z-index:2
     font-size:12px;
 }
 
-.ourWork-service{
+.ourWork-title{
   margin: 0;
-font-family: Raleway;
-font-size: 20px;
-font-weight: 600;
-
+  font-family: Muli;
+  font-size: 23px;
+  font-weight: 600;
 }
 
 .ourWork-description-div{
-  width:245px;
+  width:100%;
+  font-family: Muli;
+  font-size:18px;
+  line-height: 1.6;
+  font-weight:200;
 }
 
-.ourWork-description-text{
-  font-family: Muli;
-  font-size:15px;
+#ourWork-service-div{
+  height:89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.ourWork-service-text{
+  font-family: Lato;
+  margin: 0;
+}
+
+/* -----------------------Learn -----------------------*/
+
 
 #learn-div{
   display:flex;
@@ -124,15 +112,15 @@ font-weight: 600;
 
 /* -------------PastProjects----------------- */
 
-#projects-div{
-  display: flex;
-flex-direction: column;
+#projects-view{
+  opacity: 0;
+  transition: opacity 1s;
+  margin: 0;
 }
 
-#projects-view{
-  opacity:0;
-  transition: opacity 1s;
-  margin: 219px 0 30px 0;
+#projects-div{
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image{
@@ -159,24 +147,6 @@ margin: 5px 5px 0px 0px;
 }
 
 @media screen and (min-width: 375px){
-
-  #ourWork-view{
-    padding: 93vh 0 0 0;
-    width: auto;
-    position: relative;
-  }
-
-  .ourWork-description-div{
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .ourWork-div{
-    flex-direction: column;
-  }
-  .ourWork-description-text{
-    width:71%
-  }
 
   #projects-div{
     flex-direction:column;
@@ -261,12 +231,12 @@ margin: 5px 5px 0px 0px;
     padding-top:108vh;
 
   }
-  .ourWork-service-div {
+  .ourWork-title-div {
       text-align:center;
       width:100%;
       margin-bottom:30px;
   }
-  .ourWork-service{
+  .ourWork-title{
     font-size:32px;
   }
   .ourWork-icon{
@@ -335,7 +305,6 @@ margin: 5px 5px 0px 0px;
 
 
 }
-
 @media screen and (min-width:1920px){
   #above-title{
     top: 273px;

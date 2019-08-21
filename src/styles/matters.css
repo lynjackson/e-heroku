@@ -1,65 +1,13 @@
 
 #matters-view{
-      /* background: linear-gradient(180deg, #ef00001a, white); */
-      width: 100%;
-}
-
-#fixed-matters-header{
-  position: fixed;
-  width: 100%;
-  background: white;
-  z-index: 2;
-  height: 16%;
-  width:100vw;
-        /* box-shadow: 0px 2px 6px rgba(46,0,0,1); */
-}
-
-#why-digital-matters{
-  font-family: raleway;
-  color: rgba(109, 109, 109, 1);
-  position: relative;
-  right: 12px;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: right;
-  margin: 0 auto;
-}
-
-#matters-nav-div{
-  width:inherit;
-  position:fixed;
-  top:64px;
-  background: white;
-  z-index:2;
-}
-
-#matters-nav{
-  display: flex;
-align-items: center;
-justify-content: space-around;
-font-family: raleway;
-background-color: white;
-position: relative;
-}
-
-.matters-nav-line{
-  height: 10px;
-width: 0px;
-margin: 0;
-border-color: black;
-border-width: .5px;
-
-}
-
-.matters-nav-arrow{
-  width: 20px;
-  height: 20px;
+  width: 96%;
+  margin: 3% auto;
 }
 
 #matters-content{
   display: flex;
-flex-direction: column;
-margin-top: 101px;
+  flex-direction: column;
+  margin-top: 101px;
 }
 
 .matters-content-container{
@@ -74,7 +22,7 @@ margin-top: 101px;
 }
 
 #matters-content-engagement{
-    margin-top: 131px;
+    margin-top: 75px;
 }
 
 #matters-content-identity, #matters-content-expectation, #matters-content-information{
@@ -83,90 +31,72 @@ margin-top: 101px;
 }
 
 .matters-content-title{
-align-self:center;
-width:auto;
-font-family: Raleway;
-font-weight: normal;
-font-size: 25px;
-position: relative;
-display:inline-block;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 2.25em;
+  position: relative;
+  margin:0;
 }
 
-/* #engagement-title{
-  text-align: right;
-    right: 5px;
-    align-self: flex-end;
-    width: 293px;
-} */
-
-#engagement-title{
-
+.matters-content-text{
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 200;
+    margin:38px 0;
 }
 
-#engagement-line{
-
+#engagement-images{
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
-#identity-title{
-
-}
-
-#expectation-title{
-  /* border-bottom: 4px solid rgba(7, 87, 3, 0.45); */
-  width: auto;
-}
-
-#expectation-line{
-  border-top: 4px solid rgba(7, 87, 3, 0.45);
-  width: 576px;
-}
-
-#information-title{
-    border-bottom: 4px solid rgba(0, 30, 46, 0.45);
+#expectation-quote-text-div{
+  width: 100%;
+  background-color: rgba(31, 46, 0, .03);
 }
 
 #expectation-quote-text{
   font-family: raleway;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 1.75em;
     width: 260px;
     margin: 0 auto;
-    background-color: rgba(31, 46, 0, .03);
+    width:86%;
+    text-align:center;
+    line-height:1.2;
 }
 
-.matters-content-text{
-  font-family: Lato;
-  font-weight: 300;
+#matters-content-identity{
+  margin: 100px 0 0 0;
+}
+
+#matters-content-information{
+  margin: 100px 0 0 0;
+}
+
+#information-title{
+  margin: 46px 0 0 0;
+}
+
+.matters-content-information{
+  margin: 38px 0 0 0
 }
 
 
 
-.engagement-images{
-  width: 179%;
-height: auto;
-position: relative;
-left: -15em;
-max-width: 200%;
-}
+
+
+
 
 
 
 @media screen and (min-width:375px){
-  #matters-view{
-        /* background: linear-gradient(180deg, #ef00001a, white); */
-        /* padding:0px 10px; */
-        height:auto;
-        width: 92%;
-        margin: 3% auto;
-
-  }
   .matters-content{
 
   }
-  .matters-content-title{
-    margin: 0px 0 9px 0px;
 
-  }
   #matters-nav-div{
     top:57px;
     width:inherit;
@@ -179,39 +109,34 @@ max-width: 200%;
     top: 48%;
     position: relative;
     padding: 0px 0px;
-}
-#matters-content-engagement {
-    margin-top: 104px;
-}
-#matters-view-title {
-    font-family: raleway;
-    color: rgba(109, 109, 109, 1);
-    position: relative;
-    right: 12px;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: right;
-    margin: 0;
-    top: 26px;
-}
+  }
+
+  #matters-view-title {
+      font-family: raleway;
+      color: rgba(109, 109, 109, 1);
+      position: relative;
+      right: 12px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: right;
+      margin: 0;
+      top: 26px;
+  }
 
 }
-
-
-
 @media screen and (min-width:1024px){
 
-#matters-view{
-  height:auto;
-}
-#matters-nav-div {
-  top: 83px;
+  #matters-view{
+    height:auto;
+  }
+  #matters-nav-div {
+    top: 83px;
 
-}
-#matters-nav {
-  width: 452px;
-  margin: 0 auto;
-}
+  }
+  #matters-nav {
+    width: 452px;
+    margin: 0 auto;
+  }
   #fixed-matters-header{
       height: 190px;
   }
@@ -249,132 +174,131 @@ max-width: 200%;
   }
 
 
-#why-digital-matters{
-  font-size: 34px;
-}
-.matters-image-div{
-  width:100%
-}
-.identity-image-div{
-  padding-right:12px;
-  height:531px;
-  overflow:hidden;
-}
-#identity-image{
-  width:100%;
-  height:auto;
-  top:-233px;
-}
+  #why-digital-matters{
+    font-size: 34px;
+  }
+  .matters-image-div{
+    width:100%
+  }
+  .identity-image-div{
+    padding-right:12px;
+    height:531px;
+    overflow:hidden;
+  }
+  #identity-image{
+    width:100%;
+    height:auto;
+    top:-233px;
+  }
 
-/* #engagement-title{
-  text-align: left;
-    font-size:44px;
-    width:503px;
-} */
-.matters-text-div{
-  width:50%;
-  padding-right:12px;
-  position:relative;
-  top:96px;
-}
-
-.matters-identity-text-div, .matters-information-text-div {
-  padding-left:12px;
-  padding-right:0px
-}
-
-.matters-identity-text-div{
-  flex-direction:row;
-  width:100%;
-}
-
-#identity-title-div{
-  width:50%;
-  padding: 0 30px;
-  display:flex;
-  justify-content:center;
-}
-
-#expectation-text-div{
-  width:100%;
-}
-
-#identity-paragraph-div{
-  width:50%;
-  padding: 0 30px;
-  display:flex;
-  justify-content:center;
-}
-
-#expectation-content-div{
-  display:flex;
-  flex-direction:row-reverse;
-}
-#expectation-paragraph-div{
-  width:50%;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-}
-
-#expectation-quote-text {
-    font-family: raleway;
-    font-weight: 100;
-    font-size: 48px;
-    width: 626px;
-    margin: 0 auto;
-    background-color: rgba(31, 46, 0, .03);
-}
-
-.matters-content-title{
-  margin: 0;
-  text-align: left;
-  /* align-self:flex-start; */
-  font-size:38px;
-  width:68%;
-}
-
-#engagement-title{
-  align-self:flex-start;
-}
-
-#identity-title{
-  width:auto;
-}
-
-#expectation-title {
+  /* #engagement-title{
     text-align: left;
+      font-size:44px;
+      width:503px;
+  } */
+  .matters-text-div{
+    width:50%;
+    padding-right:12px;
+    position:relative;
+    top:96px;
+  }
 
-    margin-left:0px;
-}
-#information-title {
+  .matters-identity-text-div, .matters-information-text-div {
+    padding-left:12px;
+    padding-right:0px
+  }
+
+  .matters-identity-text-div{
+    flex-direction:row;
+    width:100%;
+  }
+
+  #identity-title-div{
+    width:50%;
+    padding: 0 30px;
+    display:flex;
+    justify-content:center;
+  }
+
+  #expectation-text-div{
+    width:100%;
+  }
+
+  #identity-paragraph-div{
+    width:50%;
+    padding: 0 30px;
+    display:flex;
+    justify-content:center;
+  }
+
+  #expectation-content-div{
+    display:flex;
+    flex-direction:row-reverse;
+  }
+  #expectation-paragraph-div{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+
+  #expectation-quote-text {
+      font-family: raleway;
+      font-weight: 100;
+      font-size: 48px;
+      width: 626px;
+      margin: 0 auto;
+      background-color: rgba(31, 46, 0, .03);
+  }
+
+  .matters-content-title{
+    margin: 0;
     text-align: left;
-    border-bottom: 4px solid rgba(7, 87, 3, 0.45);
-    width: 430px;
-    margin-left:0px;
-}
-.matters-content-text{
-  font-size:1.2em;
-  padding:0;
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0 0 29px 0;
-  width: 88.8%;
-}
+    /* align-self:flex-start; */
+    font-size:38px;
+    width:68%;
+  }
 
-#engagement-text-div{
+  #engagement-title{
+    align-self:flex-start;
+  }
 
+  #identity-title{
+    width:auto;
+  }
+
+  #expectation-title {
+      text-align: left;
+
+      margin-left:0px;
+  }
+  #information-title {
+      text-align: left;
+      border-bottom: 4px solid rgba(7, 87, 3, 0.45);
+      width: 430px;
+      margin-left:0px;
+  }
+  .matters-content-text{
+    font-size:1.2em;
+    padding:0;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0 0 29px 0;
+    width: 88.8%;
+  }
+
+  #engagement-text-div{
+
+  }
+
+  .engagement-image-div{
+    display: flex;
+    padding-left:12px;
+    overflow:hidden;
+    width: 47.2%;
+
+  }
 }
-
-.engagement-image-div{
-  display: flex;
-  padding-left:12px;
-  overflow:hidden;
-  width: 47.2%;
-
-}
-}
-
 @media screen and (min-width: 1366px){
   #matters-view{
     width:96%;
