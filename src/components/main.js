@@ -17,25 +17,25 @@ export class AboveFold extends React.Component{
     console.log(this.props);
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold}}>
-      <h1 id='above-title'>Digital experience helping you reach farther</h1>
+      <h1 id='above-title'>We create digital products & strategies that help you reach farther.</h1>
 
     </div>
   )
 }
 componentDidMount(){
-  this.props.appState.defaultHeader();
-  document.getElementById('above-fold').addEventListener('wheel', ()=>{
-    if (window.pageYOffset < 50){
-      window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
-    }})
-
-    document.getElementById('above-fold').addEventListener('keydown', (event)=>{
-      if (window.pageYOffset < 50 && event.keyCode == '40'){
-        window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
-      }})
+  // this.props.appState.defaultHeader();
+  // document.getElementById('above-fold').addEventListener('wheel', ()=>{
+  //   if (window.pageYOffset < 50){
+  //     window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
+  //   }})
+  //
+  //   document.getElementById('above-fold').addEventListener('keydown', (event)=>{
+  //     if (window.pageYOffset < 50 && event.keyCode == '40'){
+  //       window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
+  //     }})
 
   window.addEventListener('scroll', (event)=>{
-    (window.pageYOffset > window.innerHeight) || document.getElementById('matters-view') ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
+    (window.pageYOffset > 30) || document.getElementById('matters-view') ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
   })
 }
 }

@@ -16,7 +16,7 @@ export default class Header extends React.Component {
                 if (document.getElementById('header').style.height > '10em'){
                   this.props.appState.menuHeader();
                 } else{
-                  if(window.pageYOffset > window.innerHeight){
+                  if(window.pageYOffset > window.innerHeight || document.getElementById('matters-view')){
                     this.props.appState.scrollHeader();
                   }else if (document.getElementById('value-page')){
                     this.props.appState.valuesHeader();
