@@ -15,7 +15,7 @@ width: 100%;
 #above-title{
   position: relative;
   top: -75px;
-  font-size: 48px;
+  font-size: 3.1em;
   text-align:left;
   font-family: Muli, sans-serif;
   font-weight: 200;
@@ -160,12 +160,8 @@ margin: 5px 5px 0px 0px;
 
 }
 @media screen and (min-width: 411px){
-  #above-title{
-      font-size: 2.5em;
-  }
-  #above-fold{
-      background-position: -48em 0px;
-  }
+
+
 }
 @media screen and (min-width:768px){
 
