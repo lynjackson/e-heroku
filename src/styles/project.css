@@ -8,19 +8,16 @@ margin: 0 auto;
 }
 
 #main{
-width:100%;
+width:88%;
+margin: 2% auto;
 }
 
 img{
-  max-width:100%;
+
 }
 
 @media screen and (min-width:375px){
-  #main {
-      width: 90%;
-      margin: 2% auto;
-      /* border: 1px solid; */
-  }
+
 }
 
 @media screen and (min-width:411px){
@@ -30,11 +27,27 @@ img{
 }
 
 @media screen and (min-width:768px){
+  #main{
+    width:97%;
+  }
+  .view{
+    width:97%;
+  }
   #routes{
 
   }
 }
 
+@media screen and (min-width:1024px){
+  #main{
+    width: 90%;
+
+  }
+  .view{
+    margin: 0 auto;
+    width:100%;
+  }
+}
 
 
 @media screen and (min-width:1366px){

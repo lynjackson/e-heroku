@@ -21,45 +21,49 @@ class DigitalMatters extends React.Component{
   }
   render(){
     return(
-      <div className='view' id='matters-view' style={{opacity:1, transition:'opacity 3s'}}>
+      <div id='matters-view' style={{opacity:1, transition:'opacity 3s'}}>
           <Header appState={this.props}></Header>
-          <Overlay display={this.props.view.overlay} appState={this.props} />
+
 
           <div id='matters-content-engagement' className='matters-content-container'>
+          <div className='engagement-image-div matters-image-div'><img src='src/styles/images/fisherman.png' id='engagement-images'/></div>
             <div id='engagement-text-div' className='matters-text-div'>
-              <h1 className='matters-content-title matters-content'  id='engagement-title'>We'll help you connect with all your potential customers and collaborators.</h1>
-              <p className='matters-content-text matters-content'>Whatever your business does, there are virtually always more people that need it. Digital technologies give you unprecedented access to people, and unlimited opportunities to present yourself to potential customers. Digital technology can also help you engage with current customers in new and innovative ways.</p>
+              <h1 className='matters-content-title matters-content'  id='engagement-title'>We help companies find more customers & collaborators.</h1>
+              <p className='matters-content-text matters-content' id='engagement-text'>Whatever product or service your business provides, there are virtually always more people that need it. Digital technologies give you unprecedented access to people, and unlimited opportunities to present yourself to potential customers. It'll also help you engage with current customers in new and innovative ways.</p>
             </div>
-            <div className='engagement-image-div matters-image-div'><img src='src/styles/images/fisherman.png' id='engagement-images'/></div>
           </div>
 
-          <div id='expectation-quote-text-div'><p className='matters-content-text matters-content' id='expectation-quote-text'>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p></div>
+
 
           <div id='matters-content-identity' className='matters-content-container' style={{opacity:this.state.identity, transition:'opacity 1s'}}>
             <div className='matters-text-div  matters-identity-text-div'>
               <div id='identity-title-div'>
-                <h1 className='matters-content-title matters-content'  id='identity-title'>We see each interaction as a chance to capitivate. To show you're better in ways that matter.</h1>
+                <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
               </div>
-              <hr id='identity-line'/>
+
               <div id='identity-paragraph-div'>
-                <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give to the world.</p>
-                <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information precisely when they’re looking, on whatever platform they’re using. Creating a pleasurable experience is no longer optional if companies wish to compete.</p>
+                <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information, instantly and on whatever platform they're using. Creating a pleasurable experience is no longer optional if companies want to compete.</p>
+                <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
               </div>
             </div>
+
+            <p className='matters-content-text matters-content' id='expectation-quote-text'>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p>
 
           </div>
 
 
 
           <div id='matters-content-information' className='matters-content-container' style={{opacity:this.state.information, transition:'opacity 1s'}}>
-            <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.gif' id='identity-image'/></div>
-              <div className='matters-text-div matters-information-text-div'>
-                <h1 className='matters-content-title matters-content'  id='information-title'>Our digital strategists help you leverage data to create a true competitive advantage.</h1>
-                <p className='matters-content-text matters-content-information' >What could be more valuable to your business than information about the precise ways your customer interacts with your products and company?</p>
-                <p className='matters-content-text matters-content-information' >Digital products give you access to precious data, substantially increasing your insight into the customer's experience.</p>
 
+              <div className='matters-text-div matters-information-text-div'>
+                <h1 className='matters-content-title matters-content'  id='information-title'>Our strategists utilize your customers' data to identify & create true advantages.</h1>
+                <div id='information-text-div'>
+                  <p className='matters-content-text matters-content-information'>Data integreation helps you make better decisions, increase the quality of the persoanlized experience and create true competitive advantage.</p>
+                  <p className='matters-content-text matters-content-information'>By adding science to the art, companies move from guesswork to inspired predictions and continuous hypotheses testing.</p>
                 </div>
 
+                </div>
+                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.gif' id='identity-image'/></div>
           </div>
 
 

@@ -1,150 +1,206 @@
-#above-fold{
-height: 100vh;
-/* background-image: url("https://lh3.googleusercontent.com/7hxYKJkD33Ihas_dVUFfQX6rt56ptzG_ozdl0cxA5otvK-GnuhaBLhuo9rHV1lP-h0dNExI22Wq1vHG9iQNO2juaDitohqwkVhWp06bakexGAi0VFtWezPI6fhG241TkgZj28flpfB80JVnY2FOzUbkiQKasiyNxWmvM1hTKAkibOPM7lE1VAwNWsUIsaLnMAiaesm1y0-eEsO_mqkDaGyHhhdkqFHoZWEj6oayq4ywdSBC-bV466eeidkkfQzH624u8g9wyokvoJZVZPyHq9N4M-6R1sszrHeUi5MjDffE9YG4MXAHXv0sqSwLx_R7D1p5xLWuvztKwN5VJ-cILmwuD9Bv-VJ49tnyPOxOjRqB6dtLras9xp29PzcmCj57_D2QEvjZpRq4EL_Z21OneBz442Al5KJyEYuEvCAJZb8vXPeaR2qtReo0J7jPpu1VcyaYeJStx4tKYj2lz85-U_5LAlymCjtsXkttdCMMDyW71Bpixcnk9MZeBHIpRa2OGV-5FU15tQ2CU3RQMiWTmvLFIOblYe_mmyv0NwyJKkgFPC_I6ny989DzKqti_q8zpsDqgxFZFymR97Q5eMORN0Uz7ielz6Opm-x45Fy3LbLbB_BfSGbUOHsVqnxITWHmLOy--2DgjCa8sDxEEeaN5fE1DWGuzKjT_=w1500-h850-no"); */
-/* background-position: -59em 0px; */
-/* background-size: cover; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-width: 100%;
-
-
-}
-
-#above-title{
-  position: relative;
-  top: -75px;
-  font-size: 3.1em;
-  text-align:left;
-  font-family: Muli, sans-serif;
-  font-weight: 200;
-  font-style: normal;
-
-}
-
-.view{
+@media screen and (min-width:0px){
+  #above-fold{
+  height: 79vh;
+  /* background-image: url("https://lh3.googleusercontent.com/7hxYKJkD33Ihas_dVUFfQX6rt56ptzG_ozdl0cxA5otvK-GnuhaBLhuo9rHV1lP-h0dNExI22Wq1vHG9iQNO2juaDitohqwkVhWp06bakexGAi0VFtWezPI6fhG241TkgZj28flpfB80JVnY2FOzUbkiQKasiyNxWmvM1hTKAkibOPM7lE1VAwNWsUIsaLnMAiaesm1y0-eEsO_mqkDaGyHhhdkqFHoZWEj6oayq4ywdSBC-bV466eeidkkfQzH624u8g9wyokvoJZVZPyHq9N4M-6R1sszrHeUi5MjDffE9YG4MXAHXv0sqSwLx_R7D1p5xLWuvztKwN5VJ-cILmwuD9Bv-VJ49tnyPOxOjRqB6dtLras9xp29PzcmCj57_D2QEvjZpRq4EL_Z21OneBz442Al5KJyEYuEvCAJZb8vXPeaR2qtReo0J7jPpu1VcyaYeJStx4tKYj2lz85-U_5LAlymCjtsXkttdCMMDyW71Bpixcnk9MZeBHIpRa2OGV-5FU15tQ2CU3RQMiWTmvLFIOblYe_mmyv0NwyJKkgFPC_I6ny989DzKqti_q8zpsDqgxFZFymR97Q5eMORN0Uz7ielz6Opm-x45Fy3LbLbB_BfSGbUOHsVqnxITWHmLOy--2DgjCa8sDxEEeaN5fE1DWGuzKjT_=w1500-h850-no"); */
+  /* background-position: -59em 0px; */
+  /* background-size: cover; */
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-/* -------------OurWork----------------- */
-
-#ourWork-view{
-  opacity:0;
-  transition:opacity 1s;
-  z-index: 1
-}
-
-.ourWork-div{
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 50px 0;
-}
-
-.ourWork-title-div{
-    width: auto;
-    /* border: 1px solid; */
-    position: relative;
-    font-family:rockwell;
-    font-weight:bold;
-    font-size:12px;
-}
-
-.ourWork-title{
-  margin: 0;
-  font-family: Muli;
-  font-size: 23px;
-  font-weight: 600;
-}
-
-.ourWork-description-div{
-  width:100%;
-  font-family: Muli;
-  font-size:18px;
-  line-height: 1.6;
-  font-weight:200;
-}
-
-#ourWork-service-div{
-  height:89px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.ourWork-service-text{
-  font-family: Lato;
-  margin: 0;
-}
-
-/* -----------------------Learn -----------------------*/
-
-
-#learn-div{
-  display:flex;
-  padding: 10px 0px;
   justify-content: center;
-  background-color: rgb(51,51,51);
-  width: 99vw;
-  left: 0;
-  position: absolute;
-  margin-top:106px;
+  position: relative;
+  width: 100%;
 
-}
-#learn-text{
-  font-size: 48px;
-    font-weight: 200;
-    margin: 0;
-    /* text-decoration: underline; */
-    font-family: Muli;
-    color: white;
-    top: 10px;
+
+  }
+
+  #above-title{
     position: relative;
+    top: -44px;
+    font-size: 2.2em;
+    text-align:left;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: fade 2s;
+
+  }
+
+  .view{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* -------------OurWork----------------- */
+
+  #ourWork-view{
+    opacity:1;
+    transition:opacity 1s;
+    z-index: 1;
+  }
+
+  .ourWork-div{
+    display: flex;
+    flex-direction: column;
+    margin: 110px 0;
+    opacity:0;
+    transition:opacity 1s;
+  }
+
+  #ourWork-strategy-div{
+    margin-top: 0px;
+  }
+
+  .ourWork-title-div{
+      width: auto;
+      /* border: 1px solid; */
+      position: relative;
+      font-family:rockwell;
+      font-weight:bold;
+      font-size:12px;
+  }
+
+  .ourWork-title{
+    margin: 0;
+    font-family: Raleway;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .ourWork-description-div{
+    width:100%;
+    font-family: Lato;
+    font-size:18px;
+    line-height: 1.5;
+    font-weight:200;
+  }
+
+  #ourWork-service-div{
+    height:89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ourWork-service-text{
+    font-family: Lato;
+    margin: 0;
+  }
+
+  /* -----------------------Learn -----------------------*/
+
+
+  #learn-div{
+    display:flex;
+    padding: 10px 0px;
+    justify-content: center;
+    background-color: rgb(51,51,51);
+    width: 99vw;
+    left: 0;
+    position: absolute;
+    margin-top:106px;
+
+  }
+  #learn-text{
+    font-size: 48px;
+      font-weight: 200;
+      margin: 0;
+      /* text-decoration: underline; */
+      font-family: Muli;
+      color: white;
+      top: 10px;
+      position: relative;
+  }
+  #learn-arrow{
+    font-size:20px;
+  }
+
+  /* -------------DigitalMatters----------------- */
+
+
+  /* -------------PastProjects----------------- */
+
+  #projects-view{
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 11vh;
+  }
+
+  #projects-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+
+  .project-container{
+    height:300px;
+    background-size:cover;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  #ptouch{
+    background-image: url('/src/styles/images/art.jpg');
+    background-position: -11px -24px;
+      background-size: 371px 391px;
+  }
+
+  #bill{
+    background-image: url('/src/styles/images/dining.jpeg');
+    background-position: -110px 4px;
+  }
+
+  #bill-phone{
+    width: 110px;
+    height: 232px;
+    position: absolute;
+    right: 40px;
+    margin-top: 70px;
+  }
+
+  .project-text{
+    position: relative;
+    /* display: inline; */
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    margin:0;
+    font-family:raleway;
+  }
+
+  .project-image{
+    margin: 10px 0px 0px 0px;
+      width: 98%;
+      height:100%;
+      align-self: center;
+  }
+
+  .project-logo{
+    width: 100px;
+    position: relative;
+
+  }
+
+  .page-title-box{
+    text-align:right;
+  }
+
+  .page-title-text{
+  border: 1px solid black;
+  width: auto;
+  float: right;
+  padding: 7px;
+  font-family: Poppins;
+  color:white;
+  background:black;
+  position:relative;
+  right:1px;
+  margin: 5px 5px 0px 0px;
+  }
 }
-#learn-arrow{
-  font-size:20px;
-}
 
-/* -------------DigitalMatters----------------- */
-
-
-/* -------------PastProjects----------------- */
-
-#projects-view{
-  opacity: 0;
-  transition: opacity 1s;
-  margin: 0;
-}
-
-#projects-div{
-  display: flex;
-  flex-direction: column;
-}
-
-.project-image{
-  margin: 10px 0px 0px 0px;
-    width: 98%;
-    align-self: center;
-}
-
-.page-title-box{
-  text-align:right;
-}
-
-.page-title-text{
-border: 1px solid black;
-width: auto;
-float: right;
-padding: 7px;
-font-family: Poppins;
-color:white;
-background:black;
-position:relative;
-right:1px;
-margin: 5px 5px 0px 0px;
-}
 
 @media screen and (min-width: 375px){
 
@@ -206,11 +262,12 @@ margin: 5px 5px 0px 0px;
   }
   #above-title{
       padding: 0;
-      font-size: 2.8em;
+      font-size: 4.81em;
+      top:-17px;
   }
   .ourWork-div {
     padding:0px;
-    align-items: center;
+
     width:32%;
     flex-direction:column;
     justify-content: flex-start;
@@ -220,15 +277,14 @@ margin: 5px 5px 0px 0px;
   #ourWork-content{
     display:flex;
     justify-content: space-between;
-    width: 90.5%;
+    width: 100%;
   }
   #ourWork-view{
-
-    padding-top:108vh;
-
+    margin: 0 auto;
+    padding-top:0vh;
   }
   .ourWork-title-div {
-      text-align:center;
+      text-align:left;
       width:100%;
       margin-bottom:30px;
   }
@@ -256,6 +312,9 @@ margin: 5px 5px 0px 0px;
   #projects-div{
     flex-direction:row;
     justify-content: space-between;
+  }
+  .project-container{
+    width:45.5%;
   }
   .project-image{
     width:31.3%;
@@ -316,3 +375,12 @@ margin: 5px 5px 0px 0px;
 
   }
 }
+
+
+
+/* animations */
+
+  @keyframes fade{
+    0% {opacity:0}
+    100% {opacity:1}
+  }

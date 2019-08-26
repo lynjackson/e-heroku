@@ -1,96 +1,118 @@
+@media screen and (min-width:0px){
+  #matters-view{
 
-#matters-view{
-  width: 96%;
-  margin: 3% auto;
-}
+    margin: 3% auto;
+  }
 
-#matters-content{
-  display: flex;
-  flex-direction: column;
-  margin-top: 101px;
-}
+  #matters-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 101px;
+  }
 
-.matters-content-container{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 78px;
-}
+  .matters-content-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+  }
 
-.matters-text-div{
-  display:flex;
-  flex-direction:column;
-}
+  .matters-text-div{
+    display:flex;
+    flex-direction:column;
+  }
 
-#matters-content-engagement{
-    margin-top: 75px;
-}
+  #matters-content-engagement{
+      margin-top: 69px;
+      flex-direction:column-reverse;
+  }
 
-#matters-content-identity, #matters-content-expectation, #matters-content-information{
-  /* border-top: 5px solid rgb(180, 124, 9); */
-  /* padding-bottom: 79px; */
-}
+  #matters-content-identity, #matters-content-expectation, #matters-content-information{
+    /* border-top: 5px solid rgb(180, 124, 9); */
+    /* padding-bottom: 79px; */
+  }
 
-.matters-content-title{
-  font-family: Raleway;
-  font-weight: normal;
-  font-size: 2.25em;
-  position: relative;
-  margin:0;
-}
+  .matters-content-title{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 2em;
+    position: relative;
+    margin:0;
+    margin-bottom:2vh;
 
-.matters-content-text{
-    font-family: Muli;
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 200;
-    margin:38px 0;
-}
+  }
 
-#engagement-images{
-  width: 100%;
-  height: auto;
-  position: relative;
-}
+  .matters-content-text{
+    width:100%;
+    font-family: Lato;
+    font-size:18px;
+    line-height: 1.5;
+    font-weight:200;
+    margin: 0;
+  }
 
-#expectation-quote-text-div{
-  width: 100%;
-  background-color: rgba(31, 46, 0, .03);
-}
+  #engagement-images{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 
-#expectation-quote-text{
-  font-family: raleway;
-    font-weight: 100;
-    font-size: 1.75em;
-    width: 260px;
+  #engagement-title{
+
+  }
+
+  #expectation-quote-text-div{
+    width: 100%;
+    background-color: rgba(31, 46, 0, .03);
+  }
+
+  #expectation-quote-text{
+    font-family: raleway;
+      font-weight: 100;
+      font-size: 1.75em;
+      width: 260px;
+      margin: 0 auto;
+      width:86%;
+      text-align:center;
+      line-height:1.2;
+      margin-top:20vh;
+  }
+
+  #matters-content-identity{
+    margin: 100px 0 0 0;
+  }
+
+  #matters-content-information{
+    margin: 29vh 0 0 0;
+    flex-direction: column-reverse;
+  }
+
+  #information-title{
+
+  }
+
+
+
+  .engagement-image-div{
+    width: 100vw;
+    height: 24vh;
+    overflow:hidden;
+    position: absolute;
     margin: 0 auto;
-    width:86%;
-    text-align:center;
-    line-height:1.2;
+    left: 0;
+    top: 80px;
+  }
+
+  #engagement-text-div{
+    margin-top:34.5vh;
+  }
+
+  #identity-image{
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    margin-top:10vh;
+  }
 }
-
-#matters-content-identity{
-  margin: 100px 0 0 0;
-}
-
-#matters-content-information{
-  margin: 100px 0 0 0;
-}
-
-#information-title{
-  margin: 46px 0 0 0;
-}
-
-.matters-content-information{
-  margin: 38px 0 0 0
-}
-
-
-
-
-
-
-
-
 
 @media screen and (min-width:375px){
   .matters-content{
@@ -128,6 +150,7 @@
 
   #matters-view{
     height:auto;
+    width:90%;
   }
   #matters-nav-div {
     top: 83px;
@@ -162,11 +185,13 @@
   }
 
   #matters-content-identity{
-    flex-direction: column-reverse;
+    flex-direction:column;
+    height:100vh;
+    justify-content:space-between;
   }
 
   #matters-content-information{
-    flex-direction: row-reverse;
+    flex-direction: column;
   }
 
   #matters-content-expectation{
@@ -186,9 +211,9 @@
     overflow:hidden;
   }
   #identity-image{
-    width:100%;
-    height:auto;
-    top:-233px;
+    left: 0;
+    position: absolute;
+    width: 100vw;
   }
 
   /* #engagement-title{
@@ -203,19 +228,27 @@
     top:96px;
   }
 
-  .matters-identity-text-div, .matters-information-text-div {
+  .matters-identity-text-div{
     padding-left:12px;
     padding-right:0px
   }
-
-  .matters-identity-text-div{
+  .matters-information-text-div{
+    padding-left:12px;
+    padding-right:0px;
     flex-direction:row;
     width:100%;
+    justify-content: space-between;
+  }
+
+  .matters-identity-text-div{
+    flex-direction:column;
+    width:50%;
+    align-self:flex-end;
   }
 
   #identity-title-div{
-    width:50%;
-    padding: 0 30px;
+    width:100%;
+
     display:flex;
     justify-content:center;
   }
@@ -225,8 +258,8 @@
   }
 
   #identity-paragraph-div{
-    width:50%;
-    padding: 0 30px;
+    width:100%;
+    flex-direction: column;
     display:flex;
     justify-content:center;
   }
@@ -243,28 +276,32 @@
   }
 
   #expectation-quote-text {
-      font-family: raleway;
-      font-weight: 100;
-      font-size: 48px;
-      width: 626px;
-      margin: 0 auto;
-      background-color: rgba(31, 46, 0, .03);
+    font-family: raleway;
+    font-weight: 100;
+    font-size: 48px;
+    width: 100%;
+    margin: 0 auto;
+    top: 97px;
+    position: relative;
+
   }
 
   .matters-content-title{
     margin: 0;
     text-align: left;
     /* align-self:flex-start; */
-    font-size:38px;
+    font-size:34px;
     width:68%;
   }
 
   #engagement-title{
     align-self:flex-start;
+    width:48%;
   }
 
   #identity-title{
     width:auto;
+    margin-bottom:51px;
   }
 
   #expectation-title {
@@ -274,9 +311,14 @@
   }
   #information-title {
       text-align: left;
-      border-bottom: 4px solid rgba(7, 87, 3, 0.45);
-      width: 430px;
+
+      width: 47%;
       margin-left:0px;
+  }
+  #information-text-div{
+    display:flex;
+    flex-direction:column;
+    width: 47%;
   }
   .matters-content-text{
     font-size:1.2em;
@@ -284,19 +326,24 @@
     font-size: 1.2em;
     padding: 0;
     margin: 0 0 29px 0;
-    width: 88.8%;
+
   }
 
   #engagement-text-div{
-
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    margin-top: 44.5vh;
   }
 
   .engagement-image-div{
-    display: flex;
-    padding-left:12px;
-    overflow:hidden;
-    width: 47.2%;
-
+   height:43vh;
+  }
+  #engagement-images{
+    top:-38px;
+  }
+  #engagement-text{
+    width:48%;
   }
 }
 @media screen and (min-width: 1366px){

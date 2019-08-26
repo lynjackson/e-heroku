@@ -9,41 +9,56 @@ export default class Header extends React.Component {
       return(
         <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor,height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
           <div id='header-items'>
-            <Link to='/'><img src='./src/styles/images/e3.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert}}/></Link>
+
+            <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
+
+                <img src='./src/styles/images/ethey2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
+
+            </Link>
+
             {this.props.children}
-            <div id='menu-icon-circle'>
-              <ion-icon name={this.props.appState.view.menu} id='menu-icon' onClick={(event)=>{
-                if (document.getElementById('header').style.height > '10em'){
-                  this.props.appState.menuHeader();
-                } else{
-                  if(window.pageYOffset > window.innerHeight || document.getElementById('matters-view')){
-                    this.props.appState.scrollHeader();
-                  }else if (document.getElementById('value-page')){
-                    this.props.appState.valuesHeader();
-                  }else{
-                  this.props.appState.defaultHeader();
-                  event.stopPropagation();
-                }
-              }}}
-              style={{filter:this.props.appState.header.headerInvert}}></ion-icon>
+
+            <div id='menu-div' style={{filter:this.props.appState.header.headerInvert}} onClick={(event)=>{
+              if (document.getElementById('header').style.height > '10em'){
+                this.props.appState.menuHeader();
+              } else{
+                if(window.pageYOffset > window.innerHeight || document.getElementById('matters-view')){
+                  this.props.appState.scrollHeader();
+                }else if (document.getElementById('value-page')){
+                  this.props.appState.valuesHeader();
+                }else{
+                this.props.appState.defaultHeader();
+                event.stopPropagation();
+              }
+            }}}>
+              <hr className='menu-line' />
+              <hr className='menu-line' />
+              <hr className='menu-line' />
             </div>
+
           </div>
 
-
-          <div id='overlay-content' style={{display: this.props.appState.header.display}}>
+          <div id='overlay-content' style={{display:this.props.appState.header.display, opacity:setTimeout(()=>{return this.props.appState.header.opacity}, 3000), zIndex:-10}}>
               <Link to='/' className='over-lay-link' onClick={()=>{this.props.appState.front()}}>Home</Link>
               <hr className='over-lay-line' />
-              <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Our Values</Link>
+              <Link to='/digital_matters' className='over-lay-link'>About</Link>
               <hr className='over-lay-line' />
-              <Link to='/digital_matters' className='over-lay-link'>Why Digital Matters</Link>
+              <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</Link>
               <hr className='over-lay-line' />
-              <a href='#' className='over-lay-link'>Contact Us</a>
+              <a href='#' className='over-lay-link'>Contact</a>
             </div>
 
         </div>
 
       )
     }
+
+    // <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto', top: 6, position: 'relative'}}>
+    //   <div id='e-div'>
+    //     <img src='./src/styles/images/ethey.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
+    //   </div>
+    //   <img src='./src/styles/images/triangle.png' id='triangle' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert, width: '10%', left:-3}}/>
+    // </Link>
 
     componentDidMount(){
 
@@ -61,3 +76,23 @@ export default class Header extends React.Component {
 // onClick={()=>{this.props.appState.view.overlay === 'none' ? this.props.appState.overlay():this.props.appState.front()}}
 
 // <a href='#'><img src='./src/styles/images/e2.png' id='e' style={{filter:this.props.appState.view.header}}/></a>
+
+
+
+
+
+
+// <ion-icon name={this.props.appState.view.menu} id='menu-icon' onClick={(event)=>{
+//   if (document.getElementById('header').style.height > '10em'){
+//     this.props.appState.menuHeader();
+//   } else{
+//     if(window.pageYOffset > window.innerHeight || document.getElementById('matters-view')){
+//       this.props.appState.scrollHeader();
+//     }else if (document.getElementById('value-page')){
+//       this.props.appState.valuesHeader();
+//     }else{
+//     this.props.appState.defaultHeader();
+//     event.stopPropagation();
+//   }
+// }}}
+// style={{filter:this.props.appState.header.headerInvert}}></ion-icon>

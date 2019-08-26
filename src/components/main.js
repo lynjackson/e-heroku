@@ -17,9 +17,7 @@ export class AboveFold extends React.Component{
     console.log(this.props);
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold}}>
-      <h1 id='above-title'>Digital products & strategies that help you reach farther.</h1>
-      <svg style={{width:'9%', alignSelf:'center', top:'22%', position:'relative'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"/></svg>
-
+      <h1 id='above-title'><span style={{fontFamily: 'Lato', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
     </div>
   )
 }
@@ -46,36 +44,75 @@ export class OurWork extends React.Component{
   return(
     <div className='view' id='ourWork-view'>
         <div id='ourWork-content'>
-          <WhatWeDo service={['Research & Product Strategy', 'Prototyping & Market Validation', 'Solutions Architecture']} title={'Digital Strategy'} description={'We develop custom digital strategies, conducting research and analytics into which platforms are important to business performance, and what improvements to current applications could enhance the customer experience further.'} icon={'./src/styles/icons/svg/023-research.svg'}/>
-          <WhatWeDo service={['UX, UI, Art Direction', 'Mobile, Web, Emerging Tech', 'Backend & API Development']} title={`Design x Development`} description={"We design applications, social media experiences, and marketing campaigns, each aimed at making great user experience a part of your brand in the eyes of users, and extending your business's vision, culture and spirit."} icon={'./src/styles/icons/svg/027-social-media.svg'}/>
-          <WhatWeDo service={['Service Design & Optimization', 'DevOps & Technical Infrastructure', 'Testing, Data Analytics, Optimization']} title={'Data Integration'} description={'We prioritize the collection of useful data in designing compelling customer experiences. Adding science to the art moves you from guesswork to inspired predictions, using metrics and analytics to inform decisions.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
+          <WhatWeDo idey='jawny1' service={['Research & Product Strategy', 'Prototyping & Market Validation', 'Solutions Architecture']} title={'Strategizing'} description={'We develop custom digital strategies, conducting research and analytics into which platforms are important to business performance, and what improvements to current applications could enhance the customer experience further.'} icon={'./src/styles/icons/svg/023-research.svg'}/>
+          <WhatWeDo idey='jawny2' service={['UX, UI, Art Direction', 'Mobile, Web, Emerging Tech', 'Backend & API Development']} title={`Creating`} description={"We design applications, social media experiences, and marketing campaigns, each aimed at making great user experience a part of your brand in the eyes of users, and extending your business's vision, culture and spirit."} icon={'./src/styles/icons/svg/027-social-media.svg'}/>
+          <WhatWeDo idey='jawny3' service={['Service Design & Optimization', 'DevOps & Technical Infrastructure', 'Testing, Data Analytics, Optimization']} title={'Integrating'} description={'We prioritize the collection of useful data in designing compelling customer experiences. Adding science to the art moves you from guesswork to inspired predictions, using metrics and analytics to inform decisions.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
         </div>
         <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}></Link>
     </div>
   )
 }
 //<p className='ourWork-statement'>We Consult & Create</p>
-componentDidMount(){
-  window.addEventListener('scroll', (event)=>{
-    if(window.pageYOffset >= 367){
-        return document.getElementById('ourWork-view').style.opacity=1}
-    })
-  }
+// componentDidMount(){
+//   window.addEventListener('scroll', (event)=>{
+//     if(window.pageYOffset >= 2q2){
+//         return document.getElementById('jawny1').style.opacity=1
+//       }
+//       if(window.pageYOffset >= 549){
+//           return document.getElementById('jawny2').style.opacity=1
+//         }
+//     })
+//   }
 }
 
-const WhatWeDo = (props)=>{
-  return(
-    <div className='ourWork-div' id='ourWork-strategy-div' style={{border: props.noBorder}}>
-      <div className='ourWork-title-div'><h1 className='ourWork-title'>{props.title}</h1></div>
-      <div className='ourWork-description-div'><p className='ourWork-description-text'>{props.description}</p></div>
-      <div id='ourWork-service-div'>
-        <p className='ourWork-service-text'>{props.service[0]}</p>
-        <p className='ourWork-service-text'>{props.service[1]}</p>
-        <p className='ourWork-service-text'>{props.service[2]}</p>
+export class WhatWeDo extends React.Component{
+  render(){
+    return(
+      <div className='ourWork-div' id={this.props.idey} style={{border: this.props.noBorder}}>
+        <div className='ourWork-title-div'><h1 className='ourWork-title'>{this.props.title}</h1></div>
+        <div className='ourWork-description-div'><p className='ourWork-description-text'>{this.props.description}</p></div>
+        <div id='ourWork-service-div'>
+          <p className='ourWork-service-text'>{this.props.service[0]}</p>
+          <p className='ourWork-service-text'>{this.props.service[1]}</p>
+          <p className='ourWork-service-text'>{this.props.service[2]}</p>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
+
+  componentDidMount(){
+
+    if(window.innerWidth < 769){
+      window.addEventListener('scroll', (event)=>{
+        if(window.pageYOffset >= 22){
+            return document.getElementById('jawny1').style.opacity=1
+          }
+        })
+        window.addEventListener('scroll', (event)=>{
+          if(window.pageYOffset >= 500){
+              return document.getElementById('jawny2').style.opacity=1
+            }
+          })
+          window.addEventListener('scroll', (event)=>{
+            if(window.pageYOffset >= 950){
+                return document.getElementById('jawny3').style.opacity=1
+              }
+            })
+    }else{
+      window.addEventListener('scroll', (event)=>{
+        if(window.pageYOffset >= 22){
+            return(
+                document.getElementById('jawny1').style.opacity=1,
+                document.getElementById('jawny2').style.opacity=1,
+                document.getElementById('jawny3').style.opacity=1
+            )
+          }
+        })
+    }
+
+    }
 }
+
 
 // export const Learn = ()=>{
 //   return(
@@ -116,9 +153,17 @@ export class RecentProjects extends React.Component {
     return(
       <div className='view' id='projects-view'>
         <div id='projects-div'>
-          <img className='project-image' src='./src/styles/images/old_ethe.jpg'/>
-          <img className='project-image' src='./src/styles/images/creator.jpg'/>
-          <img className='project-image' src='./src/styles/images/bill.jpg'/>
+          <div id='ptouch' className='project-container'>
+            <p className='project-text'>Helping the community find its creative space.</p>
+            <img className='project-logo' src='./src/styles/images/studio.png'/>
+          </div>
+          <div id='bill' className='project-container'>
+            <p className='project-text' style={{color:'white'}}>Enhancing the way you go out to eat.</p>
+            <img className='project-logo' src='./src/styles/images/bill-logo.png' style={{filter:'invert(1)'}}/>
+            <img id='bill-phone' src='./src/styles/images/phone.png' style={{}}/>
+          </div>
+
+
         </div>
       </div>
     )
@@ -126,12 +171,15 @@ export class RecentProjects extends React.Component {
 
 componentDidMount(){
   window.addEventListener('scroll', (event)=>{
-    if(window.pageYOffset >= 991){
-        return document.getElementById('projects-view').style.opacity=1}
+    if(window.innerWidth > 769 && window.pageYOffset >= 700){
+        return document.getElementById('projects-view').style.opacity=1
+      }else if (window.innerWidth < 769 && window.pageYOffset >= 1510){
+        return document.getElementById('projects-view').style.opacity=1
     }
-  )
-}
 
+})
+
+}
 }
 
 export const ContactUs = ()=>{

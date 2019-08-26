@@ -15,7 +15,7 @@ class Overlay extends React.Component{
           <hr className='over-lay-line' />
           <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Our Values</Link>
           <hr className='over-lay-line' />
-          <Link to='/digital_matters' className='over-lay-link'>Why Digital Matters</Link>
+          <Link to='/digital_matters' className='over-lay-link'>About</Link>
           <hr className='over-lay-line' />
           <a href='#' className='over-lay-link'>Contact Us</a>
         </div>
