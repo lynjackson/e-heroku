@@ -38,14 +38,14 @@ class App extends React.Component {
     }
 
     componentDidMount(){
-      let lato = new FontFace('lato', 'url(../styles/fonts/Lato-Regular.ttf)', {
+      let Lato = new FontFace('Lato', 'url(../styles/fonts/Lato-Regular.ttf)', {
         style: 'normal',
         weight: '400'
       });
 
-      document.fonts.add(lato);
+      document.fonts.add(Lato);
 
-      lato.load();
+      Lato.load();
     }
 
     // <Learn appState={this.props}/>
