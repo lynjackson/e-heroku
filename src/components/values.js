@@ -67,11 +67,36 @@ class Values extends React.Component{
       setTimeout(()=>{document.getElementById('value-page').addEventListener('wheel', funky)}, 500)
 
     }
+
     this.props.invertHeader();
 
     document.getElementById('value-page').addEventListener('wheel', funky)
 
-    document.getElementById('value-page').addEventListener('touchstart', console.log('swipe'));
+
+    let xey = [];
+
+    document.getElementById('value-page').addEventListener('touchmove', (e)=>{
+      xey.push(e.touches[0].pageY);
+      console.log(xey);
+      document.getElementById('value-page').addEventListener('touchend', (e)=>{
+        if (xey[xey.length - 1] < xey[0]){
+          this.props.valueNextPage()
+          this.setState({})
+        }
+        else if (xey[xey.length - 1] > xey[0]){
+          this.props.valuePrevPage()
+          this.setState({})
+        }
+        xey = [];
+      });
+
+    });
+
+
+
+    const touchy = ()=>{
+
+    }
 
 
 }
