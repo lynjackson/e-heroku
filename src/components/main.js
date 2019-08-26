@@ -41,6 +41,9 @@ componentDidMount(){
 
 export class OurWork extends React.Component{
   render(){
+
+
+
   return(
     <div className='view' id='ourWork-view'>
         <div id='ourWork-content'>

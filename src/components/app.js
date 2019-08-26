@@ -20,6 +20,8 @@ class App extends React.Component {
   }
 
   render(){
+
+
     console.log(this.props)
       return(
           <div id='main'>
@@ -33,6 +35,17 @@ class App extends React.Component {
           </div>
 
       )
+    }
+
+    componentDidMount(){
+      let lato = new FontFace('Lato', 'url(../styles/fonts/Lato-Regular.ttf)', {
+        style: 'normal',
+        weight: '400'
+      });
+
+      document.fonts.add(lato);
+
+      lato.load();
     }
 
     // <Learn appState={this.props}/>
