@@ -38,7 +38,7 @@ class App extends React.Component {
     }
 
     componentDidMount(){
-      let lato = new FontFace('Lato', 'url(../styles/fonts/Lato-Regular.ttf)', {
+      let lato = new FontFace('lato', 'url(../styles/fonts/Lato-Regular.ttf)', {
         style: 'normal',
         weight: '400'
       });
