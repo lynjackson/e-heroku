@@ -69,7 +69,7 @@
 
   @font-face {
   font-family: 'Lato';
-  src: url("/src/styles/fonts/Lato2OFL/Lato-Regular.ttf") format("ttf");
+  src: url("/src/styles/fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
 }
 
   .ourWork-description-div{
