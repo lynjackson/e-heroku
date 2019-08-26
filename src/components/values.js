@@ -78,6 +78,7 @@ class Values extends React.Component{
     document.getElementById('value-page').addEventListener('touchmove', (e)=>{
       xey.push(e.touches[0].pageY);
       console.log(xey);
+      e.preventDefault();
       document.getElementById('value-page').addEventListener('touchend', (e)=>{
         if (xey[xey.length - 1] < xey[0]){
           this.props.valueNextPage()
