@@ -17,7 +17,7 @@ export class AboveFold extends React.Component{
     console.log(this.props);
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold}}>
-      <h1 id='above-title'><span style={{fontFamily: 'Lato', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
+      <h1 id='above-title'><span style={{fontFamily: 'lato', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
     </div>
   )
 }
