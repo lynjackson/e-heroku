@@ -1,20 +1,26 @@
 const titles = [
-  'Renounce & Enjoy',
-  'Creativity',
-  'Abundance Mindset',
-  'Consistent Evaluation',
-  'Client Service',
+  'Openness',
   'Experience',
-  'Openness',]
+  'Service',
+  'Evaluation',
+  'Abundance',
+  'Renunciation',
+  'Joy'
+  ]
 
 const texts = [
-  'When we are compulsively attached to the results of our work, it makes it more difficult to simply enjoy what we are doing',
-  'Creativity is not the capacity to draw or compose or sculpt, but a way of understanding the world',
-  'With ideas, we strive to maintain an abundance mindset, clinging to ideas no longer than we need to because we know there will always be more',
-  'Regularly question practices in life and work. Reassess which behaviors are productive and which are destructive. Adjust accordingly.',
-  'Good client service is one of our highest ideals because of the trust implied when handing something important to you, over to us.',
-  'We try not to take our or others’ experience for granted. We see it as the the greatest gift we’re given.',
-  'Life is full of mystery. Only by embracing the unknown and remaining open to all are we free enough to find solutions we can’t initially imagine.',
+  'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
+  "To us, experience is the whole point. We don't take ours or that of others’ for granted.",
+  'We strive to make the needs of those we serve as important to us as they are to them.',
+  'We regularly reassess what behaviors are productive and which are destructive, and adjust accordingly.',
+  'We cling to ideas no longer than necessary because we know there will always be more.',
+  "When we  compulsively crave the outcomes of out actions, it is more difficult to simply enjoy what we're doing.",
+  "We enjoy what we do. It's why we do it.",
+
+
+
+
+
 
 
 
@@ -23,18 +29,18 @@ const texts = [
 
 export default function(state = {
   page: 0,
-  backgroundColorValue: 0,
+  backgroundColorValue: 26,
   headerInvert: 1,
   textColor: 'white',
-  title: 'Renounce & Enjoy',
-  text: 'When we are compulsively attached to the results of our work, it makes it more difficult to simply enjoy what we are doing',
+  title: 'Openness',
+  text: 'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
 }, action) {
 //initial state should be set to whatever data structure you want your new state contained in
 	switch (action.type) {
 		case 'NEXTPAGE':
 			return Object.assign(state, {
           page: state.page+1,
-          backgroundColorValue: state.backgroundColorValue+40,
+          backgroundColorValue: state.backgroundColorValue+50,
           headerInvert: ()=>{(state.page > 1) ? 1: 0},
           textColor: ()=>{state.page > 1 ? 'white': 'black'},
           title: titles[state.page+1],
@@ -44,7 +50,7 @@ export default function(state = {
       case 'PREVPAGE':
   			return Object.assign(state, {
             page: state.page-1,
-            backgroundColorValue: state.backgroundColorValue-40,
+            backgroundColorValue: state.backgroundColorValue-50,
             headerInvert: ()=>{(state.page > 1) ? 1: 0},
             textColor: ()=>{state.page > 1 ? 'white': 'black'},
             title: titles[state.page-1],

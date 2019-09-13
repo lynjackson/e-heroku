@@ -1,18 +1,22 @@
-body{
-  margin: 0;
-}
 
-#routes{
-width:100%;
-margin: 0 auto;
-}
+@media screen and (min-width:0px){
+  body{
+    margin: 0;
+  }
 
-#main{
-width:88%;
-margin: 2% auto;
-}
+  #routes{
+  width:100%;
+  margin: 0 auto;
+  }
 
-img{
+  #main{
+  width:88%;
+  margin: 2% auto;
+  }
+
+  img{
+
+  }
 
 }
 
@@ -22,7 +26,7 @@ img{
 
 @media screen and (min-width:411px){
   #main {
-      width: 94%;
+      width: 88%;
   }
 }
 
@@ -52,7 +56,7 @@ img{
 
 @media screen and (min-width:1366px){
   #main{
-    width: 96%;
+    width: 80%;
     margin: 50px auto;
   }
 }

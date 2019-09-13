@@ -20,8 +20,6 @@ class App extends React.Component {
   }
 
   render(){
-
-
     console.log(this.props)
       return(
           <div id='main'>
@@ -31,7 +29,7 @@ class App extends React.Component {
             <OurWork appState={this.props}/>
 
             <RecentProjects />
-            <ContactUs />
+            <ContactUs message={'Ready when you are...'}/>
           </div>
 
       )

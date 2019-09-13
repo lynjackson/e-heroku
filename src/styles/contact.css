@@ -1,28 +1,45 @@
 
-#contact-view{
-    background-color: rgb(51, 51, 51);
-    height:auto;
-    position: absolute;
-    width: 100vw;
-    left: 0;
-    padding:100px 0;
-}
+@media screen and (min-width: 0px){
+  #contact-view{
+      background-color: rgb(51, 51, 51);
+      height:auto;
+      position: absolute;
+      width: 100vw;
+      height:66vh;
+      margin-top:312px;
+      left: 0;
+      padding:100px 0;
+  }
 
-.contact-text{
-  font-family:Lato;
-  font-size: 40px;
-  color: white;
-  font-weight: 100;
-  margin: 17px 0;
-  margin: 17px 0 0 2%;
-}
-#contact-link{
-  font-family:Raleway;
-  font-weight: bold;
-  font-size: 54px;
-  color:white;
-  margin: 17px 0 0 2%;
+  .contact-text{
+    font-family:Lato;
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+    margin: 17px 0;
+    margin: 17px 0 0 2%;
+  }
+  #contact-link{
+    font-family:Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    color:white;
+    margin: 17px 5%;
+  }
 
+  #contact-options{
+    display:flex;
+    flex-direction: column;
+    margin: 123px 5%;
+  }
+
+  .contact-option{
+    font-family:Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    color:white;
+    margin:5px 0;
+  }
 }
 
 @media screen and (min-width: 375px){
@@ -35,10 +52,14 @@
     font-weight: 100;
     margin: 17px 5%;
   }
-  #contact-link{
 
-    font-size: 30px;
-    margin: 17px 5%;
+}
+
+@media screen and (min-width: 411px){
+  #contact-options{
+    display:flex;
+    flex-direction: column;
+    margin: 99px 5%;
   }
 }
 
@@ -49,12 +70,21 @@
 }
 @media screen and (min-width: 1024px){
   .contact-text, #contact-link{
-    margin: 17px 4%;
+    margin: 17px auto;
+    width:90%;
+  }
+  #contact-view{
+    margin-top:0vh;
+  }
+  #contact-options{
+    margin:99px 4%;
+
   }
 }
 @media screen and (min-width: 1366px){
-  .contact-text, #contact-link{
-    margin: 17px 3%;
+  .contact-text, #contact-link, #contact-options{
+    margin: 35px auto;
+    width:80%;
   }
 }
 @media screen and (min-width: 1920px){
@@ -64,7 +94,8 @@
 }
 @media screen and (min-width: 2560px){
   .contact-text, #contact-link{
-    margin: 17px 12%;
+    margin: 17px auto;
+    width:80%;
   }
 }
 

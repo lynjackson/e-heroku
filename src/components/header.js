@@ -7,15 +7,11 @@ export default class Header extends React.Component {
   render(){
     console.log(this.props);
       return(
-        <div id='header' style={(document.documentElement.clientWidth < 769 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor,height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
+        <div id='header' style={(window.pageYOffset === 0 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
           <div id='header-items'>
-
             <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
-
                 <img src='./src/styles/images/ethey2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
-
             </Link>
-
             {this.props.children}
 
             <div id='menu-div' style={{filter:this.props.appState.header.headerInvert}} onClick={(event)=>{

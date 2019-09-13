@@ -7,6 +7,7 @@ import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, d
 import { bindActionCreators } from 'redux'
 //imports function needed to use action creator
 import { connect } from 'react-redux'
+import {ContactUs} from './main'
 //imports function needed to access redux state object
 
 class DigitalMatters extends React.Component{
@@ -58,7 +59,7 @@ class DigitalMatters extends React.Component{
               <div className='matters-text-div matters-information-text-div'>
                 <h1 className='matters-content-title matters-content'  id='information-title'>Our strategists utilize your customers' data to identify & create true advantages.</h1>
                 <div id='information-text-div'>
-                  <p className='matters-content-text matters-content-information'>Data integreation helps you make better decisions, increase the quality of the persoanlized experience and create true competitive advantage.</p>
+                  <p className='matters-content-text matters-content-information'>Data integration helps you make better decisions, increase the quality of the persoanlized experience and create true competitive advantage.</p>
                   <p className='matters-content-text matters-content-information'>By adding science to the art, companies move from guesswork to inspired predictions and continuous hypotheses testing.</p>
                 </div>
 
@@ -66,7 +67,7 @@ class DigitalMatters extends React.Component{
                 <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.gif' id='identity-image'/></div>
           </div>
 
-
+        <ContactUs message={'Right though?'}/>
       </div>
     )
   }

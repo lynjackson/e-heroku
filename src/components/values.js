@@ -34,7 +34,7 @@ class Values extends React.Component{
       <div id='value-page' >
         <Header appState={this.props} invert={'1'}/>
         <Overlay display={this.props.overlay.display} appState={this.props}/>
-        <div id='value-content' style={{backgroundColor:`hsla(${this.props.values.backgroundColorValue}, 184%, 9%)`, color: this.props.values.textColor}}>
+        <div id='value-content' style={{backgroundColor:`hsla(${this.props.values.backgroundColorValue}, 50%, 7.5%, 1)`, color: this.props.values.textColor}}>
           <div className='value-value'>
             <h2 id='value-title'>{this.props.values.title}</h2>
 

@@ -42,13 +42,15 @@
 }
 
   #value-text{
-    font-family: lato;
-    font-size: 1em;
-    font-weight: 300;
-    width: 100%;
+
     text-align: center;
     margin: 0 auto;
-    animation: rollIn forwards .5s
+    animation: rollIn forwards .5s;
+
+    width: 100%;
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    line-height: 1.5;
   }
 
   #values-arrow-div{
