@@ -2,6 +2,7 @@
   #matters-view{
     margin: 0 auto;
     width:88%;
+    max-width:1280px;
   }
 
   #matters-content{
@@ -384,6 +385,9 @@
   #fixed-matters-header{
     width: inherit;
   }
+  #engagement-images{
+    top:-100px;
+  }
 }
 @media screen and (min-width: 1920px){
   #matters-view{
@@ -392,6 +396,9 @@
   }
   #fixed-matters-header{
     width: inherit;
+  }
+  #matters-content-identity{
+      height: 73vh;
   }
 }
 @media screen and (min-width: 2460px){

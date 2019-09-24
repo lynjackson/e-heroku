@@ -36,12 +36,12 @@ class DigitalMatters extends React.Component{
 
 
 
-          <div id='matters-content-identity' className='matters-content-container' style={{opacity:this.state.identity, transition:'opacity 1s'}}>
+          <div id='matters-content-identity' className='matters-content-container' style={{opacity:0, transition:'opacity 1s'}}>
+          
             <div className='matters-text-div  matters-identity-text-div'>
               <div id='identity-title-div'>
                 <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
               </div>
-
               <div id='identity-paragraph-div'>
                 <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information, instantly and on whatever platform they're using. Creating a pleasurable experience is no longer optional if companies want to compete.</p>
                 <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
@@ -54,7 +54,7 @@ class DigitalMatters extends React.Component{
 
 
 
-          <div id='matters-content-information' className='matters-content-container' style={{opacity:this.state.information, transition:'opacity 1s'}}>
+          <div id='matters-content-information' className='matters-content-container' style={{opacity:0, transition:'opacity 1s'}}>
 
               <div className='matters-text-div matters-information-text-div'>
                 <h1 className='matters-content-title matters-content'  id='information-title'>Our strategists utilize your customers' data to identify & create true advantages.</h1>
@@ -64,7 +64,7 @@ class DigitalMatters extends React.Component{
                 </div>
 
                 </div>
-                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.gif' id='identity-image'/></div>
+                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.png' id='identity-image'/></div>
           </div>
 
         <ContactUs message={'Right though?'}/>
@@ -85,23 +85,15 @@ class DigitalMatters extends React.Component{
   //   </div>
   // </div>
   componentDidMount(){
-    window.addEventListener('scroll', (event)=>{
-      if(window.pageYOffset < 304){
-          this.props.engagementNav();
-        }
-      if(window.pageYOffset >= 304 && window.pageYOffset < 1051){
-          this.props.identityNav();
-          this.setState({identity:1})
-        }
-        if(window.pageYOffset >= 957 && window.pageYOffset < 1416){
-            this.props.expectationNav();
-            this.setState({expectation:1})
-          }
-          if(window.pageYOffset >= 1476 ){
-              this.props.informationNav();
-              this.setState({information:1})
-            }
+
+    if(window.innerWidth >= 1024){
+      window.addEventListener('scroll', (event)=>{
+        (window.pageYOffset > 137) ? document.getElementById('matters-content-identity').style.opacity=1: document.getElementById('jawny1').style.opacity=0;
+        (window.pageYOffset > 725) ? document.getElementById('matters-content-information').style.opacity=1: document.getElementById('jawny3').style.opacity=0;
       })
+    }
+
+
       this.props.scrollHeader();
       this.props.defaultView();
       console.log('matters re-render')
@@ -133,6 +125,24 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch){
 	return bindActionCreators({ selector: selectBook, overlay: overlay, valueNextPage: valueNextPage, valuePrevPage: valuePrevPage, defaultView: defaultView, defaultHeader: defaultHeader, invertHeader: invertHeader, engagementNav: engagementNav, identityNav: identityNav, expectationNav: expectationNav, informationNav:informationNav, scrollHeader:scrollHeader, menuHeader:menuHeader }, dispatch)
 }
+
+// window.addEventListener('scroll', (event)=>{
+//   if(window.pageYOffset < 304){
+//       this.props.engagementNav();
+//     }
+//   if(window.pageYOffset >= 304 && window.pageYOffset < 1051){
+//       this.props.identityNav();
+//       this.setState({identity:1})
+//     }
+//     if(window.pageYOffset >= 957 && window.pageYOffset < 1416){
+//         this.props.expectationNav();
+//         this.setState({expectation:1})
+//       }
+//       if(window.pageYOffset >= 1476 ){
+//           this.props.informationNav();
+//           this.setState({information:1})
+//         }
+//   })
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(DigitalMatters)

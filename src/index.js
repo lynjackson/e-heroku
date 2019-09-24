@@ -2,13 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app'
 import Values from './components/values';
-import Header from './components/header';
 import DigitalMatters from './components/digital-matters'
 import './styles/project.css'
-
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import ReduxPromise from 'redux-promise';
+import { createStore } from 'redux';
 import reducers from './reducers';
 import {BrowserRouter, Route} from 'react-router-dom'
 

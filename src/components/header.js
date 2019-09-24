@@ -12,6 +12,7 @@ export default class Header extends React.Component {
             <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
                 <img src='./src/styles/images/ethey2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
             </Link>
+
             {this.props.children}
 
             <div id='menu-div' style={{filter:this.props.appState.header.headerInvert}} onClick={(event)=>{

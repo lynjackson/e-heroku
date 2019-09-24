@@ -51,6 +51,9 @@
     font-family: 'Lato-Light';
     font-size: 18px;
     line-height: 1.5;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 29px 0;
   }
 
   #values-arrow-div{

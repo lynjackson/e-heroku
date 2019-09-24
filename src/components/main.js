@@ -18,7 +18,7 @@ export class AboveFold extends React.Component{
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
       <h1 id='above-title' ><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
-      <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='./src/styles/images/arrow.png' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
+      <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='./src/styles/images/arrow.png' id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
     </div>
   )
 }
@@ -48,7 +48,7 @@ export class OurWork extends React.Component{
           <div id='ourWork-content'>
             <WhatWeDo idey='jawny1' service={['Research & Product Strategy', 'Prototyping & Market Validation', 'Solutions Architecture']} title={'Consulting'} description={'We develop custom digital strategies, conducting research and analytics into which platforms are important to business performance, and what improvements to current applications could enhance the customer experience further.'} icon={'./src/styles/icons/svg/023-research.svg'}/>
             <WhatWeDo idey='jawny2' service={['UX, UI, Art Direction', 'Mobile, Web, Emerging Tech', 'Backend & API Development']} title={`Creating`} description={"We design applications, social media experiences, and marketing campaigns, each aimed at making great user experience a part of your brand in the eyes of users, and extending your business's vision, culture and spirit."} icon={'./src/styles/icons/svg/027-social-media.svg'}/>
-            <WhatWeDo idey='jawny3' service={['Service Design & Optimization', 'DevOps & Technical Infrastructure', 'Testing, Data Analytics, Optimization']} title={'Integrating'} description={'We prioritize the collection of useful data in designing compelling customer experiences. Adding science to the art moves you from guesswork to inspired predictions, using metrics and analytics to inform decisions.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
+            <WhatWeDo idey='jawny3' service={['Service Design & Optimization', 'DevOps & Technical Infrastructure', 'Testing, Data Analytics']} title={'Integrating'} description={'We prioritize the collection of useful data in designing compelling customer experiences. Adding science to the art moves you from guesswork to inspired predictions, using metrics and analytics to inform decisions.'} icon={'./src/styles/icons/svg/001-statistics.svg'} noBorder={0}/>
           </div>
           <Link to='/digital_matters' onClick={()=>{this.props.appState.scrollHeader(); console.log(this.props)}}></Link>
       </div>
@@ -82,7 +82,7 @@ export class WhatWeDo extends React.Component{
       })
     }
 
-    if(window.innerWidth > 1024){
+    if(window.innerWidth >= 1024){
 
       window.addEventListener('scroll', (event)=>{
         (window.pageYOffset > 0) ? document.getElementById('jawny1').style.opacity=1: document.getElementById('jawny1').style.opacity=0;
@@ -177,13 +177,8 @@ export class RecentProjects extends React.Component {
 
 componentDidMount(){
   window.addEventListener('scroll', (event)=>{
-    if(window.innerWidth > 769 && window.pageYOffset >= 700){
-        return document.getElementById('projects-view').style.opacity=1
-      }else if (window.innerWidth < 769 && window.pageYOffset >= 1510){
-        return document.getElementById('projects-view').style.opacity=1
-    }
-
-})
+    (window.pageYOffset > 396)?document.getElementById('projects-view').style.opacity =1:document.getElementById('projects-view').style.opacity =0
+  })
 
 }
 }
@@ -191,13 +186,15 @@ componentDidMount(){
 export const ContactUs = (props)=>{
   return(
     <div className='view' id='contact-view' style={{backgroundColor:'rgb(26,26,26)',}}>
-      <p className='contact-text' id='ready'>{props.message}</p>
-      <a href="mailto:webmaster@example.com" id='contact-link'>Get in touch</a>
-      <div id='contact-options'>
-        <a className='contact-option'>Privacy Policy</a>
-        <a className='contact-option'>News</a>
-        <a className='contact-option'>Events</a>
-        <a className='contact-option'>Industries</a>
+    <div id='contact-content'>
+        <p className='contact-text' id='ready'>{props.message}</p>
+        <a href="mailto:webmaster@example.com" id='contact-link'>Get in touch</a>
+        <div id='contact-options'>
+          <a className='contact-option'>Privacy Policy</a>
+          <a className='contact-option'>News</a>
+          <a className='contact-option'>Events</a>
+          <a className='contact-option'>Industries</a>
+        </div>
       </div>
     </div>
   )

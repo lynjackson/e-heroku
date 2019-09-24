@@ -78,7 +78,9 @@
   }
   #contact-options{
     margin:99px 4%;
-
+  }
+  #ready{
+    font-weight:400;
   }
 }
 @media screen and (min-width: 1366px){
@@ -89,7 +91,16 @@
 }
 @media screen and (min-width: 1920px){
   .contact-text, #contact-link{
-    margin: 17px 5%;
+    width:auto;
+    /* margin: 17px 5%; */
+  }
+  #contact-options{
+    width:auto;
+  }
+  #contact-content{
+    width:1280px;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 2560px){

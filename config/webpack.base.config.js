@@ -1,25 +1,10 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// module.exports = {
-//   entry: [
-//     './src/index.js'
-//   ],
-//   output: {
-//     path: __dirname,
-//     publicPath: '/',
-//     filename: 'bundle.js'
-//   }
-// }
 
 module.exports = {
-  // entry: [
-  //   './src/index.js'
-  // ],
-  // output: {
-  //   path: __dirname,
-  //   publicPath: '/',
-  //   filename: 'bundle.js'
-  // },
+  
+  entry: './src/index.js',
+  
   module: {
     rules: [
       {
