@@ -1,5 +1,4 @@
 import React from 'react';
-import PageTitle from '../flex_Components/page-title';
 import Header from '../components/header';
 import Overlay from './overlay'
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, engagementNav, identityNav, expectationNav, informationNav, scrollHeader, menuHeader } from '../actions/index.js'
@@ -30,6 +29,7 @@ class DigitalMatters extends React.Component{
           <div className='engagement-image-div matters-image-div'><img src='src/styles/images/fisherman.png' id='engagement-images'/></div>
             <div id='engagement-text-div' className='matters-text-div'>
               <h1 className='matters-content-title matters-content'  id='engagement-title'>We help companies find more customers & collaborators.</h1>
+              
               <p className='matters-content-text matters-content' id='engagement-text'>Whatever product or service your business provides, there are virtually always more people that need it. Digital technologies give you unprecedented access to people, and unlimited opportunities to present yourself to potential customers. It'll also help you engage with current customers in new and innovative ways.</p>
             </div>
           </div>
@@ -37,20 +37,19 @@ class DigitalMatters extends React.Component{
 
 
           <div id='matters-content-identity' className='matters-content-container' style={{opacity:0, transition:'opacity 1s'}}>
-          
-            <div className='matters-text-div  matters-identity-text-div'>
-              <div id='identity-title-div'>
-                <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
+            <div style={{width:'46%'}}><img src='src/styles/images/engage.jpg' style={{maxWidth: '100%'}}/></div>
+              <div className='matters-text-div  matters-identity-text-div'>
+                <div id='identity-title-div'>
+                  <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
+                </div>
+                <div id='identity-paragraph-div'>
+                  <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information, instantly and on whatever platform they're using. Creating a pleasurable experience is no longer optional if companies want to compete.</p>
+                  <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
+                </div>
               </div>
-              <div id='identity-paragraph-div'>
-                <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information, instantly and on whatever platform they're using. Creating a pleasurable experience is no longer optional if companies want to compete.</p>
-                <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
-              </div>
-            </div>
-
-            <p className='matters-content-text matters-content' id='expectation-quote-text'>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p>
-
           </div>
+
+          <p className='matters-content-text matters-content' id='expectation-quote-text'>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p>
 
 
 

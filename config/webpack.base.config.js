@@ -1,17 +1,35 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
-  
-  entry: './src/index.js',
+  mode:'development',
+  entry: {
+    index: './src/index.js',
+    frontPage: './src/components/front-page.js',
+    values: './src/components/values.js',
+    
+  },
+  optimization:{
+    splitChunks:{
+      chunks:'async'
+    }
+  },
+  output:{
+    filename:'[name].bundle.js',
+    // chunkFilename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+    
+  },
   
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        test: /\.js$/,
+        exclude: [/node_modules/, '/src/components/digital-matters.js'],
         use:{
-            loader: "babel-loader"
+            loader: "babel-loader",
         }
       },
       {
@@ -23,18 +41,16 @@ module.exports = {
         use: 'file-loader'
         //preprocesses imported image files
       },
-      {
-        test: /\.(svg|jpg|gif|jpeg|ttf)$/,
-        use: 'url-loader'
-        //preprocesses imported image files
-      },
+      {test: /\.(svg|jpg|gif|jpeg|ttf|png)$/, use: 'url-loader'},
     ]
   },
   resolve: {
     extensions: ['*', '.js']
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      title: 'Output Management',
       template: './src/index.html',
       filename: './index.html'
     })

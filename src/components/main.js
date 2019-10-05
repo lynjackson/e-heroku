@@ -5,10 +5,11 @@ import '../styles/main.css';
 // import '../styles/ourWork.css';
 import '../styles/contact.css';
 import '../styles/images/e2.png';
-import PageTitle from '../flex_Components/page-title'
 import ethe from '../styles/images/old_ethe.jpg';
 import reach from '../styles/images/reach.jpeg';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
+
+import phone from '../styles/images/phone.png'
 
 
 export class AboveFold extends React.Component{
@@ -41,7 +42,6 @@ componentDidMount(){
 }
 
 export class OurWork extends React.Component{
-
   render(){
     return(
       <div className='view' id='ourWork-view'>
@@ -164,12 +164,10 @@ export class RecentProjects extends React.Component {
             <img className='project-logo' src='./src/styles/images/studio.png'/>
           </div>
           <div id='bill' className='project-container'>
-            <p className='project-text' style={{color:'white'}}>Enhancing the way you go out to eat.</p>
+            <p className='project-text' style={{color:'white'}}>A better way to dine out.</p>
             <img className='project-logo' src='./src/styles/images/bill-logo.png' style={{filter:'invert(1)'}}/>
             <img id='bill-phone' src='./src/styles/images/phone.png' style={{}}/>
           </div>
-
-
         </div>
       </div>
     )

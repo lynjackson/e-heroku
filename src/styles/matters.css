@@ -260,7 +260,7 @@
   }
 
   .matters-identity-text-div{
-    padding-left:12px;
+    /* padding-left:12px; */
     padding-right:0px
   }
   .matters-information-text-div{
@@ -379,7 +379,7 @@
 }
 @media screen and (min-width: 1366px){
   #matters-view{
-    width:80%;
+    width:88%;
     margin:50px auto;
   }
   #fixed-matters-header{
@@ -387,6 +387,27 @@
   }
   #engagement-images{
     top:-100px;
+  }
+  #engagement-text{
+    width:46%;
+  }
+  .matters-content{
+    width:100%;
+  }
+  #matters-content-identity{
+    flex-direction:row;
+    height:auto;
+  }
+  #engagement-title{
+    align-self:flex-start;
+    width:46%;
+  }
+  #identity-title{
+    margin-bottom:16px;
+  }
+
+  .matters-identity-text-div{
+    width:46%;
   }
 }
 @media screen and (min-width: 1920px){
