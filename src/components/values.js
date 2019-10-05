@@ -37,9 +37,7 @@ class Values extends React.Component{
         <div id='value-content' style={{backgroundColor:`hsla(${this.props.values.backgroundColorValue}, 50%, 7.5%, 1)`, color: this.props.values.textColor}}>
           <div className='value-value'>
             <h2 id='value-title'>{this.props.values.title}</h2>
-
             <p id='value-text' key={this.props.values.text}>{this.props.values.text}</p>
-
           </div>
           <div id='values-arrow-div'><p>{this.props.values.page+1} of 7</p></div>
         </div>

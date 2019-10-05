@@ -397,6 +397,12 @@
   #matters-content-identity{
     flex-direction:row;
     height:auto;
+    margin-top:0px;
+  }
+  
+  #matters-content-engagement{
+    margin-top:22vh;
+    margin-bottom:157px;
   }
   #engagement-title{
     align-self:flex-start;
@@ -405,9 +411,26 @@
   #identity-title{
     margin-bottom:16px;
   }
+  .matters-text-div{
+    top:0px;
+  }
 
   .matters-identity-text-div{
     width:46%;
+  }
+  #expectation-quote-source{
+    font-family:lato;
+    top: 97px;
+    position:relative;
+    text-align:right;
+  }
+
+  #identity-image{
+    margin-top:1vh;
+  }
+  
+  .identity-image-div{
+    height:330px;
   }
 }
 @media screen and (min-width: 1920px){

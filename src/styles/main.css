@@ -389,9 +389,10 @@
   }
 
   #bill-phone{
-    right:8em;
-    width: 113px;
-    height: 232px;
+    right: 7em;
+    width: 144px;
+    height: 311px;
+    margin-top:0px;
   }
 
   #contact-view{

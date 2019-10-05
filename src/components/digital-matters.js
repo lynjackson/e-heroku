@@ -37,19 +37,20 @@ class DigitalMatters extends React.Component{
 
 
           <div id='matters-content-identity' className='matters-content-container' style={{opacity:0, transition:'opacity 1s'}}>
-            <div style={{width:'46%'}}><img src='src/styles/images/engage.jpg' style={{maxWidth: '100%'}}/></div>
+            <div id='matters-identity-image-div' style={{width:'46%', opacity:0, transition:'opacity 1s'}}><img id='matters-identity-image' src='src/styles/images/engage.jpg' style={{maxWidth: '100%'}}/></div>
               <div className='matters-text-div  matters-identity-text-div'>
                 <div id='identity-title-div'>
                   <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
                 </div>
                 <div id='identity-paragraph-div'>
+                <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
                   <p className='matters-content-text matters-content'>We value maximized user experience. Digitally engaged customers expect intuitive products and information, instantly and on whatever platform they're using. Creating a pleasurable experience is no longer optional if companies want to compete.</p>
-                  <p className='matters-content-text matters-content'>Every digital interaction point for customers is a product, and like any product, should uphold the ideas the company seeks to embody and give the world.</p>
                 </div>
               </div>
           </div>
 
-          <p className='matters-content-text matters-content' id='expectation-quote-text'>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p>
+          <p className='matters-content-text matters-content' id='expectation-quote-text' style={{opacity:0, transition:'opacity 1s'}}>89% of consumers quit doing business with a company after a single poor customer experience in 2018.</p>
+          <p id='expectation-quote-source'> - Some study, 2019.</p>
 
 
 
@@ -63,7 +64,7 @@ class DigitalMatters extends React.Component{
                 </div>
 
                 </div>
-                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data.png' id='identity-image'/></div>
+                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data1.png' id='identity-image'/></div>
           </div>
 
         <ContactUs message={'Right though?'}/>
@@ -84,11 +85,22 @@ class DigitalMatters extends React.Component{
   //   </div>
   // </div>
   componentDidMount(){
+    
 
     if(window.innerWidth >= 1024){
       window.addEventListener('scroll', (event)=>{
         (window.pageYOffset > 137) ? document.getElementById('matters-content-identity').style.opacity=1: document.getElementById('jawny1').style.opacity=0;
         (window.pageYOffset > 725) ? document.getElementById('matters-content-information').style.opacity=1: document.getElementById('jawny3').style.opacity=0;
+        (window.pageYOffset < 189) ? document.getElementById('matters-identity-image-div').style.opacity=0: document.getElementById('matters-identity-image-div').style.opacity=1;
+        (window.pageYOffset < 700) ? document.getElementById('expectation-quote-text').style.opacity=0: document.getElementById('expectation-quote-text').style.opacity=1;
+      })
+    }
+    if(window.innerWidth >= 1366){
+      window.addEventListener('scroll', (event)=>{
+        (window.pageYOffset > 137) ? document.getElementById('matters-content-identity').style.opacity=1: document.getElementById('jawny1').style.opacity=0;
+        (window.pageYOffset > 1103) ? document.getElementById('matters-content-information').style.opacity=1: document.getElementById('matters-content-information').style.opacity=0;
+        (window.pageYOffset < 533) ? document.getElementById('jawny4').style.opacity=0: document.getElementById('matters-identity-image-div').style.opacity=1;
+        (window.pageYOffset < 700) ? document.getElementById('expectation-quote-text').style.opacity=0: document.getElementById('expectation-quote-text').style.opacity=1;
       })
     }
 

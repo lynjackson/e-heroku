@@ -14,8 +14,8 @@ const texts = [
   'We strive to make the needs of those we serve as important to us as they are to them.',
   'We regularly reassess what behaviors are productive and which are destructive, and adjust accordingly.',
   'We cling to ideas no longer than necessary because we know there will always be more.',
-  "When we  compulsively crave the outcomes of out actions, it is more difficult to simply enjoy what we're doing.",
-  "We enjoy what we do. It's why we do it.",
+  "When we compulsively crave the outcomes of our actions, it's more difficult to simply enjoy what we're doing...",
+  "... and if you're not enjoying what you're doing, then you're doing it wrong.",
 
 
 

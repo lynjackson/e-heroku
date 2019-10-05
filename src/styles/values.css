@@ -1,79 +1,81 @@
-/* #value-page{
-  display: flex;
-  flex-direction: column;
-  top: 0px;
-  left: 0;
-  width: 100%;
-} */
-
-#value-page{
-  width:inherit;
-}
-#value-content{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.value-value{
-  position: relative;
-  width: 80%;
-  max-width: 789px;
-  align-self: center;
-  top:-67px;
-}
-
-#value-title{
-  text-align:center;
-  font-family: raleway, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 32px;
-}
-
-@keyframes rollIn {
-  from {opacity: 0;}
-  to {opacity: 1}
-}
-
-  #value-text{
-
-    text-align: center;
-    margin: 0 auto;
-    animation: rollIn forwards .5s;
-
+@media screen and (min-width: 1366px){
+  /* #value-page{
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0;
     width: 100%;
-    font-family: 'Lato-Light';
-    font-size: 18px;
-    line-height: 1.5;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    padding: 29px 0;
-  }
-
-  #values-arrow-div{
-    bottom: 25%;
-    position: absolute;
-    font-family: raleway;
-    font-size: 1em;
-  }
-
-  /* #learn-arrow-back{
-    filter: invert(1);
-    width: 30px;
-    transform: rotate(-90deg);
-  }
-
-  #learn-arrow-forward{
-    filter: invert(1);
-    width: 30px;
-    transform: rotate(90deg);
   } */
+
+  #value-page{
+    width:inherit;
+  }
+  #value-content{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .value-value{
+    position: relative;
+    width: 80%;
+    max-width: 789px;
+    align-self: center;
+    top:-67px;
+  }
+
+  #value-title{
+    text-align:center;
+    font-family: raleway, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 32px;
+  }
+
+  @keyframes rollIn {
+    from {opacity: 0;}
+    to {opacity: 1}
+  }
+
+    #value-text{
+
+      text-align: center;
+      margin: 0 auto;
+      animation: rollIn forwards .5s;
+
+      width: 100%;
+      font-family: 'Lato-Light';
+      font-size: 18px;
+      line-height: 1.5;
+      /* border-bottom: 1px solid;
+      border-top: 1px solid; */
+      padding: 29px 0;
+    }
+
+    #values-arrow-div{
+      bottom: 25%;
+      position: absolute;
+      font-family: raleway;
+      font-size: 1em;
+    }
+
+    /* #learn-arrow-back{
+      filter: invert(1);
+      width: 30px;
+      transform: rotate(-90deg);
+    }
+
+    #learn-arrow-forward{
+      filter: invert(1);
+      width: 30px;
+      transform: rotate(90deg);
+    } */
+}
 
   @media screen and (min-width: 1366px){
     #value-page{
