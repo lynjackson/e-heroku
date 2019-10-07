@@ -67,7 +67,7 @@ class DigitalMatters extends React.Component{
                 <div className='identity-image-div matters-image-div'><img src='src/styles/images/data1.png' id='identity-image'/></div>
           </div>
 
-        <ContactUs message={'Right though?'}/>
+        <ContactUs message={"We're ready when you are."}/>
       </div>
     )
   }

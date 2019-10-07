@@ -396,23 +396,25 @@
   }
 
   #contact-view{
-    height:33vh;
+    height:59vh;
   }
   #contact-content{
-    margin: 0 auto;
     width: 88%;
     display: flex;
     flex-direction: column;
-    height:35vh;
     justify-content: space-between;
   }
 
   .contact-text, #contact-link{
-    margin:0;
+    margin:4.8% 0;
+  }
+
+  #contact-link{
+    margin: 0
   }
 
   #contact-options{
-    margin:0;
+    margin: 52px 0;
   }
 
   #ptouch{

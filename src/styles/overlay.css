@@ -1,38 +1,4 @@
-#over-lay{
-    position: fixed;
-    align-items: center;
 
-    height: 100vh;
-    background: rgb(51, 48, 48);
-
-    width: 100vw;
-    z-index:3;
-    flex-direction:column;
-    transition: opacity .5s ease-out;
-    top: 0;
-     left: 0;
-}
-
-#over-lay-options{
-  top: 27%;
-  position: relative;
-  text-align:center;
-  display:flex;
-  flex-direction: column;
-  height:10em;
-  justify-content: space-between;
-}
-
-.over-lay-link{
-  text-decoration: none;
-    font-family: raleway;
-    color: white;
-    font-size:2em;
-    margin: 10px 0px
-}
-.over-lay-line{
-  width: 100%;
-}
 
 @media screen and (max-width: 376px){
   #over-lay{

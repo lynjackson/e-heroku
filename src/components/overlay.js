@@ -17,7 +17,7 @@ class Overlay extends React.Component{
           <hr className='over-lay-line' />
           <Link to='/digital_matters' className='over-lay-link'>About</Link>
           <hr className='over-lay-line' />
-          <a href='#' className='over-lay-link'>Contact Us</a>
+          
         </div>
       </div>
     )

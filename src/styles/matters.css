@@ -214,9 +214,10 @@
   }
 
   #matters-content-identity{
-    flex-direction:column;
-    height:100vh;
-    justify-content:space-between;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 117px;
   }
 
   #matters-content-information{
@@ -236,7 +237,7 @@
   }
   .identity-image-div{
     padding-right:12px;
-    height:531px;
+    height:43vh;
     overflow:hidden;
   }
   #identity-image{
@@ -244,7 +245,7 @@
     position: absolute;
     width: 100vw;
     height:300px;
-    margin-top:14vh;
+    margin-top:0vh;
   }
 
   /* #engagement-title{
@@ -256,7 +257,7 @@
     width:50%;
     padding-right:12px;
     position:relative;
-    top:96px;
+    top:0px;
   }
 
   .matters-identity-text-div{
@@ -317,6 +318,13 @@
 
   }
 
+  #expectation-quote-source{
+    font-family:lato;
+    top: 122px;
+    position:relative;
+    text-align:right;
+  }
+
   .matters-content-title{
     margin: 0;
     text-align: left;
@@ -332,7 +340,12 @@
 
   #identity-title{
     width:auto;
-    margin-bottom:51px;
+    margin-bottom:16px;
+  }
+
+  #matters-identity-image{
+    top:40px;
+    position:relative;
   }
 
   #expectation-title {
@@ -364,7 +377,7 @@
     flex-direction:row;
     justify-content:space-between;
     width:100%;
-    margin-top: 44.5vh;
+    margin-top: 55.5vh;
   }
 
   .engagement-image-div{
@@ -401,7 +414,7 @@
   }
   
   #matters-content-engagement{
-    margin-top:22vh;
+    margin-top:13vh;
     margin-bottom:157px;
   }
   #engagement-title{
@@ -427,6 +440,11 @@
 
   #identity-image{
     margin-top:1vh;
+  }
+
+  #matters-identity-image{
+    top:0px;
+    position:relative;
   }
   
   .identity-image-div{

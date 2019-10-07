@@ -18,7 +18,7 @@ export class AboveFold extends React.Component{
     console.log(this.props);
   return(
     <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
-      <h1 id='above-title' ><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
+      <h1 id='above-title' style={{transition: 'opacity 1s'}}><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
       <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='./src/styles/images/arrow.png' id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
     </div>
   )
@@ -36,7 +36,10 @@ componentDidMount(){
   //     }})
 
   window.addEventListener('scroll', (event)=>{
-    (window.pageYOffset > 30) || document.getElementById('matters-view') ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
+    (window.pageYOffset > 30) || document.getElementById('matters-view') ? this.props.appState.scrollHeader() : this.props.appState.defaultHeader();
+  })
+  window.addEventListener('scroll', (event)=>{
+    (window.pageYOffset > 0) ? document.getElementById('above-title').style.opacity = .2: document.getElementById('above-title').style.opacity = 1 
   })
 }
 }
@@ -186,7 +189,7 @@ export const ContactUs = (props)=>{
     <div className='view' id='contact-view' style={{backgroundColor:'rgb(26,26,26)',}}>
     <div id='contact-content'>
         <p className='contact-text' id='ready'>{props.message}</p>
-        <a href="mailto:webmaster@example.com" id='contact-link'>Get in touch</a>
+        <a href="mailto:webmaster@example.com" id='contact-link'>Email us</a>
         <div id='contact-options'>
           <a className='contact-option'>Privacy Policy</a>
           <a className='contact-option'>News</a>

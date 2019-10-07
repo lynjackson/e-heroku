@@ -21,7 +21,7 @@
   }
   #contact-link{
     font-family:Raleway;
-    font-weight: 400;
+    font-weight:500;
     font-size: 18px;
     color:white;
     margin: 17px 5%;
@@ -38,7 +38,7 @@
     font-weight: 400;
     font-size: 18px;
     color:white;
-    margin:5px 0;
+    margin:8px 0;
   }
 }
 
@@ -70,17 +70,32 @@
 }
 @media screen and (min-width: 1024px){
   .contact-text, #contact-link{
-    margin: 17px auto;
-    width:90%;
+    margin: 4.8% 0;
+    width: auto;
+    
   }
   #contact-view{
     margin-top:0vh;
+    height:59vh;
+    padding: 0px 0 0% 5%;
+    width:95%;
   }
   #contact-options{
-    margin:99px 4%;
+    margin:52px 0;
+    
+  }
+
+  .contact-option{
+    color: rgb(127, 127, 127);
+    font-family: Raleway;
+    font-size: 1.125em;
+    font-weight: 500;
   }
   #ready{
-    font-weight:400;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 4.81em;
+    width:90%;
   }
 }
 @media screen and (min-width: 1366px){

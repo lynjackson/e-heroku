@@ -29,7 +29,7 @@ class FrontPage extends React.Component {
             <OurWork appState={this.props}/>
 
             <RecentProjects />
-            <ContactUs message={'Ready when you are...'}/>
+            <ContactUs message={'Get in Touch.'}/>
           </div>
 
       )

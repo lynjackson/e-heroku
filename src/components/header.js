@@ -41,8 +41,8 @@ export default class Header extends React.Component {
               <Link to='/digital_matters' className='over-lay-link'>About</Link>
               <hr className='over-lay-line' />
               <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</Link>
-              <hr className='over-lay-line' />
-              <a href='#' className='over-lay-link'>Contact</a>
+              
+              
             </div>
 
         </div>

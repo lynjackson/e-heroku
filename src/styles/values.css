@@ -1,4 +1,4 @@
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 0px){
   /* #value-page{
     display: flex;
     flex-direction: column;
@@ -77,24 +77,29 @@
     } */
 }
 
-  @media screen and (min-width: 1366px){
-    #value-page{
-      width:96%;
-      margin:50px auto;
-    }
-    .value-value{
-      width: 50%;
-    }
+@media screen and (min-width: 1024px){
+  .value-value{
+    width: 50%;
+    height:22vh;
+  }  
+}
+
+@media screen and (min-width: 1366px){
+  #value-page{
+    width:96%;
+    margin:50px auto;
   }
-  @media screen and (min-width: 1920px){
-    #value-page{
-      width:91%;
-      margin:65px auto;
-    }
+  
+}
+@media screen and (min-width: 1920px){
+  #value-page{
+    width:91%;
+    margin:65px auto;
   }
-  @media screen and (min-width: 2560px){
-    #value-page{
-      width:76%;
-      margin:88px auto;
-    }
+}
+@media screen and (min-width: 2560px){
+  #value-page{
+    width:76%;
+    margin:88px auto;
   }
+}
