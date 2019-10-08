@@ -46,10 +46,10 @@ module.exports = {
   },
   plugins: [
     // new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   title: 'Output Management',
-    //   template: './src/index.html',
-    //   filename: './index.html'
-    // })
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      template: './src/index.html',
+      filename: './index.html'
+    })
   ]
 }
