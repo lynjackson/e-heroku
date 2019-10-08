@@ -7,8 +7,7 @@ module.exports = {
   mode:'development',
   entry: {
     index: './src/index.js',
-    frontPage: './src/components/front-page.js',
-    values: './src/components/values.js',
+    
     
   },
   optimization:{
@@ -48,7 +47,7 @@ module.exports = {
     extensions: ['*', '.js']
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Output Management',
       template: './src/index.html',
