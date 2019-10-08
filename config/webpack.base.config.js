@@ -13,18 +13,18 @@ module.exports = {
   //     chunks:'async'
   //   }
   // },
-  output:{
-    // filename:'[name].bundle.js',
-    // chunkFilename: '[name].bundle.js',
-    // path: path.resolve(__dirname, 'dist')
+  // output:{
+  //   // filename:'[name].bundle.js',
+  //   // chunkFilename: '[name].bundle.js',
+  //   // path: path.resolve(__dirname, 'dist')
     
-  },
+  // },
   
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: [/node_modules/, '/src/components/digital-matters.js'],
+        exclude: [/node_modules/],
         use:{
             loader: "babel-loader",
         }
@@ -45,7 +45,7 @@ module.exports = {
     extensions: ['*', '.js']
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     // new HtmlWebpackPlugin({
     //   title: 'Output Management',
     //   template: './src/index.html',
