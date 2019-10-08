@@ -10,11 +10,11 @@ module.exports = {
     
     
   },
-  optimization:{
-    splitChunks:{
-      chunks:'async'
-    }
-  },
+  // optimization:{
+  //   splitChunks:{
+  //     chunks:'async'
+  //   }
+  // },
   output:{
     filename:'[name].bundle.js',
     // chunkFilename: '[name].bundle.js',
