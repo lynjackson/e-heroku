@@ -5,20 +5,18 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode:'development',
-  entry: {
-    index: './src/index.js',
+  entry: './src/index.js',
     
     
-  },
   // optimization:{
   //   splitChunks:{
   //     chunks:'async'
   //   }
   // },
   output:{
-    filename:'[name].bundle.js',
+    // filename:'[name].bundle.js',
     // chunkFilename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    // path: path.resolve(__dirname, 'dist')
     
   },
   
@@ -47,11 +45,11 @@ module.exports = {
     extensions: ['*', '.js']
   },
   plugins: [
-    // new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Output Management',
-      template: './src/index.html',
-      filename: './index.html'
-    })
+    new CleanWebpackPlugin(),
+    // new HtmlWebpackPlugin({
+    //   title: 'Output Management',
+    //   template: './src/index.html',
+    //   filename: './index.html'
+    // })
   ]
 }
