@@ -72,9 +72,9 @@
 
   @font-face {
     font-family: 'Lato-Thin';
-    src: url("/src/styles/fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
+    /* src: url("/src/styles/fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
     src: url("/src/styles/fonts/Lato2OFL/Lato-Light.ttf") format("truetype");
-    src: url("/src/styles/fonts/Lato2OFL/Lato-Medium.ttf") format("truetype");
+    src: url("/src/styles/fonts/Lato2OFL/Lato-Medium.ttf") format("truetype"); */
     src: url("/src/styles/fonts/Lato2OFL/Lato-Thin.ttf") format("truetype");
   }
 
@@ -83,13 +83,13 @@
     src: url("/src/styles/fonts/Lato2OFL/Lato-Medium.ttf") format("truetype");
   }
   @font-face {
-    font-family: 'Lato-Bold';
+    font-family: 'lato-bold';
     src: url("/src/styles/fonts/Lato2OFL/Lato-Bold.ttf") format("truetype");
   }
 
   .ourWork-description-div{
     width:100%;
-    font-family: 'Lato-Thin';
+    font-family: 'lato-bold';
     font-size:18px;
     line-height: 1.5;
   }
