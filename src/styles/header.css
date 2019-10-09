@@ -24,7 +24,7 @@
   }
 
   #e{
-    width: 85px;
+    width: 58px;
     align-self: center;
     position: relative;
     transition: filter 0.5s ease 0s;
@@ -81,14 +81,14 @@
       justify-content: space-between;
       animation: fade 2s;
     }
-    
+
     #over-lay{
       position: fixed;
       align-items: center;
-  
+
       height: 100vh;
       background: rgb(51, 48, 48);
-  
+
       width: 100vw;
       z-index:3;
       flex-direction:column;
@@ -96,7 +96,7 @@
       top: 0;
        left: 0;
   }
-  
+
   #over-lay-options{
     top: 27%;
     position: relative;
@@ -106,7 +106,7 @@
     height:10em;
     justify-content: space-between;
   }
-  
+
   .over-lay-link{
     text-decoration: none;
       font-family: raleway;
@@ -197,12 +197,12 @@
   }
 
   .over-lay-link{
-    
+
     font-size:2.5em;
-    
+
   }
 
-  
+
 
 }
 

@@ -126,6 +126,10 @@
     width: 100vw;
     margin-top:54vh;
   }
+
+  #matters-identity-image{
+    display:none;
+  }
 }
 
 @media screen and (min-width:375px){
@@ -243,7 +247,7 @@
   #identity-image{
     left: 0;
     position: absolute;
-    width: 100vw;
+    width: 99vw;
     height:300px;
     margin-top:0vh;
   }
@@ -346,6 +350,7 @@
   #matters-identity-image{
     top:40px;
     position:relative;
+    display:flex;
   }
 
   #expectation-title {
@@ -412,7 +417,7 @@
     height:auto;
     margin-top:0px;
   }
-  
+
   #matters-content-engagement{
     margin-top:13vh;
     margin-bottom:157px;
@@ -446,7 +451,7 @@
     top:0px;
     position:relative;
   }
-  
+
   .identity-image-div{
     height:330px;
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/main.css';
 import '../styles/header.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-import e2 from '../styles/images/e2.png'
+import e3 from '../styles/images/e3.png'
 
 export default class Header extends React.Component {
   render(){
@@ -11,7 +11,7 @@ export default class Header extends React.Component {
         <div id='header' style={(window.pageYOffset === 0 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
           <div id='header-items'>
             <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
-                <img src={e2} id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
+                <img src={e3} id='e'  onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
             </Link>
 
             {this.props.children}
@@ -73,7 +73,7 @@ export default class Header extends React.Component {
 
 // onClick={()=>{this.props.appState.view.overlay === 'none' ? this.props.appState.overlay():this.props.appState.front()}}
 
-// <a href='#'><img src='./src/styles/images/e2.png' id='e' style={{filter:this.props.appState.view.header}}/></a>
+// <a href='#'><img src='./src/styles/images/e3.png' id='e' style={{filter:this.props.appState.view.header}}/></a>
 
 
 
