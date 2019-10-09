@@ -9,6 +9,7 @@ import ethe from '../styles/images/old_ethe.jpg';
 import reach from '../styles/images/reach.jpeg';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 import phone from '../styles/images/phone.png'
+import e2 from '../styles/images/e2.png'
 import arrow from '../styles/images/arrow.png'
 
 
@@ -19,7 +20,7 @@ export class AboveFold extends React.Component{
       return(
         <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
           <h1 id='above-title' style={{transition: 'opacity 1s'}}><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
-          <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='../styles/images/e2.png' id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
+          <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src={e2} id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
         </div>
       )
 }
