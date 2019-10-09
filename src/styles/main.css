@@ -81,7 +81,10 @@
   @font-face {
     font-family: 'Lato-Heavy';
     src: url("/src/styles/fonts/Lato2OFL/Lato-Medium.ttf") format("truetype");
-
+  }
+  @font-face {
+    font-family: 'Lato-Bold';
+    src: url("/src/styles/fonts/Lato2OFL/Lato-Bold.ttf") format("truetype");
   }
 
   .ourWork-description-div{
