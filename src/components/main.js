@@ -8,7 +8,6 @@ import '../styles/images/e2.png';
 import ethe from '../styles/images/old_ethe.jpg';
 import reach from '../styles/images/reach.jpeg';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-
 import phone from '../styles/images/phone.png'
 import arrow from '../styles/images/arrow.png'
 
@@ -17,12 +16,12 @@ export class AboveFold extends React.Component{
 
   render(){
     console.log(this.props);
-    return(
-      <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
-        <h1 id='above-title' style={{transition: 'opacity 1s'}}><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
-        <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='../styles/images/e2.png' id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
-      </div>
-    )
+      return(
+        <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
+          <h1 id='above-title' style={{transition: 'opacity 1s'}}><span style={{fontFamily: 'Lato-Light', fontWeight: 300}}>W</span>e make digital products & strategies for modern companies.</h1>
+          <div style={{width:'100%', display:'flex', justifyContent:'center', position:'relative', top:'30%'}}><img src='../styles/images/e2.png' id='down-arrow' style={{width:30, transform:'rotate(180deg)', opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}/></div>
+        </div>
+      )
 }
 componentDidMount(){
   // this.props.appState.defaultHeader();
@@ -40,7 +39,7 @@ componentDidMount(){
     (window.pageYOffset > 30) || document.getElementById('matters-view') ? this.props.appState.scrollHeader() : this.props.appState.defaultHeader();
   })
   window.addEventListener('scroll', (event)=>{
-    (window.pageYOffset > 0) ? document.getElementById('above-title').style.opacity = .2: document.getElementById('above-title').style.opacity = 1 
+    (window.pageYOffset > 0) ? document.getElementById('above-title').style.opacity = .2: document.getElementById('above-title').style.opacity = 1
   })
 }
 }
@@ -170,7 +169,7 @@ export class RecentProjects extends React.Component {
           <div id='bill' className='project-container'>
             <p className='project-text' style={{color:'white'}}>A better way to dine out.</p>
             <img className='project-logo' src='./src/styles/images/bill-logo.png' style={{filter:'invert(1)'}}/>
-            <img id='bill-phone' src='./src/styles/images/phone.png' style={{}}/>
+            <img id='bill-phone' src={phone} style={{}}/>
           </div>
         </div>
       </div>
