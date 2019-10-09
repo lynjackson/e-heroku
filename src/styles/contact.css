@@ -5,15 +5,15 @@
       height:auto;
       position: absolute;
       width: 100vw;
-      height:66vh;
-      margin-top:312px;
+      height: 37vh;
+      margin-top: 15px;
       left: 0;
-      padding:100px 0;
+      padding: 100px 0;
   }
 
   .contact-text{
     font-family:Lato;
-    font-size: 40px;
+    font-size: 2.2em;
     color: white;
     font-weight: 100;
     margin: 17px 0;
@@ -30,7 +30,7 @@
   #contact-options{
     display:flex;
     flex-direction: column;
-    margin: 123px 5%;
+    margin: 98px 0 0 5%;
   }
 
   .contact-option{
@@ -44,9 +44,9 @@
 
 @media screen and (min-width: 375px){
   #contact-view{
-
-      padding-top:100px;
+    padding-top: 14px;
   }
+
   .contact-text{
     font-size: 40px;
     font-weight: 100;
@@ -59,7 +59,7 @@
   #contact-options{
     display:flex;
     flex-direction: column;
-    margin: 99px 5%;
+
   }
 }
 
@@ -72,7 +72,7 @@
   .contact-text, #contact-link{
     margin: 4.8% 0;
     width: auto;
-    
+
   }
   #contact-view{
     margin-top:0vh;
@@ -82,7 +82,7 @@
   }
   #contact-options{
     margin:52px 0;
-    
+
   }
 
   .contact-option{

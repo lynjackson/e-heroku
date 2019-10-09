@@ -33,8 +33,8 @@
     text-align:center;
     font-family: raleway, sans-serif;
     font-style: normal;
-    font-weight: 100;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 2.3em;
   }
 
   @keyframes rollIn {
@@ -81,7 +81,7 @@
   .value-value{
     width: 50%;
     height:22vh;
-  }  
+  }
 }
 
 @media screen and (min-width: 1366px){
@@ -89,7 +89,7 @@
     width:96%;
     margin:50px auto;
   }
-  
+
 }
 @media screen and (min-width: 1920px){
   #value-page{

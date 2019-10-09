@@ -24,7 +24,7 @@
   }
 
   #e{
-    width: 58px;
+    width: 85px;
     align-self: center;
     position: relative;
     transition: filter 0.5s ease 0s;
@@ -50,14 +50,15 @@
   #overlay-content{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
-    top: 19vh;
+    top: 14vh;
     width: auto;
     max-width: 27vw;
     margin: 0px auto;
     font-size:.95em;
     letter-spacing: -1px;
+    height:47.7vh;
   }
 
   #e-div{
@@ -110,9 +111,10 @@
   .over-lay-link{
     text-decoration: none;
       font-family: raleway;
+      font-weight: 400;
       color: white;
-      font-size:2em;
-      margin: 10px 0px
+      font-size:2.3em;
+      margin: 10px 0px;
   }
   .over-lay-line{
     width: 100%;

@@ -42,7 +42,7 @@
   .ourWork-div{
     display: flex;
     flex-direction: column;
-    margin: 110px 0;
+    margin: 52px 0;
     opacity:0;
     transition:opacity .5s;
   }
@@ -373,7 +373,7 @@
   .ourWork-description-text {
     font-size: 20px;
   }
-  
+
   .ourWork-icon{
     width:100px;
   }
@@ -421,7 +421,7 @@
     background-image: url('/src/styles/images/art2.jpg');
     background-position: 0px 0px;
     background-size: 100% 100%;
-    
+
   }
 
   .project-logo{
