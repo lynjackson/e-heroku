@@ -22,7 +22,6 @@
     font-weight: 400;
     font-style: normal;
     animation: fade 2s;
-
   }
 
   .view{
@@ -166,7 +165,7 @@
   }
 
   #bill{
-    background-image: url('/src/styles/images/dining.jpeg');
+    /* background-image: url('/src/styles/images/dining.jpeg'); */
     background-position: -110px 4px;
   }
 

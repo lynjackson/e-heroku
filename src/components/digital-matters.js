@@ -90,6 +90,16 @@ class DigitalMatters extends React.Component{
   componentDidMount(){
 
 
+
+
+    if(window.innerWidth >= 300){
+      window.addEventListener('scroll', (event)=>{
+        (window.pageYOffset > 137) ? document.getElementById('matters-content-identity').style.opacity=1: document.getElementById('jawny1').style.opacity=0;
+        (window.pageYOffset > 725) ? document.getElementById('matters-content-information').style.opacity=1: document.getElementById('jawny3').style.opacity=0;
+        (window.pageYOffset < 189) ? document.getElementById('matters-identity-image-div').style.opacity=0: document.getElementById('matters-identity-image-div').style.opacity=1;
+        (window.pageYOffset < 700) ? document.getElementById('expectation-quote-text').style.opacity=0: document.getElementById('expectation-quote-text').style.opacity=1;
+      })
+    }
     if(window.innerWidth >= 1024){
       window.addEventListener('scroll', (event)=>{
         (window.pageYOffset > 137) ? document.getElementById('matters-content-identity').style.opacity=1: document.getElementById('jawny1').style.opacity=0;

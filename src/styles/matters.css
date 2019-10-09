@@ -38,7 +38,7 @@
     font-size: 2em;
     position: relative;
     margin:0;
-    margin-bottom:2vh;
+    margin-bottom:6vh;
 
   }
 
@@ -62,7 +62,7 @@
   }
 
   #identity-title{
-    margin-bottom:81px;
+    /* margin-bottom:81px; */
   }
 
   #information-title{
@@ -98,8 +98,12 @@
   }
 
   #matters-content-information{
-    margin: 29vh 0 0 0;
+    margin: 20vh 0 0 0;
     flex-direction: column-reverse;
+  }
+
+  .matters-information-text-div{
+    margin-bottom:35vh;
   }
 
 
@@ -393,6 +397,10 @@
   }
   #engagement-text{
     width:48%;
+  }
+
+  .matters-information-text-div{
+    margin-bottom:5vh;
   }
 }
 @media screen and (min-width: 1366px){

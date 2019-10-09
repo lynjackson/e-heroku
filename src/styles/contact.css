@@ -5,17 +5,16 @@
       height:auto;
       position: absolute;
       width: 100vw;
-      height: 37vh;
       margin-top: 15px;
       left: 0;
-      padding: 100px 0;
+      padding: 100px 0 30px 0;
   }
 
   .contact-text{
-    font-family:Lato;
+    font-family:Raleway;
     font-size: 2.2em;
     color: white;
-    font-weight: 100;
+    font-weight: 400;
     margin: 17px 0;
     margin: 17px 0 0 2%;
   }
@@ -37,7 +36,7 @@
     font-family:Raleway;
     font-weight: 400;
     font-size: 18px;
-    color:white;
+    color: rgb(127, 127, 127);
     margin:8px 0;
   }
 }
@@ -50,7 +49,7 @@
   .contact-text{
     font-size: 40px;
     font-weight: 100;
-    margin: 17px 5%;
+    margin: 30px 5%;
   }
 
 }
@@ -76,7 +75,7 @@
   }
   #contact-view{
     margin-top:0vh;
-    height:59vh;
+    height:auto;
     padding: 0px 0 0% 5%;
     width:95%;
   }
@@ -99,10 +98,13 @@
   }
 }
 @media screen and (min-width: 1366px){
-  .contact-text, #contact-link, #contact-options{
+  #contact-link{
+    margin: 0;
+  }
+  /* .contact-text, #contact-link, #contact-options{
     margin: 35px auto;
     width:80%;
-  }
+  } */
 }
 @media screen and (min-width: 1920px){
   .contact-text, #contact-link{

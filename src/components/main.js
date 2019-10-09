@@ -12,6 +12,7 @@ import phone from '../styles/images/phone.png'
 import e2 from '../styles/images/e2.png'
 import arrow from '../styles/images/arrow.png'
 import art from '../styles/images/art.jpg'
+import bill_back from '../styles/images/dining.jpeg'
 
 
 export class AboveFold extends React.Component{
@@ -168,7 +169,7 @@ export class RecentProjects extends React.Component {
             <p className='project-text'>Helping the community find its creative space.</p>
             <img className='project-logo' src='./src/styles/images/studio.png'/>
           </div>
-          <div id='bill' className='project-container'>
+          <div id='bill' className='project-container' style={{backgroundImage: `url(${bill_back})`}}>
             <p className='project-text' style={{color:'white'}}>A better way to dine out.</p>
             <img className='project-logo' src='./src/styles/images/bill-logo.png' style={{filter:'invert(1)'}}/>
             <img id='bill-phone' src={phone} style={{}}/>
