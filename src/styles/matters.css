@@ -1,4 +1,14 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("./fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("./fonts/Lato2OFL/Lato-Light.ttf") format("truetype");
+}
+
 @media screen and (min-width:0px){
+
   #matters-view{
     margin: 0 auto;
     width:88%;
@@ -44,7 +54,7 @@
 
   .matters-content-text{
     width:100%;
-    font-family: Lato;
+    font-family: 'Lato-Light';
     font-size:18px;
     line-height: 1.5;
     font-weight:200;
