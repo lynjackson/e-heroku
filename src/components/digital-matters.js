@@ -7,6 +7,9 @@ import { bindActionCreators } from 'redux'
 //imports function needed to use action creator
 import { connect } from 'react-redux'
 import {ContactUs} from './main'
+import fisherman from '../styles/images/fisherman.png'
+import identity from '../styles/images/engage.jpg'
+import data from '../styles/images/data1.png'
 //imports function needed to access redux state object
 
 class DigitalMatters extends React.Component{
@@ -26,10 +29,10 @@ class DigitalMatters extends React.Component{
 
 
           <div id='matters-content-engagement' className='matters-content-container'>
-          <div className='engagement-image-div matters-image-div'><img src='src/styles/images/fisherman.png' id='engagement-images'/></div>
+          <div className='engagement-image-div matters-image-div'><img src={fisherman} id='engagement-images'/></div>
             <div id='engagement-text-div' className='matters-text-div'>
               <h1 className='matters-content-title matters-content'  id='engagement-title'>We help companies find more customers & collaborators.</h1>
-              
+
               <p className='matters-content-text matters-content' id='engagement-text'>Whatever product or service your business provides, there are virtually always more people that need it. Digital technologies give you unprecedented access to people, and unlimited opportunities to present yourself to potential customers. It'll also help you engage with current customers in new and innovative ways.</p>
             </div>
           </div>
@@ -37,7 +40,7 @@ class DigitalMatters extends React.Component{
 
 
           <div id='matters-content-identity' className='matters-content-container' style={{opacity:0, transition:'opacity 1s'}}>
-            <div id='matters-identity-image-div' style={{width:'46%', opacity:0, transition:'opacity 1s'}}><img id='matters-identity-image' src='src/styles/images/engage.jpg' style={{maxWidth: '100%'}}/></div>
+            <div id='matters-identity-image-div' style={{width:'46%', opacity:0, transition:'opacity 1s'}}><img id='matters-identity-image' src={identity} style={{maxWidth: '100%'}}/></div>
               <div className='matters-text-div  matters-identity-text-div'>
                 <div id='identity-title-div'>
                   <h1 className='matters-content-title matters-content'  id='identity-title'>Every interaction is a chance to capitivate. To show you're better in ways that matter.</h1>
@@ -64,7 +67,7 @@ class DigitalMatters extends React.Component{
                 </div>
 
                 </div>
-                <div className='identity-image-div matters-image-div'><img src='src/styles/images/data1.png' id='identity-image'/></div>
+                <div className='identity-image-div matters-image-div'><img src={data} id='identity-image'/></div>
           </div>
 
         <ContactUs message={"We're ready when you are."}/>
@@ -85,7 +88,7 @@ class DigitalMatters extends React.Component{
   //   </div>
   // </div>
   componentDidMount(){
-    
+
 
     if(window.innerWidth >= 1024){
       window.addEventListener('scroll', (event)=>{
