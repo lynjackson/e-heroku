@@ -13,6 +13,7 @@ import e2 from '../styles/images/e2.png'
 import arrow from '../styles/images/arrow.png'
 import art from '../styles/images/art.jpg'
 import bill_back from '../styles/images/dining.jpeg'
+import lato from '../styles/fonts/Lato2OFL/Lato-Regular.ttf'
 
 
 export class AboveFold extends React.Component{
@@ -68,9 +69,9 @@ export class WhatWeDo extends React.Component{
     return(
       <div className='ourWork-div' id={this.props.idey} style={{border: this.props.noBorder}}>
         <div className='ourWork-title-div'><h1 className='ourWork-title'>{this.props.title}</h1></div>
-        <div className='ourWork-description-div'><p className='ourWork-description-text'>{this.props.description}</p></div>
+        <div className='ourWork-description-div' style={{fontFamily: lato}}><p className='ourWork-description-text'>{this.props.description}</p></div>
         <div id='ourWork-service-div'>
-          <p className='ourWork-service-text'>{this.props.service[0]}</p>
+          <p className='ourWork-service-text' style={{fontFamily: `url(${lato})`}}>{this.props.service[0]}</p>
           <p className='ourWork-service-text'>{this.props.service[1]}</p>
           <p className='ourWork-service-text'>{this.props.service[2]}</p>
         </div>

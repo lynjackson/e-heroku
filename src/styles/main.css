@@ -89,7 +89,7 @@
 
   .ourWork-description-div{
     width:100%;
-    font-family: 'Lato';
+    /* font-family: 'Lato'; */
     font-size:18px;
     line-height: 1.5;
   }
@@ -102,7 +102,7 @@
   }
 
   .ourWork-service-text{
-    font-family: 'Lato-Bold';
+    /* font-family: 'Lato-Bold'; */
     font-size:1.125em;
     margin: 0;
   }
