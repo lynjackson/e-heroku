@@ -13,7 +13,9 @@ import e2 from '../styles/images/e2.png'
 import arrow from '../styles/images/arrow.png'
 import art from '../styles/images/art.jpg'
 import bill_back from '../styles/images/dining.jpeg'
-import lato from '../styles/fonts/Lato2OFL/Lato-Regular.ttf'
+import '../styles/fonts/Lato2OFL/Lato-Regular.ttf'
+import '../styles/fonts/Lato2OFL/Lato-Bold.ttf'
+import '../styles/fonts/Lato2OFL/Lato-Thin.ttf'
 
 
 export class AboveFold extends React.Component{
