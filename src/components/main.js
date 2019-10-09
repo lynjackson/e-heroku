@@ -16,6 +16,8 @@ import bill_back from '../styles/images/dining.jpeg'
 import '../styles/fonts/Lato2OFL/Lato-Regular.ttf'
 import '../styles/fonts/Lato2OFL/Lato-Bold.ttf'
 import '../styles/fonts/Lato2OFL/Lato-Thin.ttf'
+import studio from '../styles/images/studio.png'
+import bill_logo from '../styles/images/bill-logo.png'
 
 
 export class AboveFold extends React.Component{
@@ -170,11 +172,11 @@ export class RecentProjects extends React.Component {
         <div id='projects-div'>
           <div id='ptouch' className='project-container' style={{backgroundImage: `url(${art})`}}>
             <p className='project-text'>Helping the community find its creative space.</p>
-            <img className='project-logo' src='./src/styles/images/studio.png'/>
+            <img className='project-logo' src={studio}/>
           </div>
           <div id='bill' className='project-container' style={{backgroundImage: `url(${bill_back})`}}>
             <p className='project-text' style={{color:'white'}}>A better way to dine out.</p>
-            <img className='project-logo' src='./src/styles/images/bill-logo.png' style={{filter:'invert(1)'}}/>
+            <img className='project-logo' src={bill_logo} style={{filter:'invert(1)'}}/>
             <img id='bill-phone' src={phone} style={{}}/>
           </div>
         </div>
