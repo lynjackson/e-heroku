@@ -160,7 +160,7 @@
   }
 
   #ptouch{
-    background-image: url('/src/styles/images/art.jpg');
+    /* background-image: url('/src/styles/images/art.jpg'); */
     background-position: -11px -24px;
       background-size: 371px 391px;
   }

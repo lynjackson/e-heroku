@@ -11,6 +11,7 @@ import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 import phone from '../styles/images/phone.png'
 import e2 from '../styles/images/e2.png'
 import arrow from '../styles/images/arrow.png'
+import art from '../styles/images/art.jpg'
 
 
 export class AboveFold extends React.Component{
@@ -163,7 +164,7 @@ export class RecentProjects extends React.Component {
     return(
       <div className='view' id='projects-view'>
         <div id='projects-div'>
-          <div id='ptouch' className='project-container'>
+          <div id='ptouch' className='project-container' style={{backgroundImage: `url(${art})`}}>
             <p className='project-text'>Helping the community find its creative space.</p>
             <img className='project-logo' src='./src/styles/images/studio.png'/>
           </div>
