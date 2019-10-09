@@ -9,6 +9,7 @@ import { bindActionCreators } from 'redux'
 //imports function needed to use action creator
 import { connect } from 'react-redux'
 //imports function needed to access redux state object
+import arrow from '../styles/images/arrow.png'
 
 class Values extends React.Component{
   constructor(props){
@@ -39,7 +40,7 @@ class Values extends React.Component{
             <h2 id='value-title'>{this.props.values.title}</h2>
             <p id='value-text' key={this.props.values.text}>{this.props.values.text}</p>
           </div>
-          <div id='values-arrow-div'><p>{this.props.values.page+1} of 7</p></div>
+          <div id='values-arrow-div'><p>{this.props.values.page+1} of 7</p><img src={arrow} style={{filter:'invert(1)', transform: 'rotate(180deg)', width: 30, left: 3, position: 'relative', top:72}}/></div>
         </div>
       </div>
     )
