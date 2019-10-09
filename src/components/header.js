@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/main.css';
 import '../styles/header.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
+import e2 from '../styles/images/e2.png'
 
 export default class Header extends React.Component {
   render(){
@@ -10,7 +11,7 @@ export default class Header extends React.Component {
         <div id='header' style={(window.pageYOffset === 0 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
           <div id='header-items'>
             <Link to='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
-                <img src='./src/styles/images/ethey2.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
+                <img src={e2} id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
             </Link>
 
             {this.props.children}
@@ -41,8 +42,8 @@ export default class Header extends React.Component {
               <Link to='/digital_matters' className='over-lay-link'>About</Link>
               <hr className='over-lay-line' />
               <Link to='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</Link>
-              
-              
+
+
             </div>
 
         </div>
