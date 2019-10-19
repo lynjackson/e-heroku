@@ -42,7 +42,7 @@ class Values extends React.Component{
           </div>
           <div id='values-arrow-div'><p>{this.props.values.page+1} of 7</p><img src={arrow} style={{filter:'invert(1)', transform: 'rotate(180deg)', width: 30, left: 3, position: 'relative', top:72}}/></div>
         </div>
-        <iframe style={{width:'100%', position: 'absolute', height: '99vh',}} src="https://appetize.io/embed/tq08t4qj50qjtmgg716hn6jut4?autoplay=false&amp;debug=true&amp;device=iphone6&amp;deviceColor=black&amp;embed=true&amp;orientation=portrait&amp;scale=100&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fbillrestaurant-iosapp%2B!UuTA77p!%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
+        <iframe scrolling='no' style={{width:375, position: 'relative', height: 670,}} src="https://appetize.io/embed/tq08t4qj50qjtmgg716hn6jut4?autoplay=false&amp;debug=true&amp;device=iphone8&amp;deviceColor=black&amp;embed=true&amp;orientation=portrait&amp;scale=100&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fbillrestaurant-iosapp%2B!UuTA77p!%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
       </div>
     )
   }
