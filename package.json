@@ -6,15 +6,18 @@
 		"scripts": {
 				"test": "echo \"Error: no test specified\" && exit 1",
 				"dev": "node_modules/.bin/webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback",
+				"tev": "next",
 				"heroku-postbuild": "webpack -p --mode production --config config/webpack.prod.js",
 				"start": "node server.js"
 		},
 		"author": "",
 		"license": "ISC",
 		"dependencies": {
+				"@zeit/next-css": "^1.0.1",
+				"@zeit/next-sass": "^1.0.1",
 				"clean-webpack-plugin": "^3.0.0",
 				"express": "^4.17.1",
-				"next": "^9.0.6",
+				"next": "^9.1.1",
 				"react": "^16.5.2",
 				"react-dom": "^16.5.2",
 				"react-redux": "^7.1.0",
@@ -38,7 +41,7 @@
 				"file-loader": "^4.0.0",
 				"html-webpack-plugin": "^3.2.0",
 				"mini-css-extract-plugin": "^0.4.3",
-				"node-sass": "^4.8.3",
+				"node-sass": "^4.13.0",
 				"optimize-css-assets-webpack-plugin": "^4.0.0",
 				"sass-loader": "^7.0.3",
 				"style-loader": "^0.21.0",
