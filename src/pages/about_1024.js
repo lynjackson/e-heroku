@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import {Contact} from '../components/contact'
 import fisherman from '../styles/images/fisherman.png'
-import fisherman2 from '../styles/images/fisherman2.jpg'
+import fisherman2 from '../styles/images/fisherman22.jpg'
 import data from '../styles/images/data1.png'
 import '../styles/about2.css';
 import {PageTitle} from '../components/header';
