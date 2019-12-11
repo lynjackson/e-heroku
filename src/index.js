@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FrontPage from './pages/front-page'
-import Values from './pages/values';
+import Home from './pages/home'
+// import Values from './pages/values';
+import Values3 from './pages/values3';
 import {William} from './pages/william';
-import DigitalMatters from './pages/digital-matters'
-import './styles/project.css'
+import About from './pages/about'
+import About1024 from './pages/about_1024'
+import './styles/app.css'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
@@ -18,14 +20,14 @@ import {BrowserRouter, Route} from 'react-router-dom'
 
 ReactDOM.render(
 	<Provider store={createStore(reducers)}>
-  <BrowserRouter>
-    <div id='routes'>
-      <Route exact='true' path='/' component={FrontPage}/>
-      <Route exact='true' path='/values' component={Values}/>
-      <Route exact='true' path='/digital-matters' component={DigitalMatters}/>
-      <Route exact='true' path='/billy_boy' component={William}/>
-    </div>
-  </BrowserRouter>
+	  <BrowserRouter>
+	    <div id='routes'>
+	      <Route exact='true' path='/' component={Home}/>
+	      <Route exact='true' path='/values' component={Values3}/>
+	      <Route exact='true' path='/digital-matters' component={About1024} />
+	      <Route exact='true' path='/billy_boy' component={William}/>
+	    </div>
+	  </BrowserRouter>
 	</Provider>,
 	document.getElementById('app')
 )
@@ -52,7 +54,7 @@ ReactDOM.render(
 //   <div id='routes'>
 //     <Route exact='true' path='/' component={FrontPage}/>
 //     <Route exact='true' path='/values' component={Values}/>
-//     <Route exact='true' path='/digital_matters' component={DigitalMatters}/>
+//     <Route exact='true' path='/digital_matters' component={About}/>
 //     <Route exact='true' path='/billy_boy' component={William}/>
 //   </div>
 // </BrowserRouter>

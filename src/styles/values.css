@@ -19,32 +19,51 @@
 
   #value-page{
     width:inherit;
-  }
-  #value-content{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    background-color: #1A1A1A;
+    height:100vh;
+
   }
 
-  .value-value{
+  #value-content{
     position: relative;
-    width: 80%;
-    max-width: 789px;
-    align-self: center;
-    top:-67px;
+    width: 100vw;
+    color:white;
+    margin: 0 auto;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #value-value{
+    position: relative;
+    width: 90.4%;
+    height: 204px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* margin-top: 16vh; */
   }
 
   #value-title{
     text-align:center;
-    font-family: raleway, sans-serif;
+    font-family: poppins, sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 2.3em;
+    font-weight: 600;
+    font-size: 3.37em;
+    /* margin: 27.99vh 0 6.15vh 0; */
+    margin:0;
+    animation: rollIn forwards .5s;
+  }
+  #arrow_values{
+    margin: 0 auto;
+    margin-top: 192px;
+    filter:invert(1);
+    width: 16px;
+    left: 3px;
+    position: relative;
   }
 
   @keyframes rollIn {
@@ -55,24 +74,20 @@
     #value-text{
 
       text-align: center;
-      margin: 0 auto;
+      /* margin: auto; */
       animation: rollIn forwards .5s;
-
       width: 100%;
-      font-family: 'Lato-Light';
-      font-size: 18px;
+      font-family: 'open sans';
+      font-size: 1.06em;
       line-height: 1.5;
+      bottom: 7px;
+      position:relative;
+
       /* border-bottom: 1px solid;
       border-top: 1px solid; */
-      padding: 29px 0;
     }
 
-    #values-arrow-div{
-      bottom: 25%;
-      position: absolute;
-      font-family: raleway;
-      font-size: 1em;
-    }
+
 
     /* #learn-arrow-back{
       filter: invert(1);
@@ -88,9 +103,26 @@
 }
 
 @media screen and (min-width: 1024px){
-  .value-value{
-    width: 50%;
+  #value-value{
+    width: 100%;
     height:22vh;
+  }
+  #value-content{
+    height:100vh;
+  }
+  #value-value{
+    height:242px;
+    margin:0;
+  }
+  #value-text{
+    width:50%;
+    margin: 0;
+  }
+  #value-circles{
+    /* margin: 6.13vh auto 7.52vh; */
+  }
+  #arrow_values{
+    margin: 65px auto 0px;
   }
 }
 
