@@ -75,9 +75,9 @@ class Values3 extends React.Component{
 // <iframe scrolling='no' style={{width:375, position: 'relative', height: 670,}} src="https://appetize.io/embed/tq08t4qj50qjtmgg716hn6jut4?autoplay=false&amp;debug=true&amp;device=iphone8&amp;deviceColor=black&amp;embed=true&amp;orientation=portrait&amp;scale=100&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexpo.io%2F%40hop26%2Fbillrestaurant-iosapp%2B!UuTA77p!%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
 
   componentDidMount(){
-    window.addEventListener('scroll',()=>{
-      this.setState({counter: this.state.counter + 1})
-    })
+    // window.addEventListener('scroll',()=>{
+    //   this.setState({counter: this.state.counter + 1})
+    // })
 
     window.addEventListener('keyup',(e)=>{
       if ((e.keyCode === 40|| e.keyCode ===39) && this.state.counter < 6){

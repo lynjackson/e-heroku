@@ -10,7 +10,7 @@ class AboveFold extends React.Component{
       return(
         <div id='above-fold' onClick={()=>{this.props.props.overlay(); console.log(this.props)}} style={{display: this.props.appState.view.aboveFold,}}>
           <p id='above-title' style={{transition: 'opacity 1s'}}>Digital products & strategies for modern companies.</p>
-          <div id='arrow-div' onPress={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}><img src={arrow} id='down-arrow' style={{width:16, height:16, opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} /></div>
+          <div id='arrow-div' onClick={()=>{window.scrollTo({top:document.getElementById('above-fold').offsetHeight -100, behavior: 'smooth'})}}><img src={arrow} id='down-arrow' style={{width:16, height:16, opacity:(window.pageYOffset === 0)? 1: 0, transition:'opacity .5s'}} /></div>
         </div>
       )
 }
