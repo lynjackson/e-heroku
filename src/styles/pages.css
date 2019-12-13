@@ -1,0 +1,13 @@
+@media screen and (min-width: 0px){
+  #home{
+    width:88%;
+    margin: 0% auto;
+    max-width:1280px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #home{
+  width:90.1%;
+  }
+}

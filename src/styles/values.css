@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("./fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Lato2OFL/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Lato-Light';
-  src: url("./fonts/Lato2OFL/Lato-Light.ttf") format("truetype");
+  src: url("../assets/fonts/Lato2OFL/Lato-Light.ttf") format("truetype");
 }
 
 @media screen and (min-width: 0px){

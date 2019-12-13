@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/home.css';
+import '../styles/home/home.css';
 import '../styles/header.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-import ethey from '../styles/images/ethelogo.png'
-import plus from '../styles/images/plus-sign.png'
+import ethey from '../assets/images/ethelogo.png'
+import plus from '../assets/images/plus-sign.png'
 
 export class HeaderMobile extends React.Component {
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import art from '../../styles/images/pt_background.jpeg'
-import bill_back from '../../styles/images/bill-background.jpeg'
-import studio from '../../styles/images/studio.png'
-import bill_logo from '../../styles/images/bill-logo.png'
-import '../../styles/projects.css'
+import art from '../../assets/images/pt_background.jpeg'
+import bill_back from '../../assets/images/bill-background.jpeg'
+import studio from '../../assets/images/studio.png'
+import bill_logo from '../../assets/images/bill-logo.png'
+import '../../styles/home/projects.css'
 
 
 export class Projects extends React.Component {

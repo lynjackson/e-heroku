@@ -1,0 +1,52 @@
+@media screen and (min-width: 0px){
+  #above-fold{
+  height: 62.11vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  position: relative;
+  width: 100%;
+  z-index:3;
+  align-items:center;
+  }
+
+  #above-title{
+    position: relative;
+    top: 25vh;
+    font-size: 2.2em;
+    text-align:left;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    line-height: 47.02px;
+    font-size:36.35px;
+    letter-spacing: -14;
+    text-align:center;
+    animation: fade 2s;
+  }
+
+  #arrow-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 74.75vh;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #above-fold{
+    background-position: -187px 0;
+    height:74.8vh;
+  }
+
+  #above-title{
+      padding: 0;
+      font-size: 4.0em;
+      line-height:1;
+      width:100%;
+      font-weight: 400;
+      top:204px;
+
+  }
+}

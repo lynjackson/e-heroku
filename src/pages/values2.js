@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux'
 //imports function needed to use action creator
 import { connect } from 'react-redux'
 //imports function needed to access redux state object
-import arrow from '../styles/images/arrow2.png'
+import arrow from '../assets/images/arrow2.png'
 import {PageTitle} from '../components/header';
 
 class Values2 extends React.Component{

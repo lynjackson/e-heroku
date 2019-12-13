@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/home/services.css'
 
 
 export class Services extends React.Component{

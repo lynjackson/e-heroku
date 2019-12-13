@@ -5,8 +5,8 @@ import {HeaderMobile, HeaderDesktop} from '../components/header';
 // import Overlay from './overlay';
 // import Values from './values'
 import '../styles/app.css'
-import '../styles/home.css';
-import '../styles/app.css';
+// import '../styles/home/home.css';
+import '../styles/pages.css'
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';

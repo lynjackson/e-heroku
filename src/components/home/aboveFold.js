@@ -1,5 +1,6 @@
 import React from 'react';
-import arrow from '../../styles/images/arrow2.png'
+import arrow from '../../assets/images/arrow2.png'
+import '../../styles/home/aboveFold.css'
 
 
 class AboveFold extends React.Component{
