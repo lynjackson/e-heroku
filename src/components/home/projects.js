@@ -12,7 +12,7 @@ export class Projects extends React.Component {
   render(){
     return(
       <React.Fragment style={{position:'relative'}}>
-        <div id='projects-div' >
+        <div id='projects-div' style={{opacity: 0}}>
           <div id='bill' className='project-container' style={{backgroundImage: `url(${bill_back})`}}>
             <img className='project-logo' id='bill-logo' src={bill_logo} style={{filter:'invert(1)'}}/>
             <p className='project-text' style={{color:'white', backgroundColor:'rgba(0,0,0,.27)'}}>A better way to dine out</p>

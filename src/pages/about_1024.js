@@ -20,7 +20,7 @@ import {Section3, Section3Mobile} from '../components/about/section3'
 class About1024 extends React.Component{
   constructor(props){
     super(props);
-    this.state = { engagement: 1, identity: 0, expectation: 0, information: 0, }
+    this.state = { engagement: 1, identity: 0, expectation: 0, information: 0, change: 0}
   }
 
   render(){
@@ -87,6 +87,9 @@ class About1024 extends React.Component{
       this.props.defaultView();
       console.log('matters re-render')
       window.scrollTo(0, 0)
+      window.addEventListener('resize', ()=>{
+        this.setState({change: this.state.change + 1})
+      })
 
 
       // document.getElementById('nav-engagement').addEventListener('click', ()=>{window.scrollTo({top:document.getElementById('matters-content-engagement').offsetTop - 200, behavior: 'smooth'})})
