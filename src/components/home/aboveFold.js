@@ -14,16 +14,6 @@ class AboveFold extends React.Component{
       )
 }
 componentDidMount(){
-  // this.props.appState.defaultHeader();
-  // document.getElementById('above-fold').addEventListener('wheel', ()=>{
-  //   if (window.pageYOffset < 50){
-  //     window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
-  //   }})
-  //
-  //   document.getElementById('above-fold').addEventListener('keydown', (event)=>{
-  //     if (window.pageYOffset < 50 && event.keyCode == '40'){
-  //       window.scrollTo({top: window.innerHeight, left:0, behavior: 'smooth'}); console.log('scroll')
-  //     }})
 
   window.addEventListener('scroll', (event)=>{
     (window.pageYOffset > 30) || document.getElementById('matters-view') ? this.props.appState.scrollHeader() : this.props.appState.defaultHeader();

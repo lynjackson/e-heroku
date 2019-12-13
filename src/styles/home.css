@@ -206,6 +206,10 @@
 
 }
 @media screen and (min-width: 1024px){
+  #home{
+  width:90.1%;
+  }
+
   #above-fold{
     background-position: -187px 0;
     height:74.8vh;

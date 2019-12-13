@@ -45,6 +45,11 @@ class Home extends React.Component {
       document.fonts.add(Lato);
 
       Lato.load();
+
+      var http = require("http");
+      setInterval(function() {
+          http.get("http://ethe.herokuapp.com");
+      }, 300000); // every 5 minutes (300000)
     }
 
     // <Learn appState={this.props}/>
