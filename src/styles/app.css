@@ -13,13 +13,13 @@
   body{
     margin: 0;
     overscroll-behavior: none;
-    background-color: blue;
+    background-color: rgb(26,26,26);
   }
 
   #routes{
   width:100%;
   margin: 0 auto;
-  background-color: green;
+  background-color: white;
   }
 
   #app{
