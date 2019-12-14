@@ -16,7 +16,7 @@ class Values3 extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      title:['open', 'serve', 'evaluate', 'experience', 'renounce', 'enjoy', 'whatever'],
+      title:['open', 'serve', 'evaluate', 'experience', 'renounce', 'enjoy', 'diligence'],
       text:[
         'Only by embracing the unknown and staying open are we free to find solutions we can’t initially imagine.',
         'We try to empathize with the experiences of others, and help out where we can.',
@@ -24,7 +24,7 @@ class Values3 extends React.Component{
         'Experience is all we really have. We don’t take our’s or others’ lightly.',
         'We live for the process more than the result. And somehow, the result is usually better for it.',
         'We try to find joy in whatever we do.',
-        'Whateverrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.'
+        'If something is worth doing, its worth doing wholeheartedly.'
       ],
       counter:0,
       reset: 0,

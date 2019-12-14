@@ -37,7 +37,8 @@
 @media screen and (min-width: 1024px){
   #above-fold{
     background-position: -187px 0;
-    height:74.8vh;
+    /* height:74.8vh; */
+    height:623px;
   }
 
   #above-title{
