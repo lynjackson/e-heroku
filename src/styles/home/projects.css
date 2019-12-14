@@ -94,5 +94,18 @@
   }
   #ptouch{
     background-position: 0px 33.5vw;
+    box-shadow: 5px 7px 14px #0000006b;
   }
+
+  #bill{
+    box-shadow: 5px 7px 14px #0000006b;
+  }
+
+
+
+
+
+
+
+  
 }
