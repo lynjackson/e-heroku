@@ -7,7 +7,7 @@
 
   html{
     overscroll-behavior: none;
-    background-color: red;
+    
   }
 
   body{
@@ -23,7 +23,7 @@
   }
 
   #app{
-    background-color:yellow;
+
   }
 
 
