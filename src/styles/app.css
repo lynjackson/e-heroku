@@ -7,17 +7,23 @@
 
   html{
     overscroll-behavior: none;
-    background-color: rgb(26,26,26)
+    background-color: red;
   }
 
   body{
     margin: 0;
     overscroll-behavior: none;
+    background-color: blue;
   }
 
   #routes{
   width:100%;
   margin: 0 auto;
+  background-color: green;
+  }
+
+  #app{
+    background-color:yellow;
   }
 
 
