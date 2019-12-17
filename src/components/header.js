@@ -44,6 +44,8 @@ export class HeaderMobile extends React.Component {
               <a href='/digital-matters' className='over-lay-link'>About</a>
               <hr className='over-lay-line' />
               <a href='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</a>
+              <hr className='over-lay-line' />
+              <a href='/people' className='over-lay-link'>People</a>
 
 
             </div>
@@ -170,7 +172,7 @@ export class HeaderDesktop extends React.Component {
               <div id='header-links-div'>
                 <a className='header-link' style={{color:this.state.textColor}} href='/digital-matters'><p>Vision</p></a>
                 <a className='header-link' style={{color:this.state.textColor}} href='/values'><p>Values</p></a>
-                <a className='header-link' style={{color:this.state.textColor}} href='/'><p>People</p></a>
+                <a className='header-link' style={{color:this.state.textColor}} href='/people'><p>People</p></a>
               </div>
 
           </div>

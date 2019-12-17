@@ -5,12 +5,12 @@
   }
 
   #lyn-image_lyn{
-    background-image: url('../../assets/images/lyn1.jpg');
+    background-image: url('../../assets/images/lyn2.jpeg');
     height: 132px;
     width: 132px;
     background-size: cover;
     border-radius: 50%;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
     background-position: top;
   }
 

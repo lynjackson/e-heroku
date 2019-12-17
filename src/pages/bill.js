@@ -24,26 +24,30 @@ const BillAndroid =()=>{
 
 
 export const Bill = (props) => {
+  if(window.innerWidth > 475){
+    return window.location.href = '/bill_app'
+  }
+
   return (
     <div id='page_bill' style={{}}>
       <div id='header_bill'><div id='header-items_bill'><div id='bill-logo_bill'></div></div></div>
       <p id='question_bill'>How do you want to view the Bill App?</p>
       <div id='open-options-div_bill'>
 
-        <div className='open-option_bill'>
+        <a href='exp://expo.io/@hop26/74c4cf+pPiw812Bd' className='open-option_bill' >
           <p className='open-option-title_bill'>Open in Expo</p>
           <div className='icon-div_bill'><div id='android-icon_bill' className='icon_bill'></div><p className='plus_bill'>+</p><div id='expo-icon_bill' className='icon_bill'></div></div>
           <p className='open-option-desc_bill'>Android devices with Expo installed.</p>
-        </div>
+        </a>
 
-        <div className='open-option_bill'>
+        <a href='/bill_app' className='open-option_bill'>
           <p className='open-option-title_bill'>Open in Browser</p>
           <div className='icon-div_bill'><div id='no-expo-icon_bill' className='icon_bill'></div><p className='plus_bill'>/</p><div id='apple-icon_bill' className='icon_bill'></div></div>
           <p className='open-option-desc_bill'>Apple devices & Android devices without Expo.</p>
-        </div>
+        </a>
 
       </div>
-      <div id='phone-div_bill'><BillAndroid/></div>
+
     </div>
   )
 }

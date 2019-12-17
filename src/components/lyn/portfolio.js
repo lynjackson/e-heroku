@@ -21,7 +21,7 @@ export const Portfolio_Mobile = ()=>{
 
       <div className='project-div_lyn'>
         <div className='project-title-text-div_lyn'>
-          <a href='ethe.herokuapp.com' className='project-title_lyn' style={{margin: 0}}>Bill Restaurant Mobile App</a>
+          <a href={(window.innerWidth < 475)? '/bill_q': '/bill_app'} className='project-title_lyn' style={{margin: 0}}>Bill Restaurant Mobile App</a>
           <p className='project-stack_lyn'style={{margin: 0}}>React, Webpack, Sass, Next.js</p>
         </div>
         <p className='design-docs_lyn' style={{alignSelf:'flex-start'}}>Design Documents</p>
@@ -61,7 +61,7 @@ export const Portfolio_Desktop = ()=>{
         <div className='project-div_lyn'>
           <div className='project-title-text-div_lyn'>
             <div className='qr_portfolio' id='bill-qr_portfolio'></div>
-            <a href='http://ethe.herokuapp.com' className='project-title_lyn' style={{margin: 0}}>Bill Restaurant Mobile App</a>
+            <a href={(window.innerWidth < 475)? '/bill_q': '/bill_app'} className='project-title_lyn' style={{margin: 0}}>Bill Restaurant Mobile App</a>
             <p className='project-stack_lyn'style={{margin: 0}}>React, Webpack, Sass, Next.js</p>
           </div>
           <p className='design-docs_lyn' >Design Documents</p>
