@@ -26,6 +26,7 @@
     flex-direction: column;
     justify-content: center;
     background-position: center;
+    /* max-width:1280px; */
 
     left: 0px;
   }
@@ -56,8 +57,9 @@
 
 @media screen and (min-width: 1024px){
   #section2-title_about {
-    width: 71.93%;
-    font-size: 2.62em;
+    width: 670px;
+    font-size: 3.14em;
+    letter-spacing: -1.4px;
   }
   #cat-image-div_about{
     height:38.67vh;
@@ -69,16 +71,28 @@
     flex-direction: row;
     margin-top:44.27vh;
     margin: 44.27vh 0 auto 0;
-    justify-content: space-between;
+    
   }
   #avon-quote-div_about{
     align-self: flex-start;
     margin: 0;
-    width: 28.6vw;
-    margin: 0;
+    width: 298px;
+    margin: 0 56px 0 0;
+  }
+  #avon-quote_about{
+    font-size:29.5px;
   }
   #avon-attribute_about {
-    margin-right: 11%;
+
   }
+
+}
+
+@media screen and (min-width:1367px){
+  #cat-image-div_about{
+    max-width:1280px;
+    left:auto;
+  }
+
 
 }

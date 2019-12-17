@@ -126,23 +126,3 @@
     margin: 65px auto 0px;
   }
 }
-
-@media screen and (min-width: 1366px){
-  #value-page{
-    width:96%;
-    margin:50px auto;
-  }
-
-}
-@media screen and (min-width: 1920px){
-  #value-page{
-    width:91%;
-    margin:65px auto;
-  }
-}
-@media screen and (min-width: 2560px){
-  #value-page{
-    width:76%;
-    margin:88px auto;
-  }
-}

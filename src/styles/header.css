@@ -21,6 +21,7 @@
     justify-content: space-between;
     align-items:center;
     height:62px;
+    max-width:1280px;
   }
 
   #e{
@@ -167,21 +168,6 @@
   }
 }
 
-@media screen and (min-width:375px){
-
-  #header{
-
-  }
-
-
-
-
-  #e{
-    /* width:60px; */
-    /* padding-top:10px */
-  }
-
-}
 
 @media screen and (min-width:768px){
   #header{
@@ -203,7 +189,7 @@
   }
 
   #header-items{
-    width:90%;
+    width:90.1%;
   }
 
   #e{
@@ -275,7 +261,7 @@
   }
   #header{
     position: fixed;
-    width:76%;
+
 
     flex-direction: row;
     justify-content: space-between;

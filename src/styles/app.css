@@ -2,12 +2,20 @@
   font-family: 'OpenSans-Regular';
   src: url("../assets/fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../assets/fonts/open-sans/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../assets/fonts/open-sans/OpenSans-Semibold.ttf") format("truetype");
+}
 
 @media screen and (min-width:0px){
 
   html{
     overscroll-behavior: none;
-    
+
   }
 
   body{

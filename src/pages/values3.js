@@ -40,7 +40,7 @@ class Values3 extends React.Component{
       <div id='value-page' >
       {(window.innerWidth >= 1024) ? <HeaderDesktop appState={this.props}>
         <p style={{color:'white', fontFamily:'poppins', fontSize:'1.149em', fontWeight:100}}>+</p>
-        <p style={{color:'white', fontFamily:'poppins', fontSize:'1.187em', fontWeight:100, }}>vision</p>
+        <p style={{color:'white', fontFamily:'poppins', fontSize:'1.187em', fontWeight:100, }}>values</p>
       </HeaderDesktop> : <HeaderMobile appState={this.props}/>}
 
         <div id='value-content'>

@@ -22,7 +22,6 @@
   }
 
   #section3-content_about{
-    justify-content: space-between;
     display:flex;
   }
 
@@ -40,6 +39,7 @@
     height: 264px;
     width:298px;
     background-size: cover;
+    margin: 0 56px 0 0;
   }
 
 }

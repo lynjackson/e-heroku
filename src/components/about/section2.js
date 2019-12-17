@@ -20,7 +20,7 @@ export class Section2 extends React.Component {
     return(
       <div id='section2_about' className='section_about' style={{opacity:0, transition:'opacity 1s'}}>
         <div id='cat-image-div_about' className='about-section-image-div'>
-          <p className='section-title_about' id='section2-title_about'>In 2018, 89% of consumers quit a company after a single poor customer experience.</p>
+          <p className='section-title_about' id='section2-title_about'>In 2018, 89% of consumers quit a company after a <span style={{textDecoration:'underline'}}>single</span> poor customer experience.</p>
         </div>
         <div id='section2-text_about'>
           <div id='avon-quote-div_about'>

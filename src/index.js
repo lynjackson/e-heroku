@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import Home from './pages/home'
 // import Values from './pages/values';
 import Values3 from './pages/values3';
-import {William} from './pages/william';
+import {Bill} from './pages/bill';
 import About from './pages/about'
 import About1024 from './pages/about_1024'
+import Lyn from './pages/lyn'
 import './styles/app.css'
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -25,7 +26,8 @@ ReactDOM.render(
 	      <Route exact='true' path='/' component={Home}/>
 	      <Route exact='true' path='/values' component={Values3}/>
 	      <Route exact='true' path='/digital-matters' component={About1024} />
-	      <Route exact='true' path='/billy_boy' component={William}/>
+	      <Route exact='true' path='/billy_boy' component={Bill}/>
+				<Route exact='true' path='/lyn' component={Lyn}/>
 	    </div>
 	  </BrowserRouter>
 	</Provider>,
