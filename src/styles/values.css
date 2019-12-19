@@ -50,7 +50,7 @@
 
   #value-title{
     text-align:center;
-    font-family: poppins, sans-serif;
+    font-family:'Poppins-Semibold';
     font-style: normal;
     font-weight: 600;
     font-size: 3.37em;
@@ -73,7 +73,6 @@
   }
 
     #value-text{
-
       text-align: center;
       /* margin: auto; */
       animation: rollIn forwards .5s;

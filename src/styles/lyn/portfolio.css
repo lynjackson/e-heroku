@@ -17,12 +17,14 @@
     color:black;
   }
   .project-stack_lyn{
-    font-family:raleway;
+    font-family:'Raleway-Regular';
     font-size:12px;
   }
   .design-docs_lyn{
-    font-family:raleway;
+    font-family:'Raleway-Regular';
     font-size:12px;
+    text-decoration: none;
+    color:black;
   }
 }
 

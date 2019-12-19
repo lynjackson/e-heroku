@@ -49,7 +49,7 @@ class Values3 extends React.Component{
             <p id='value-title' key={this.state.title[counter]}>{this.state.title[counter]}</p>
             <p id='value-text' key={this.state.text[counter]}>{this.state.text[counter]}</p>
 
-            <div id='value-circles' style={{zIndex:30, display:'flex', justifyContent:'space-between', width:143, }}>
+            <div id='value-circles' style={{zIndex:3, display:'flex', justifyContent:'space-between', width:143, }}>
               <div onClick={()=>{this.setState({counter:0})}} id='circle0' style={{border:'1px solid white', width:8.14, height: 8.14, borderRadius:'50%', backgroundColor:(this.state.counter === 0) ? 'rgba(255,255,255,1)' :  'rgba(255,255,255,0)'}}></div>
               <div id='circle1' style={{border:'1px solid white', width:8.14, height: 8.14, borderRadius:'50%', backgroundColor:(this.state.counter === 1) ? 'rgba(255,255,255,1)' :  'rgba(255,255,255,0)'}}></div>
               <div onClick={()=>{this.setState({counter:2})}} style={{zIndex:30, border:'1px solid white', width:8.14, height: 8.14, borderRadius:'50%', backgroundColor:(this.state.counter === 2) ? 'rgba(255,255,255,1)' :  'rgba(255,255,255,0)'}}></div>

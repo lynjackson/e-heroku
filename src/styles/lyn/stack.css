@@ -83,8 +83,9 @@
 
   .contact-link-text_lyn{
     color:black;
-    font-family:poppins;
+    font-family:'Poppins-Regular';
     font-size:9.7px;
+    text-decoration:none;
   }
 }
 
