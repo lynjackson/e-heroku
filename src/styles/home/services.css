@@ -28,7 +28,7 @@
 
   .services-title{
     margin: 0;
-    font-family: Poppins;
+    font-family: 'Poppins-Bold';
     font-size: 1.5em;
     font-weight:600;
   }
@@ -48,7 +48,7 @@
   }
 
   .services-service-text{
-    font-family: 'Poppins';
+    font-family: 'Poppins-Semibold';
     font-size:1.06em;
     font-weight:600;
     margin: 0;
@@ -99,7 +99,6 @@
     margin: 23px 0;
   }
   .services-service-text{
-    font-family: 'Poppins';
     font-size:1em;
     font-weight:500;
     margin: 0;
