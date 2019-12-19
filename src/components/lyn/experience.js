@@ -5,7 +5,7 @@ export const Experience = ()=>{
   return(
     <div id='experience_lyn' className='section_lyn'>
       <div className='section-title_lyn'>
-        <p style={{fontFamily: 'poppins', fontSize:18.91, fontWeight: 500, margin: 0}}>Experience</p>
+        <p style={{fontFamily: 'Poppins-Medium', fontSize:18.91, fontWeight: 500, margin: 0}}>Experience</p>
         <hr />
       </div>
 
@@ -47,7 +47,7 @@ export const Experience_Desktop = ()=>{
   return(
     <div id='experience_lyn' className='section_lyn'>
       <div className='section-title_lyn'>
-        <p style={{fontFamily: 'poppins', fontSize:18.91, fontWeight: 500, margin: 0}}>Experience</p>
+        <p style={{fontFamily: 'Poppins-Medium', fontSize:18.91, fontWeight: 500, margin: 0}}>Experience</p>
         <hr />
       </div>
 

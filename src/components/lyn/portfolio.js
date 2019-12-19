@@ -7,7 +7,7 @@ export const Portfolio_Mobile = ()=>{
   return(
     <div id='projects_lyn' className='section_lyn'>
       <div className='section-title_lyn'>
-        <p style={{fontFamily: 'poppins', fontSize:18.91, fontWeight: 500, margin: 0}}>Projects</p>
+        <p style={{fontFamily: 'Poppins-Medium', fontSize:18.91, fontWeight: 500, margin: 0}}>Projects</p>
         <hr />
       </div>
 
@@ -43,7 +43,7 @@ export const Portfolio_Desktop = ()=>{
   return(
     <div id='projects_lyn' className='section_lyn'>
       <div className='section-title_lyn'>
-        <p style={{fontFamily: 'poppins', fontSize:18.91, fontWeight: 500, margin: 0}}>Projects</p>
+        <p style={{fontFamily: 'Poppins-Medium', fontSize:18.91, fontWeight: 500, margin: 0}}>Projects</p>
         <hr />
       </div>
 
