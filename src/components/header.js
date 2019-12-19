@@ -41,7 +41,7 @@ export class HeaderMobile extends React.Component {
           <div id='overlay-content' style={{display:this.props.appState.header.display, opacity:setTimeout(()=>{return this.props.appState.header.opacity}, 3000), zIndex:-10}}>
               <a href='/' className='over-lay-link' onClick={()=>{this.props.appState.front()}}>Home</a>
               <hr className='over-lay-line' />
-              <a href='/digital-matters' className='over-lay-link'>About</a>
+              <a href='/digital-matters' className='over-lay-link'>Vision</a>
               <hr className='over-lay-line' />
               <a href='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</a>
               <hr className='over-lay-line' />

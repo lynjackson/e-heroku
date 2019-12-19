@@ -15,7 +15,7 @@ export const Profile_Mobile = ()=>{
         </div>
 
         <div id='contact-div_lyn'>
-          <ContactLink text={'Resume'} linktype={'resume'} url='http://www.google.com'/>
+          <ContactLink text={'Resume'} linktype={'resume'} url='https://drive.google.com/file/d/1bBXDKf7KqYOqst2fDeztQuVxANpa61Tn/view?usp=sharing'/>
           <ContactLink text={'LinkedIn'} linktype={'linkedin'} url='https://www.linkedin.com/in/lyndon-jackson-541a5b18/'/>
           <ContactLink text={'Email'} linktype={'email'} url='mailto:ljoconnor5@gmail.com'/>
         </div>
@@ -37,9 +37,9 @@ export const Profile_Desktop = ()=>{
         </div>
 
         <div id='contact-div_lyn'>
-          <ContactLink text={'Resume'} linktype={'resume'}/>
-          <ContactLink text={'LinkedIn'} linktype={'linkedin'}/>
-          <ContactLink text={'Email'} linktype={'email'}/>
+          <ContactLink text={'Resume'} linktype={'resume'} url='https://drive.google.com/file/d/1bBXDKf7KqYOqst2fDeztQuVxANpa61Tn/view?usp=sharing'/>
+          <ContactLink text={'LinkedIn'} linktype={'linkedin'} url='https://www.linkedin.com/in/lyndon-jackson-541a5b18/'/>
+          <ContactLink text={'Email'} linktype={'email'} url='mailto:ljoconnor5@gmail.com'/>
         </div>
 
       </div>

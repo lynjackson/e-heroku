@@ -6,8 +6,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode:'development',
   entry: './src/index.js',
-    
-    
+
+
   // optimization:{
   //   splitChunks:{
   //     chunks:'async'
@@ -17,9 +17,9 @@ module.exports = {
   //   // filename:'[name].bundle.js',
   //   // chunkFilename: '[name].bundle.js',
   //   // path: path.resolve(__dirname, 'dist')
-    
+
   // },
-  
+
   module: {
     rules: [
       {
@@ -34,7 +34,7 @@ module.exports = {
       use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|svg|jpg|gif|jpeg|ttf)$/,
+        test: /\.(png|svg|jpg|gif|jpeg|ttf|otf)$/,
         use: 'file-loader'
         //preprocesses imported image files
       },
