@@ -44,7 +44,8 @@ export class BillApp_Mobile extends React.Component{
     if(window.innerWidth < 475){
       return (
         <div id='page_bill' style={{}}>
-          <div id='header_bill'><div id='header-items_bill'><div id='bill-logo_bill'></div></div></div>
+          {// <div id='header_bill'><div id='header-items_bill'><div id='bill-logo_bill'></div></div></div>
+          }
           <BillAndroid_NoBorder/>
         </div>
       )
