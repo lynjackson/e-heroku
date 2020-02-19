@@ -5,7 +5,7 @@
       justify-content: space-between;
   }
   #section3-image-div_about{
-      background-image:url('../../assets/images/data1.png');
+      background-image:url('../../assets/images/dining.jpeg');
       background-position: center;
       background-size: cover;
   }
@@ -35,7 +35,7 @@
   }
 
   #image-section3_about{
-    background-image: url('../../assets/images/data1.png');
+    background-image: url('../../assets/images/dining.jpeg');
     height: 264px;
     width:298px;
     background-size: cover;

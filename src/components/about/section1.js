@@ -9,7 +9,7 @@ import { connect } from 'react-redux'
 import {Contact} from '../../components/contact'
 import fisherman from '../../assets/images/fisherman.png'
 import fisherman2 from '../../assets/images/fisherman22.jpg'
-import data from '../../assets/images/data1.png'
+import data from '../../assets/images/dining.jpeg'
 import '../../styles/about/about2.css';
 import '../../styles/about/section1.css'
 import {PageTitle} from '../../components/header';

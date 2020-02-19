@@ -9,7 +9,7 @@ import { connect } from 'react-redux'
 import {Contact} from '../components/contact'
 // import fisherman from '../styles/images/fisherman.png'
 // import fisherman2 from '../styles/images/fisherman22.jpg'
-// import data from '../styles/images/data1.png'
+// import data from '../styles/images/dining.jpeg'
 import '../styles/about/about2.css';
 import {PageTitle} from '../components/header';
 //imports function needed to access redux state object
