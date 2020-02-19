@@ -37,30 +37,3 @@ ReactDOM.render(
 	</Provider>,
 	document.getElementById('app')
 )
-
-// const Whatever =()=>{
-//   return(
-//     <div>text</div>
-//   )
-// }
-//
-// export default Whatever;
-
-// <BrowserRouter>
-//
-//   <div id='routes'>
-//     <Route exact='true' path='/' component={FrontPage}/>
-//
-//   </div>
-// </BrowserRouter>
-
-
-// <BrowserRouter>
-//   <FrontPage />
-//   <div id='routes'>
-//     <Route exact='true' path='/' component={FrontPage}/>
-//     <Route exact='true' path='/values' component={Values}/>
-//     <Route exact='true' path='/digital_matters' component={About}/>
-//     <Route exact='true' path='/billy_boy' component={William}/>
-//   </div>
-// </BrowserRouter>

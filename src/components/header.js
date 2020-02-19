@@ -1,8 +1,9 @@
 import React from 'react';
 import '../styles/home/home.css';
-import '../styles/header.css';
+import '../styles/css/header.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
-import ethey from '../assets/images/ethelogo.png'
+import ethey from '../assets/icons/header/logo.png';
+import menuButton from '../assets/icons/header/menu.png'
 import plus from '../assets/images/plus-sign.png'
 
 export class HeaderMobile extends React.Component {
@@ -31,9 +32,10 @@ export class HeaderMobile extends React.Component {
                 event.stopPropagation();
               }
             }}}>
+              <img src={menuButton} id='menu-button_header' />
+              {/* <hr className='menu-line' />
               <hr className='menu-line' />
-              <hr className='menu-line' />
-              <hr className='menu-line' />
+              <hr className='menu-line' /> */}
             </div>
 
           </div>
