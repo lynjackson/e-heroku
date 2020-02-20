@@ -12,6 +12,9 @@
     opacity:0;
     transition:opacity .5s;
   }
+  #services-content{
+    z-index:1;
+  }
 
   #services-strategy-div{
     margin-top: 0px;

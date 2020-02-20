@@ -141,19 +141,20 @@ export const PageTitle = (props)=>{
 
 export const Header2 = ()=>{
   
-  const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'white' : 'black')
-  const [logoInvert, setInvert] = useState('invert(0)')
+  const blackish = 'rgb(26,26,26)'
+  const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'rgba(255,255,255, .2)' : blackish)
+  const [logoInvert, setInvert] = useState((window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)')
   const [headerHeight, setHeight] = useState(75)
   // ^ Setting...
 
   useEffect(()=>{
     window.addEventListener('scroll', (e)=>{
       if (window.location.pathname==='/' && window.pageYOffset < 5){
-        setBack('white')
+        setBack('rgba(255,255,255, .2)')
         setInvert('invert(0)')
       }
       else{
-        setBack('black')
+        setBack(blackish)
         setInvert('invert(1)')
       }      
     })
@@ -182,9 +183,9 @@ export const Header2 = ()=>{
       </div>
       
       <div id='nav-options'>
-        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>Vision</Link>
-        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>Values</Link>
-        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>People</Link>
+        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>Vision</Link>
+        <Link to='/values' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>Values</Link>
+        <Link to='/people' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>People</Link>
       </div>
     </div>
   )

@@ -1,5 +1,49 @@
-import React from 'react';
-import '../../styles/home/services.css'
+import React, {useState, useEffect, useCallback} from 'react';
+import '../../styles/css/home.css';
+import Bulb from '../../assets/icons/bulb.png';
+import Cloud from '../../assets/icons/cloud.png';
+import Data from '../../assets/icons/data.png';
+
+
+export const Services2 = ()=>{
+  const [servicesOpacity, setOpacity] = useState(0)
+  
+  useEffect(()=>{
+    window.addEventListener('scroll', ()=>{
+      if(window.pageYOffset > 5){
+        setOpacity(1);
+      }
+      else{
+        setOpacity(0);
+      }
+    })
+  })
+
+  return(
+    <div id='services' style={{opacity: servicesOpacity}}>
+      <Service img={Bulb} title={'Creating experiences from ideas.'} description={'We design apps, social media experiences, and marketing campaigns, each aimed at making great user experience a part of your brand in the eyes of users, and extending your business’s vision, culture and spirit.'}/>
+      <Service img={Cloud} title={'Turning data into useful information.'} description={'We prioritize the collection of useful data in designing compelling customer experiences. Adding science to the art moves you from guesswork to inspired predictions, using metrics and analytics to inform decisions.'}/>
+      <Service img={Data} title={'Developing custom digital strategies.'} description={'We develop custom digital strategies, analyzing each platform’s importance to business performance, and determining what improvements to current applications could enhance the experience further.'}/>
+    </div>
+  )
+}
+
+const Service = (props)=>{
+  return(
+    <div className='service'>
+      <img src={props.img} style={{width:45}}/>
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+  </div>
+  )
+  
+}
+
+
+
+
+
+
 
 
 export class Services extends React.Component{
