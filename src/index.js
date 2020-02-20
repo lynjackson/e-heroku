@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './pages/home'
+import Home, {Home2} from './pages/home'
 // import Values from './pages/values';
 import Values3 from './pages/values3';
 import {Bill} from './pages/bill';
@@ -27,7 +27,7 @@ ReactDOM.render(
 	  <BrowserRouter>
 	    <div id='routes'>
 	      <Route path='/' component={Header2} />
-		  <Route exact='true' path='/' component={Home}/>
+		  <Route exact='true' path='/' component={Home2}/>
 	      <Route exact='true' path='/values' component={Values3}/>
 	      <Route exact='true' path='/digital-matters' component={About1024} />
 	      <Route exact='true' path='/bill_q' component={Bill}/>

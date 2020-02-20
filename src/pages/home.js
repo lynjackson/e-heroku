@@ -1,11 +1,12 @@
 import React from 'react';
 // import {OurWork, RecentProjects, ContactUs, DigitalMatters, Learn} from './main';
-import AboveFold from '../components/home/aboveFold';
+import AboveFold, {AboveFold2} from '../components/home/aboveFold';
 import {HeaderMobile, HeaderDesktop} from '../components/header';
 // import Overlay from './overlay';
 // import Values from './values'
 import '../styles/app.css'
 // import '../styles/home/home.css';
+import '../styles/css/home.css';
 import '../styles/pages.css'
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
@@ -14,6 +15,21 @@ import {Services} from '../components/home/services';
 import {Projects} from '../components/home/projects';
 import {Contact} from '../components/contact';
 
+
+
+
+export const Home2 = (props)=>{
+  
+  return(
+    <div id='home'>
+            <AboveFold2 appState={props} />
+            <Services appState={props}/>
+            <Projects />
+            <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div>
+            <Contact message={'Get in touch'}/>
+          </div>
+  )
+}
 
 
 class Home extends React.Component {

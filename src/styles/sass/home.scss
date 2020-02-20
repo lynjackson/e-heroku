@@ -1,35 +1,28 @@
+@import 'store';
+
 @media screen and (min-width: 0px){
+  
   #above-fold{
-  height: 62.11vh;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  position: relative;
-  width: 100%;
-  z-index:3;
-  align-items:center;
+    @include box(flex, column, auto, center);
+    @include hw(62.11vh, 100%);
+    position: relative;
+    z-index:3;
   }
 
   #above-title{
     position: relative;
     top: 25vh;
-    font-size: 2.2em;
     text-align:left;
-    font-family: 'Poppins-Medium', sans-serif;
-    font-weight: 400;
-    line-height: 47.02px;
-    font-size:46.35px;
-    letter-spacing: -14;
-    animation: fade 2s;
+    @include font('Poppins-Medium', 46.35px, 400, 47.02px, -14)
+    /* animation: fade 2s; */
   }
 
   #arrow-div{
-    width: 100%;
+    @include hw(100px, 100%);
     display: flex;
     justify-content: center;
     position: absolute;
     top: 74.75vh;
-    height: 100px;
   }
 }
 

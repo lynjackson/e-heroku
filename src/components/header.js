@@ -169,11 +169,14 @@ export const Header2 = ()=>{
       <div id='header-items2'>
         <Link to='/'><img src={ethey} id='logo2' style={{filter: logoInvert}} /></Link>
         <img src={menuButton} id='menu2' onClick={()=>{
+          
           if(headerHeight === '100vh'){
-            setHeight(75)
+            setHeight(75);
          }
          else{
             setHeight('100vh')
+            setBack('black');
+            setInvert('invert(1)')
          }
         }}/>
       </div>

@@ -1,0 +1,50 @@
+@media screen and (min-width: 0px) {
+  #above-fold {
+    display: flex;
+    flex-direction: column;
+    justify-content: auto;
+    align-items: center;
+    height: 62.11vh;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+
+  #above-title {
+    position: relative;
+    top: 25vh;
+    text-align: left;
+    font-family: "Poppins-Medium";
+    font-size: 46.35px;
+    font-weight: 400;
+    line-height: 47.02px;
+    letter-spacing: -14;
+  }
+
+  #arrow-div {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 74.75vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #above-fold {
+    background-position: -187px 0;
+    /* height:74.8vh; */
+    height: 623px;
+  }
+
+  #above-title {
+    padding: 0;
+    font-size: 4em;
+    line-height: 77px;
+    width: 100%;
+    font-weight: 400;
+    top: 204px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
