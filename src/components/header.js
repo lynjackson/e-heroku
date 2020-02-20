@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import '../styles/home/home.css';
 import '../styles/css/header.css';
+import '../styles/css/header2.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 import ethey from '../assets/icons/header/logo.png';
 import menuButton from '../assets/icons/header/menu.png'
-import plus from '../assets/images/plus-sign.png'
+import plus from '../assets/images/plus-sign.png';
 
 export class HeaderMobile extends React.Component {
 
@@ -57,94 +58,7 @@ export class HeaderMobile extends React.Component {
       )
     }
   }
-//
-//
-//
-//
-//
-//
-//   render(){
-//     console.log(this.props);
-//       return(
-//         <div id='header' style={(window.pageYOffset === 0 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
-//
-//           <div id='header-items'>
-//
-//               <a href='/' style={{display: 'flex', width: 'auto', height: 'auto',  position: 'relative'}}>
-//                   <img src={ethey} id='e'  onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
-//               </a>
-//
-//
-//               {this.props.children}
-//
-//
-//
-//             <div id='menu-div' style={{filter:this.props.appState.header.headerInvert}} onClick={(event)=>{
-//               if (document.getElementById('header').style.height > '10em'){
-//                 this.props.appState.menuHeader();
-//               } else{
-//                 if(window.pageYOffset > window.innerHeight || document.getElementById('matters-view')){
-//                   this.props.appState.scrollHeader();
-//                 }else if (document.getElementById('value-page')){
-//                   this.props.appState.valuesHeader();
-//                 }else{
-//                 this.props.appState.defaultHeader();
-//                 event.stopPropagation();
-//               }
-//             }}}>
-//               <hr className='menu-line' />
-//               <hr className='menu-line' />
-//               <hr className='menu-line' />
-//             </div>
-//
-//           </div>
-//
-//           <div id='overlay-content' style={{display:this.props.appState.header.display, opacity:setTimeout(()=>{return this.props.appState.header.opacity}, 3000), zIndex:-10}}>
-//               <a href='/' className='over-lay-link' onClick={()=>{this.props.appState.front()}}>Home</a>
-//               <hr className='over-lay-line' />
-//               <a href='/digital-matters' className='over-lay-link'>About</a>
-//               <hr className='over-lay-line' />
-//               <a href='/values' className='over-lay-link' onClick={()=>{this.props.appState.values()}}>Values</a>
-//
-//
-//             </div>
-//
-//         </div>
-//
-//       )
-//     }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//     // <div id='eandtitle_header'>
-//
-//     // <div id='header' style={(window.pageYOffset === 0 && document.getElementById('above-fold'))?{backgroundColor:this.props.appState.header.backgroundColor, height: this.props.appState.header.headerHeight}:{backgroundColor:this.props.appState.header.backgroundColor, height:this.props.appState.header.headerHeight}}>
-//
-//     // <a href='/' style={{display: 'flex', width: 'auto', height: 'auto', top: 6, position: 'relative'}}>
-//     //   <div id='e-div'>
-//     //     <img src='./src/styles/images/ethey.png' id='e' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert,}}/>
-//     //   </div>
-//     //   <img src='./src/styles/images/triangle.png' id='triangle' onClick={()=>{this.props.appState.defaultView()}} style={{filter:this.props.appState.header.headerInvert, width: '10%', left:-3}}/>
-//     // </Link>
-//
-//     componentDidMount(){
-//
-//       // document.getElementById('menu-icon-circle').addEventListener('click', (event)=>{this.props.appState.view.overlay === 'none' ? this.props.appState.overlay():this.props.appState.defaultView(); event.stopPropagation()})
-//
-//       // window.addEventListener('scroll', (event)=>{
-//       //   (window.pageYOffset > window.innerHeight -100) ? this.props.appState.scrollHeader(): this.props.appState.defaultHeader();
-//       // })
-// // backgroundColor:(window.pageYOffset > window.innerHeight)?'white':'rgba(0,0,0,0)'
-//
-//       // document.getElementById('e').addEventListener('click', (event)=>{this.props.appState.front(); event.stopPropagation()})
-//     }
-// }
+
 
 
 
@@ -215,6 +129,60 @@ export const PageTitle = (props)=>{
   return(
     <div id='div_PageTitle'>
       <p id='title_PageTitle'>{props.title}</p>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+export const Header2 = ()=>{
+  
+  const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'white' : 'black')
+  const [logoInvert, setInvert] = useState('invert(0)')
+  const [headerHeight, setHeight] = useState(75)
+  // ^ Setting...
+
+  useEffect(()=>{
+    window.addEventListener('scroll', (e)=>{
+      if (window.location.pathname==='/' && window.pageYOffset < 5){
+        setBack('white')
+        setInvert('invert(0)')
+      }
+      else{
+        setBack('black')
+        setInvert('invert(1)')
+      }      
+    })
+
+    document.getElementById('header2').addEventListener('wheel', (e)=>{
+      if(headerHeight === '100vh'){ e.preventDefault() }
+    })
+  })
+  
+  return (
+    <div id='header2' style={{backgroundColor: headerBackground, height: headerHeight}}>
+      
+      <div id='header-items2'>
+        <Link to='/'><img src={ethey} id='logo2' style={{filter: logoInvert}} /></Link>
+        <img src={menuButton} id='menu2' onClick={()=>{
+          if(headerHeight === '100vh'){
+            setHeight(75)
+         }
+         else{
+            setHeight('100vh')
+         }
+        }}/>
+      </div>
+      
+      <div id='nav-options'>
+        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>Vision</Link>
+        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>Values</Link>
+        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack('black')}}>People</Link>
+      </div>
     </div>
   )
 }

@@ -14,6 +14,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import {BrowserRouter, Route} from 'react-router-dom'
+import{Header2} from './components/header.js'
 // import { values } from './actions';
 
 
@@ -25,7 +26,8 @@ ReactDOM.render(
 	<Provider store={createStore(reducers)}>
 	  <BrowserRouter>
 	    <div id='routes'>
-	      <Route exact='true' path='/' component={Home}/>
+	      <Route path='/' component={Header2} />
+		  <Route exact='true' path='/' component={Home}/>
 	      <Route exact='true' path='/values' component={Values3}/>
 	      <Route exact='true' path='/digital-matters' component={About1024} />
 	      <Route exact='true' path='/bill_q' component={Bill}/>

@@ -26,7 +26,7 @@ class Home extends React.Component {
     console.log(this.props)
       return(
           <div id='home'>
-            {(window.innerWidth >= 1024) ? <HeaderDesktop appState={this.props}/> : <HeaderMobile appState={this.props}/>}
+            {/* {(window.innerWidth >= 1024) ? <HeaderDesktop appState={this.props}/> : <HeaderMobile appState={this.props}/>} */}
             <AboveFold appState={this.props} />
             <Services appState={this.props}/>
             <Projects />

@@ -1,5 +1,38 @@
 
 @media screen and (min-width:0px){
+  // #header2{
+  //   height:75px;
+  //   width:100vw;
+  //   position:fixed;
+  //   display:flex;
+  //   flex-direction: column;
+  //   transition: background-color .5s, height .5s;
+  //   z-index:20;
+    
+  // }
+  // #header-items2{
+  //   display:flex;
+  //   justify-content: space-between;
+  //   align-items:center;
+  //   width:90%;
+  //   margin: 0 auto; 
+  //   margin-top:11px;
+  // }
+  #nav-options{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    display:none;
+  }
+  // #logo2{
+  //   width:59px;
+  // }
+  // #menu2{
+  //   width:38px;
+  //   height:18px;
+  //   z-index:100;
+  // }
+  
   #header{
     position: fixed;
     left: 0;

@@ -1,0 +1,60 @@
+@media screen and (min-width:0px){
+    @mixin box($flex, $dir, $jus, $align){
+        display: $flex;
+        flex-direction: $dir;
+        justify-content: $jus;
+        align-items: $align;
+    }
+
+    @mixin hw($h, $w){
+        height: $h;
+        width: $w;
+    }
+    
+    #header2{
+    //   @include hw(75px, 100vw);
+    //   @include box(flex, column, auto, auto);
+      display:flex;
+      flex-direction: column;
+
+    //   height: 75px;
+        width:100vw;
+      position:fixed;
+      transition: background-color .5s, height .5s;
+      z-index:20;
+      overflow:hidden;
+      
+    }
+    #header-items2{
+      @include box(flex, auto, space-between, center);
+      width:90%;
+      margin: 11px  auto 0 auto; 
+    }
+
+    #nav-options{
+    //   @include box(flex, column, space-between, auto);
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family:poppins;
+      font-size:46.35px;
+      align-self:center;
+      position:relative;
+      top:200px;
+      height: 500px;
+      text-align:center;
+      
+    }
+    .nav-option{
+        text-decoration: none;
+        color:white;
+    }
+    #logo2{
+      width:59px;
+    }
+    #menu2{
+      width:38px;
+      height:31px;
+      z-index:100;
+    }
+}
