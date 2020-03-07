@@ -46,5 +46,16 @@
     z-index: 100;
   }
 }
+@media screen and (min-width: 1280px) {
+  #header-items2 {
+    width: 88.2%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #header-items2 {
+    width: 88.2%;
+    margin: 18px auto;
+  }
+}
 
 /*# sourceMappingURL=header2.css.map */

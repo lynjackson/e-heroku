@@ -144,7 +144,7 @@ export const Header2 = ()=>{
   const blackish = 'rgb(26,26,26)'
   const [headerBackground, setBack] = useState((window.location.pathname === '/' && window.pageYOffset < 5) ? 'rgba(255,255,255, .2)' : blackish)
   const [logoInvert, setInvert] = useState((window.location.pathname !== '/') ? 'invert(1)' : 'invert(0)')
-  const [headerHeight, setHeight] = useState(75)
+  const [headerHeight, setHeight] = useState(86)
   // ^ Setting...
 
   useEffect(()=>{
@@ -172,20 +172,20 @@ export const Header2 = ()=>{
         <img src={menuButton} id='menu2' onClick={()=>{
           
           if(headerHeight === '100vh'){
-            setHeight(75);
+            setHeight(86);
          }
          else{
             setHeight('100vh')
-            setBack('black');
+            setBack(blackish);
             setInvert('invert(1)')
          }
         }}/>
       </div>
       
       <div id='nav-options'>
-        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>Vision</Link>
-        <Link to='/values' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>Values</Link>
-        <Link to='/people' className='nav-option' onClick={()=>{setHeight(75); setBack(blackish)}}>People</Link>
+        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Vision</Link>
+        <Link to='/values' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Values</Link>
+        <Link to='/people' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>People</Link>
       </div>
     </div>
   )
