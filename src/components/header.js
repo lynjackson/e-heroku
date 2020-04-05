@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import '../styles/home/home.css';
-import '../styles/css/header.css';
+// import '../styles/css/header.css';
 import '../styles/css/header2.css';
 import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 import ethey from '../assets/icons/header/logo.png';
@@ -183,7 +183,7 @@ export const Header2 = ()=>{
       </div>
       
       <div id='nav-options'>
-        <Link to='/digital-matters' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Vision</Link>
+        <Link to='/vision' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Vision</Link>
         <Link to='/values' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>Values</Link>
         <Link to='/people' className='nav-option' onClick={()=>{setHeight(86); setBack(blackish)}}>People</Link>
       </div>

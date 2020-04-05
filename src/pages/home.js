@@ -7,7 +7,7 @@ import {HeaderMobile, HeaderDesktop} from '../components/header';
 import '../styles/app.css'
 // import '../styles/home/home.css';
 import '../styles/css/home.css';
-import '../styles/pages.css'
+import '../styles/css/pages.css';
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, menuHeader, scrollHeader, values} from '../actions/index.js'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
@@ -25,7 +25,7 @@ export const Home2 = (props)=>{
             <AboveFold2 appState={props} />
             <Services2 appState={props}/>
             <Projects />
-            <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div>
+            {/* <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div> */}
             <Contact message={'Get in touch'}/>
           </div>
   )
@@ -46,7 +46,7 @@ class Home extends React.Component {
             <AboveFold appState={this.props} />
             <Services appState={this.props}/>
             <Projects />
-            <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div>
+            {/* <div id='contact-breaker' style={{width:'100%', position:'relative'}}></div> */}
             <Contact message={'Get in touch'}/>
           </div>
       )
@@ -79,12 +79,7 @@ class Home extends React.Component {
 // <Overlay display={this.state.overlay.display} appState={this.props} />
 
 function mapStateToProps(state){
-  return{
-    books: state.books,
-    view: state.view,
-    values: state.values,
-    header: state.header
-  }
+  return{ books: state.books, view: state.view, values: state.values, header: state.header }
 }
 
 

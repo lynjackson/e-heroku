@@ -1,41 +1,27 @@
 import React from 'react';
-import art from '../../assets/images/pt_background.jpeg'
+import art from '../../assets/images/cover.jpeg'
 import bill_back from '../../assets/images/bill-background.jpeg'
 import studio from '../../assets/images/studio.png'
-import bill_logo from '../../assets/images/bill-logo.png'
+import bill_logo from '../../assets/icons/bill.png'
 import '../../styles/home/projects.css'
 
-
-export class Projects extends React.Component {
-
-
-  render(){
-    return(
-      <React.Fragment style={{position:'relative', cursor:'pointer'}}>
-        <div id='projects-div' style={{opacity: 0, cursor: 'pointer'}}>
-          <a href='/bill_q' id='bill' className='project-container' style={{backgroundImage: `url(${bill_back})`, textDecoration:'none'}}>
-            <img className='project-logo' id='bill-logo' src={bill_logo} style={{filter:'invert(1)'}}/>
-            <p className='project-text' style={{color:'white', backgroundColor:'rgba(0,0,0,.27)'}}>A better way to dine out</p>
-          </a>
-          <a href='https://studio.ljoconnor5.now.sh' id='ptouch' className='project-container' style={{backgroundImage: `url(${art})`, cursor:'pointer', textDecoration:'none'}}>
-            <img className='project-logo' id='pt-logo' src={studio}/>
-            <p className='project-text' id='pt-text_projects' style={{backgroundColor:'rgba(255,255,255,.27)'}}>The community creative space</p>
-          </a>
-        </div>
-      </React.Fragment>
-
-    )
+export const Projects = ()=>{
+  return(
+    <div id='projects'>
+      <Project background={bill_back} logo={bill_logo} tagline={'A better way to order'} color1={'#000000B2'} color2={'#00000014'} textColor={'#FFFFFFC4'}/>
+      <Project background={art} logo={studio} tagline={'The creative space'} color1={'#FFFFFFC4'} color2={'#FFFFFF14'} textColor={'#000000B2'}/>
+    </div>
+  )
 }
-componentDidMount(){
-  window.addEventListener('scroll', (event)=>{
-    (window.pageYOffset > 396)?document.getElementById('projects-div').style.opacity =1:document.getElementById('projects-view').style.opacity =0
-  })
 
-
-
-  // console.log(document.getElementById('header').style)
-
-
-
-}
+const Project = (props) =>{
+  return(
+    <div className='project' style={{backgroundImage: `url(${props.background})`, color: props.textColor }}>
+      <div className='overlay' style={{background:`linear-gradient(359deg, ${props.color1}, ${props.color2})`}}>
+        <img className='logo' src={props.logo}></img>
+        <p className='tagline'>{props.tagline}</p>
+      </div>
+      
+    </div>
+  )
 }

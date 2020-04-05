@@ -5,20 +5,13 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import '../styles/people.css'
 
-export class People extends React.Component{
-  constructor(){
-    super();
-  }
+export const People = (props) => {
+  
 
-  render(){
+  
     return(
-      <div id='page_about' style={{height:'100vh'}}>
-        {(window.innerWidth >= 1024) ? <HeaderDesktop appState={this.props}>
-          <p style={{color:'white', fontFamily:'poppins', fontSize:'1.149em', fontWeight:100}}>+</p>
-          <p style={{color:'white', fontFamily:'poppins', fontSize:'1.187em', fontWeight:100, }}>people</p>
-        </HeaderDesktop> : <HeaderMobile appState={this.props}/>}
-
-        <div  id='content_people'>
+      <div id='page_people' style={{height:'100vh'}}>
+        <div id='content_people'>
           <a href='/lyn' id='person1-icon_people'>
             <div id='person1-image_people'></div>
             <p id='name_people'>Lyn Jackson</p>
@@ -29,14 +22,13 @@ export class People extends React.Component{
 
       </div>
     )
-  }
 
-  componentDidMount(){
-    this.props.scrollHeader();
-    window.addEventListener('resize', ()=>{
-      this.setState({change:this.state.change + 1})
-    })
-  }
+  // componentDidMount(){
+  //   props.scrollHeader();
+  //   window.addEventListener('resize', ()=>{
+  //     this.setState({change:this.state.change + 1})
+  //   })
+  // }
 }
 
 function mapStateToProps(state){
