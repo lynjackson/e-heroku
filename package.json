@@ -7,7 +7,7 @@
 				"test": "echo \"Error: no test specified\" && exit 1",
 				"devy": "webpack-dev-server  --open",
 				"build": "webpack --config webpack.config.js",
-				"heroku-postbuild": "webpack -p --mode production --config config/webpack.config.js",
+				"heroku-postbuild": "webpack -p --mode production --config webpack.config.js",
 				"start": "node server.js"
 		},
 		"author": "",
