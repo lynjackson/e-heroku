@@ -3,6 +3,14 @@
 }
 
 @media screen and (min-width: 0px) {
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   #value-con {
     display: flex;
     flex-direction: column;
@@ -13,6 +21,14 @@
     margin: 0 auto;
     color: white;
     text-align: center;
+    animation: fade 1s;
+    transition: opacity 0.2s;
+  }
+  #value-con #value-title {
+    transition: opacity 0.5s;
+  }
+  #value-con #value-text {
+    transition: opacity 0.5s;
   }
   #value-con h3 {
     font-family: poppins;

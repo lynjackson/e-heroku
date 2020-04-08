@@ -8,7 +8,7 @@
     flex-direction: column;
     width: 100vw;
     position: fixed;
-    transition: background-color 0.5s, height 0.5s;
+    transition: background-color 1s, height 0.5s;
     z-index: 20;
     overflow: hidden;
   }
@@ -29,7 +29,7 @@
     align-self: center;
     position: relative;
     top: 200px;
-    height: 500px;
+    height: 36vh;
     text-align: center;
   }
   #header2 .nav-option {

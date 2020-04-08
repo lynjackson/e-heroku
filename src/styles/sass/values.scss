@@ -1,12 +1,27 @@
 @import 'store';
 
 @media screen and (min-width: 0px){
+    @keyframes fade{
+        0% {opacity:0};
+        100% {opacity:1};
+    }
+    
     #value-con{
         @include box(flex, column, center, center);
         @include hw(100%, 89.8%);        
         margin: 0 auto;
         color:white;
         text-align:center;
+        animation:fade 1s;
+        transition: opacity .2s;
+        
+        #value-title{
+            transition:opacity .5s;
+        }
+        #value-text{
+            transition:opacity .5s;
+        }
+
         h3{
             @include font(poppins, 54.35px, 700, auto, auto);
             margin: 9.3px auto;
@@ -32,6 +47,7 @@
 @media screen and (min-width: 1024px){
     #value-con{
         @include hw(100%, 615px);
+        
         h3{
             margin: 27.5px auto;
         }

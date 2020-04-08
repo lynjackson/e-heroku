@@ -19,10 +19,10 @@ import {BrowserRouter, Route} from 'react-router-dom'
 import{Header2} from './components/header.js'
 // import { values } from './actions';
 
+// import People from (/* webpackPrefetch: true */ './pages/people')
+
 
 // const what = import('./pages/values').then((values)=>{return values.default})
-
-
 
 ReactDOM.render(
 	<Provider store={createStore(reducers)}>

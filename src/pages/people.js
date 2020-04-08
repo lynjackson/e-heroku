@@ -4,6 +4,7 @@ import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, d
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import '../styles/people.css'
+import { HashRouter, Switch, Link, Route, Redirect } from "react-router-dom";
 
 export const People = (props) => {
   
@@ -12,11 +13,11 @@ export const People = (props) => {
     return(
       <div id='page_people' style={{height:'100vh'}}>
         <div id='content_people'>
-          <a href='/lyn' id='person1-icon_people'>
+          <Link to='/lyn' id='person1-icon_people'>
             <div id='person1-image_people'></div>
             <p id='name_people'>Lyn Jackson</p>
             <p id='role_people'>UI Developer</p>
-          </a>
+            </Link>
           <p id='page_people'>Page 1/1</p>
         </div>
 

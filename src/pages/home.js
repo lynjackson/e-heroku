@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useLayoutEffect, useCallback} from 'react';
 // import {OurWork, RecentProjects, ContactUs, DigitalMatters, Learn} from './main';
 import AboveFold, {AboveFold2} from '../components/home/aboveFold';
 import {HeaderMobile, HeaderDesktop} from '../components/header';
@@ -20,8 +20,15 @@ import {Contact} from '../components/contact';
 
 export const Home2 = (props)=>{
   
+const [loadStatus, setLoad] = useState('no')
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    setLoad('yes');
+  })
+
   return(
-    <div id='home'>
+    <div id='home' style={{opacity: (loadStatus === 'yes')? 1 : 0}}>
             <AboveFold2 appState={props} />
             <Services2 appState={props}/>
             <Projects />

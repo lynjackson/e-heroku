@@ -18,6 +18,12 @@
   }
   
   #above-fold{
+    @keyframes fadeIn {
+      0%{opacity:0};
+      100%{opacity:1};
+  }
+  animation: fadeIn 2s;
+    
     @include box(flex, column, auto, center);
     @include hw(62.11vh, 100%);
     position: relative;
@@ -47,6 +53,7 @@
       position:absolute;
       @include hw(86vh, 100vw);
       z-index: -1;
+      border: 0px solid white;
     }
   }
 

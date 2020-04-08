@@ -16,6 +16,7 @@
   }
 
   #above-fold {
+    animation: fadeIn 2s;
     display: flex;
     flex-direction: column;
     justify-content: auto;
@@ -24,6 +25,14 @@
     width: 100%;
     position: relative;
     z-index: 0;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   #above-fold #above-title {
     position: relative;
@@ -52,6 +61,7 @@
     height: 86vh;
     width: 100vw;
     z-index: -1;
+    border: 0px solid white;
   }
 
   #services {

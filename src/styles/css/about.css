@@ -50,6 +50,17 @@
     left: 0px;
   }
 
+  #sec1 {
+    animation: fadeIn 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   #sec1 #sec1-image-div {
     height: 187px;
     width: 100vw;

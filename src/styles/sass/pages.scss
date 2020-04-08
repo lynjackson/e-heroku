@@ -13,9 +13,15 @@
       width:90.5%;
       max-width:1280px;
     }
+    #page_value{
+      margin: 0 auto;
+      width:100%;
+      background-color:hsl(0,0,10);
+      height:100vh;
+    }
   
     #page_lyn{
-      width: 88%;
+      width: $width-mobile;
       margin: 0 auto;
     }
   
@@ -36,11 +42,10 @@
     }
   
     #page_lyn{
-      width: 90.1%;
+      width: $width-iPad;
       max-width:1280px;
       margin: 0 auto;
-      display:flex;
-      justify-content: space-between;
+      @include box(flex, row, flex-start, flex-start);
     }
   }
 
@@ -48,6 +53,10 @@
     
     #page_about{
       width: $width-13;
+    }
+
+    #page_lyn{
+      width:$width-13;
     }
   }
   

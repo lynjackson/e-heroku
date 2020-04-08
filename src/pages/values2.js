@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import '../styles/css/values.css';
 import DownArrow from '../assets/icons/values-down-arrow.png'
+import deb from 'lodash.debounce';
+import thot from 'lodash.throttle';
 
 export const Values = ()=>{
   
@@ -18,6 +20,7 @@ export const Values = ()=>{
   const [counter, setCounter] = useState(0)
   const [valueTitle, setTitle] = useState(title[counter])
   const [valueText, setText] = useState(text[counter])
+  const [stateChange, setStateChange] = useState(0);
   
   // useEffect(()=>{
   //   window.addEventListener('wheel', (e)=>{
@@ -34,12 +37,146 @@ export const Values = ()=>{
   //   // })
   // })
   // })
+
+  
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }, wait);
+      if (immediate && !timeout) func.apply(context, args);
+    };
+  }
+
+  
+
+  function throttle(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      if ( !timeout ) timeout = setTimeout( later, wait );
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  function debounce2(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      clearTimeout(timeout);
+      //Moving this line above timeout assignment
+      if (immediate && !timeout) func.apply(context, args);
+      timeout = setTimeout(function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }, wait);
+    };
+  };
+
+  const debounce3 = (func, wait, immediate) => {
+    let timeout;
+  
+    return function() {
+      let context = this;
+      let args = arguments;
+  
+      clearTimeout(timeout);
+  
+      timeout = setTimeout(function() {
+        timeout = null;
+  
+        if (!immediate) {
+          func.apply(context, args)
+        }
+      }, wait);
+  
+      if (immediate && !timeout) {
+        func.apply(context, args)
+      }
+    };
+  };
+
+  function debounce4(func, wait, immediate) {
+    var timeout;
+    
+    return function executedFunction() {
+      var context = this;
+      var args = arguments;
+      
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+  
+      var callNow = immediate && !timeout;
+    
+      clearTimeout(timeout);
+  
+      timeout = setTimeout(later, wait);
+    
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  var myEfficientFnUp = thot(function() {
+    setCounter(counter-1);
+  }, 300, {'trailing': true});
+
+  var myEfficientFnDown = thot(function() {
+    setCounter(counter+1);
+  }, 3000, {'leading': true});
+  
+  // useEffect(()=>{
+  //   window.addEventListener('click', ()=>{
+  //     deb(()=>{
+  //       setCounter(counter+1);
+  //       console.log('scrolly')
+  //     }, 300, {'leading': true})
+  //   });
+  // })
+
+  useEffect(()=>{
+    
+    // document.getElementById('value-con').style.opacity = 1;
+    document.getElementById('value-title').style.opacity = 1;
+    document.getElementById('value-text').style.opacity = 1;
+    
+    const funky = (e)=>{
+      // document.getElementById('value-con').style.opacity = 0;
+      document.getElementById('value-title').style.opacity = 0;
+      document.getElementById('value-text').style.opacity = 0;
+
+      setTimeout(()=>(e.deltaY > 0) ? setCounter(counter + 1) : setCounter(counter - 1), 500)
+      
+      window.removeEventListener('wheel', funky)
+    }
+    
+    setTimeout(()=>{
+      
+      window.addEventListener('wheel', funky)
+      // setStateChange(stateChange + 1);
+      // console.log('remove');
+    
+    }, 1500)
+    
+
+  })
   
   return(
-    <div id='value-page' onWheel={(e)=>{(e.deltaY > 0) ? console.log(e) : setCounter(counter-1)}}>
+    <div id='page_value' >
       <div id='value-con'>
-        <h3>{valueTitle}</h3>
-        <p>{valueText} </p>
+        <h3 id='value-title'>{title[counter]}</h3>
+        <p id='value-text'>{text[counter]} </p>
         <h2>{`0${counter + 1}`}/07</h2>
         <img src={DownArrow} />
       </div>

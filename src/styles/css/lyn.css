@@ -3,201 +3,188 @@
 }
 
 @media screen and (min-width: 0px) {
-  #lyn-image-div {
-    width: 100vw;
-    height: 276px;
-    width: 100vw;
-    margin-top: 86px;
-    left: 0;
-    overflow: hidden;
+  .lyn-section {
+    margin-bottom: 53px;
   }
-  #lyn-image-div img {
-    width: 100%;
-    position: relative;
-    bottom: 4em;
-  }
-
-  #lyn-text-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 26px;
-  }
-  #lyn-text-div h1 {
-    font-family: raleway;
-    font-size: 53px;
-    font-weight: 700;
-    line-height: auto;
-    letter-spacing: -1.7px;
-    margin: 0;
-  }
-  #lyn-text-div h2 {
-    font-family: raleway;
+  .lyn-section h1 {
+    font-family: poppins;
     font-size: 32px;
-    font-weight: 700;
-    line-height: auto;
-    letter-spacing: -1.7px;
-    color: rgba(0, 0, 0, 0.55);
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #b3b3b3;
     margin: 0;
   }
-  #lyn-text-div h3 {
-    font-family: nunito sans;
-    font-size: 21px;
-    font-weight: 200;
-    line-height: auto;
-    letter-spacing: -1.7px;
-    margin: 4px 0 0 0;
+  .lyn-section h2 {
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: -1px;
+    margin: 0;
   }
-
-  #stack_lyn {
-    width: 259px;
-    margin: 27.2px auto 0 auto;
+  .lyn-section h3 {
+    font-family: nunito sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: auto;
+    letter-spacing: auto;
+    margin: 0;
+  }
+  .lyn-section .tab {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: auto;
-  }
-  #stack_lyn .stack-column_lyn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: auto;
-  }
-
-  .section-lyn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: auto;
-    height: auto;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .section-lyn .section-title_lyn {
-    font-family: raleway;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: auto;
-    letter-spacing: auto;
-    color: rgba(0, 0, 0, 0.55);
-    margin: 52px auto 0 auto;
-  }
-
-  #portfolio_lyn {
-    height: 800px;
-    width: 90%;
-  }
-  #portfolio_lyn .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: auto;
     align-items: center;
+    width: 100%;
+    margin-bottom: 37.5px;
+    height: 57px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.2);
   }
-  #portfolio_lyn .portfolio-item div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #portfolio_lyn .portfolio-item img {
-    width: 167px;
-  }
-  #portfolio_lyn .portfolio-item h1 {
-    margin: 0;
-    font-family: open sans;
-    font-size: 22px;
-    font-weight: 700;
+  .lyn-section .tab .tab-title {
+    font-family: poppins;
+    font-size: 32px;
+    font-weight: 800;
     line-height: auto;
     letter-spacing: -1px;
+    color: #b3b3b3;
   }
-  #portfolio_lyn .portfolio-item h2 {
-    margin: 0;
-    font-family: open sans;
+  .lyn-section .tab .little-arrow {
+    height: 19px;
+    width: 14px;
+    transform: rotate(90deg);
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 49px;
+    margin-top: 86px;
+  }
+  #profile #profile-image {
+    background-image: url("../../assets/images/lyn4.jpeg");
+    background-size: cover;
+    height: 449px;
+    width: 100vw;
+    position: relative;
+    left: calc((100% - 90.5%)/-2);
+    margin-bottom: 32px;
+  }
+  #profile #name {
+    font-size: 37px;
+    color: #1a1a1a;
+  }
+  #profile #title {
+    font-family: poppins;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: auto;
+    letter-spacing: -1px;
+    color: #b3b3b3;
+  }
+  #profile #location {
+    font-size: 21px;
+    margin-bottom: 22px;
+  }
+
+  #portfolio .project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60.2px;
+  }
+  #portfolio .project .portfolio-image {
+    width: 44.1%;
+  }
+  #portfolio .project .portfolio-info-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 49.6%;
+    height: 100%;
+  }
+  #portfolio .project .info-title {
+    font-family: poppins;
     font-size: 18px;
-    font-weight: 400;
-    line-height: auto;
+    font-weight: 600;
+    line-height: 23px;
     letter-spacing: -1px;
   }
-  #portfolio_lyn .portfolio-item a {
-    margin: 0;
-    font-family: raleway;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: auto;
-    letter-spacing: auto;
-  }
-
-  #experience-lyn .experience-item .item-stats {
+  #portfolio .project .design-doc-div {
     display: flex;
-    flex-direction: column;
-    justify-content: auto;
-    align-items: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
-  #experience-lyn .experience-item h1 {
-    font-family: open sans;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: auto;
-    letter-spacing: -1px;
-    margin: 0;
-  }
-  #experience-lyn .experience-item h2 {
-    font-family: open sans;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: auto;
-    letter-spacing: -1px;
-    margin: 0;
-  }
-  #experience-lyn .experience-item h3 {
-    font-family: open sans;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: auto;
-    letter-spacing: -1px;
-    margin: 0;
-  }
-  #experience-lyn .experience-item .item-description {
-    font-family: open sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: auto;
-    letter-spacing: 0.3px;
+  #portfolio .project .xd-icon {
+    width: 21px;
+    margin-right: 4.5px;
   }
 
-  #education-lyn .education-item {
-    margin: 25px 0 0 0;
+  #experience .experience-item {
+    margin-bottom: 37px;
   }
-  #education-lyn .education-item h1 {
-    font-family: open sans;
+  #experience .title {
+    font-family: poppins;
     font-size: 19px;
-    font-weight: 400;
-    line-height: auto;
-    letter-spacing: 0.3px;
-    margin: 0;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: -1px;
   }
-  #education-lyn .education-item h2 {
-    font-family: raleway;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: auto;
-    letter-spacing: auto;
-    margin: 0;
+  #experience .place {
+    font-family: poppins;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: -1px;
+    color: #b3b3b3;
+  }
+  #experience .time {
+    font-size: 14px;
+    margin-bottom: 18px;
   }
 
-  #more-lyn {
-    display: flex;
-    flex-direction: column;
-    justify-content: auto;
-    align-items: auto;
+  #education .education-item {
+    margin-bottom: 27.8px;
   }
-  #more-lyn p {
-    font-family: open sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: auto;
-    letter-spacing: 1px;
+  #education .degree {
+    color: #b3b3b3;
+  }
+
+  #more p {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #profile {
+    width: 34.1%;
+    margin-top: 86px;
+  }
+  #profile #profile-image {
+    left: calc( (100% - 90.1%) * -1);
+    width: inherit;
+    position: absolute;
+    left: 0px;
+  }
+  #profile #nameTitleLocation {
+    margin-top: 484px;
+  }
+
+  #right-side {
+    width: 551px;
+    margin: 125px 0 0 65px;
+  }
+
+  #portfolio .project {
+    align-items: center;
+  }
+  #portfolio .project .portfolio-image {
+    width: 203px;
+    height: 141px;
   }
 }
 

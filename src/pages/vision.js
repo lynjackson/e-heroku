@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState, useCallback, useLayoutEffect} from 'react';
 import {HeaderMobile, HeaderDesktop} from '../components/header';
 // import Overlay from './overlay'
 import { selectBook, overlay, menu, valueNextPage, valuePrevPage, defaultView, defaultHeader, invertHeader, engagementNav, identityNav, expectationNav, informationNav, scrollHeader, menuHeader } from '../actions/index.js'
@@ -17,23 +17,41 @@ import littlearrow from '../assets/icons/little-arrow.png';
 import '../styles/css/about.css';
 //imports function needed to access redux state object
 
-class Vision extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = { engagement: 1, identity: 0, expectation: 0, information: 0, change: 0}
-  }
+const Vision = ()=> {
+  
+  const [loadStatus, setLoadStatus] = useState('no')
+  
+  window.scrollTo(0,0);
 
-  render(){
+  // window.addEventListener('load', ()=>{setLoadStatus('yes')}, [loadStatus])
+
+  // useLayoutEffect(()=>{
+  //   window.addEventListener('load', ()=>{setLoadStatus('yes')})
+  // })
+
+  // useCallback(
+  //   ()=>{}, [loadStatus]
+  // )
+
+
+
+  // setTimeout()
+
     return(
       <div id='page_about' style={{opacity:1, transition:'opacity 3s'}}>
-          <div id='page-title'><img id='little-arrow' src={littlearrow}/> <h2 id='title-text'>Our Vision</h2></div>
-          <Sec1 />
-          <Sec2/>
-          <Sec3 />
-          <Contact message={"Get in touch"}/>
+        <div id='page-title'><img id='little-arrow' src={littlearrow}/> <h2 id='title-text'>Our Vision</h2></div>
+        <Sec1 />
+        <Sec2/>
+        <Sec3 />
+        <Contact message={"Get in touch"}/>
       </div>
+      
     )
-  }
+
+  // setTimeout()
+
+    
+  
 
 
   
